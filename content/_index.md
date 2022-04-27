@@ -15,7 +15,7 @@ The data was then cleaned via various methods (link til section?), ...
 
 
 ## [Explainer Notebook](explainer-notebook.html)
-The notebook containing all code used for the copmletion of this project can be seen [here](explainer-notebook.html).
+The notebook containing all code used for the completion of this project can be seen [here](explainer-notebook.html).
 
 
 ## Math formula
