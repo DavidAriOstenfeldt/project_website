@@ -7,8 +7,6 @@ next: network-analysis
 
 ![](billboard_py.png) ![](lyricsgenius.png)
 
-![](/images/dtu-logo.png)
-
 Aliquam nec hendrerit quam. Suspendisse maximus eros sollicitudin, accumsan turpis eu, blandit nulla. Nunc lorem elit, molestie at libero gravida, placerat consectetur ante. Sed tincidunt viverra tellus a vehicula.
 
 
