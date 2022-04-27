@@ -38,7 +38,7 @@ Create a nice table with links to download each data set...
 |:------------------|-------:|----------:|
 |[Billboard List](#)| 29,128 | 1.6       |
 |[Pre-cleaned](#)   | 29,128 | 92.5      |
-|[Cleaned](#)       | 25,419 | 44,2      |
+|[Cleaned](#)       | 25,419 | 44.2      |
 [Table caption, works as a reference][section-mmd-tables-table1]
 
 
