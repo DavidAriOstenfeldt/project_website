@@ -8,7 +8,7 @@ next: network-analysis
 
 billboard.py | LyricsGenius
 :-----------:|:------------:
-![](billboard_py.png)|![](lyricsgenius.png)
+![](images/billboard_py.png)|![](images/lyricsgenius.png)
 
 # Preliminary investigation and cleaning
 
