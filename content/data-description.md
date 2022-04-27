@@ -5,7 +5,7 @@ next: network-analysis
 ---
 
 # Gathering the data
-First, we got the songs we wanted to investigate from the [Billboard 'Hot-100' list](https://www.billboard.com/charts/hot-100/). Here, we collected song titles and artist names of all songs that appeared on the list starting from the first week of 1960, all the way to today. This was done with the [billboard.py API](https://github.com/guoguo12/billboard-charts). We made sure to only collect the songs if it was either the first time they appeared on the board, or if we hadn't already added them to the list. This way we collected a total of 29 128 unique songs, out of the total possible 322 400 songs (5200 a year * 62 years), which means 293 272 songs had multiple appearances on the Billboard 'Hot-100' list.
+First, we got the songs we wanted to investigate from the [Billboard 'Hot-100' list](https://www.billboard.com/charts/hot-100/). Here, we collected song titles and artist names of all songs that appeared on the list starting from the first week of 1960, all the way to today. This was done with the [billboard.py API](https://github.com/guoguo12/billboard-charts). We made sure to only collect the songs if it was either the first time they appeared on the board, or if we hadn't already added them to the list. This way we collected a total of 29 128 unique songs, out of the total possible 322 400 songs (5200 a year $$\times$$ 62 years), which means 293 272 songs had multiple appearances on the Billboard 'Hot-100' list.
 
 ![](/images/billboard_py.png)
 
