@@ -9,14 +9,22 @@ First, we got the songs we wanted to investigate from the [Billboard 'Hot-100' l
 
 ![](/images/billboard_py.png)
 
-We used the songs from this list to limit our scope, as otherwise the amount of data we would have to download would be insurmountable. This of course means that the data set does not provide a full picture of the entire network and vocabulary of artists, but as the data is collected from the most popular songs each week, we believe it to be a sufficient representation of the general trends in artists and lyrics through the years. We used the list of artists and song titles to collect lyrics, release year, collaborations, genres and titles from [genius.com](https://genius.com/Rick-astley-never-gonna-give-you-up-lyrics). For this part the [LyricsGenius API](https://lyricsgenius.readthedocs.io/en/master/) was used, which is an extension of the [base genius API](https://docs.genius.com/) that also collects the lyrics from each song via the python module [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/). However, the LyricsGenius API does not collect the genres of the songs it collects, and thus we had to modify the code to allow us to collect genres as well:
+We used the songs from this list to limit our scope, as otherwise the amount of data we would have to download would be insurmountable. This of course means that the data set does not provide a full picture of the entire network and vocabulary of artists, but as the data is collected from the most popular songs each week, we believe it to be a sufficient representation of the general trends in artists and lyrics through the years. We used the list of artists and song titles to collect lyrics, release year, collaborations, genres and titles from [genius.com](https://genius.com/Rick-astley-never-gonna-give-you-up-lyrics). For this part the [LyricsGenius API](https://lyricsgenius.readthedocs.io/en/master/) was used, which is an extension of the [base genius API](https://docs.genius.com/) that also collects the lyrics from each song via the python module [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/). However, the LyricsGenius API does not collect the genres of the songs, thus we had to modify the code to allow us to collect genres as well:
 
 ```Python
 def SomeShit(some, shit):
   return some += shit
 ````
 
+This way, when collecting data for each song through the modified LyricsGenius API, we would retrieve five attributes: year of release, artists who collaborated on the song, lyrics, genres and the song title. The data looks as follows:
 
+|   released |    artists       |                                              lyrics |    genres        |   title                        |
+|     ----:  |           ---:   |                                               ---:  |     ---:         |   ----:                        |
+|   1957     |  [marty robbins] | El Paso Lyrics\nOut in the West Texas town of ...   | [country]        | El Paso                        |
+| 1960-01-04 | [frankie avalon] | Why Lyrics I'll never let you go\nWhy? Because ...  | [pop]            | Why                            |
+| 1959       | [johnny preston] | Running Bear LyricsOn the bank of the river\nS...   | [pop]            | Running Bear                   |
+| 1960-01-04 | [freddy cannon]  | Way Down Yonder in New Orleans LyricsWell, way ...  | [pop]            | Way Down Yonder in New Orleans |
+| 1960-01-04 | [guy mitchell]   | Heartaches by the Number Lyrics\nHeartaches by...   | [country, cover] | Heartaches by the Number       |
 
 # Preliminary investigation and cleaning
 
