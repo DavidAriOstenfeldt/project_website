@@ -1,4 +1,4 @@
-baseURL = "https://DavidAriOstenfeldt.github.io/project_website/"
+baseURL = "https://davidariostenfeldt.github.io/project_website/"
 title = "Analysing Song Artists and Lyrics Through Genius"
 description = "In this project we analyse the connections between artists and their lexical diversity. The data has been gathered via Billboards 'Hot 100' list and Genius.com's API"
 relativeURLs = true
