@@ -5,7 +5,7 @@ next: network-analysis
 ---
 
 
-![](billboard_py.png) ![](lyricsgenius.png)
+<img src="/images/dtu-logo.png" width="200" /> <img src="/images/dtu-logo.png" width="200" />
 
 Aliquam nec hendrerit quam. Suspendisse maximus eros sollicitudin, accumsan turpis eu, blandit nulla. Nunc lorem elit, molestie at libero gravida, placerat consectetur ante. Sed tincidunt viverra tellus a vehicula.
 
@@ -26,6 +26,6 @@ Suspendisse non tellus faucibus, dapibus leo at, elementum magna. Fusce quis ant
 
 Quisque iaculis, sem quis imperdiet faucibus, nunc lorem feugiat purus, vestibulum condimentum turpis turpis ut ante. Donec vestibulum lectus ut ullamcorper condimentum. Curabitur fermentum nulla vitae arcu sollicitudin pulvinar.
 
-<img src="/images/dtu-logo.png" width="200" />
+
 
 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse eu tellus ut erat porttitor luctus. Vivamus aliquam auctor massa, in auctor orci. Ut quis enim ut lorem consectetur blandit dictum eu mauris.
