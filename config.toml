@@ -1,5 +1,5 @@
-baseURL = "https://peterampazzo.github.io/project-website-template/"
-title = "Project Title"
+baseURL = "https://DavidAriOstenfeldt.github.io/project_website/"
+title = "Analysing Song Artists and Lyrics Through Genius"
 description = "This is a project description"
 relativeURLs = true
 theme = "theme" 
