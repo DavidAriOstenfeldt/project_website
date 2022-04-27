@@ -5,7 +5,7 @@ next: network-analysis
 ---
 
 
-
+![](billboard_py.png) ![](lyricsgenius.png)
 
 ![](/images/dtu-logo.png)
 
