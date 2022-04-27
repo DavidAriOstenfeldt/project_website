@@ -27,10 +27,15 @@ This way, when collecting data for each song through the modified LyricsGenius A
 | 1960-01-04 | [guy mitchell]   | Heartaches by the Number Lyrics\nHeartaches by...   | [country, cover] | Heartaches by the Number       |
 
 # Preliminary investigation and cleaning
+Removing duplicates..
+Removing translated songs..
+Removing non-english songs..
+Removing gimmick songs..
 
 
 
 # Properties of the data
+The final data set is ..
 
 Create a nice table with links to download each data set...
 
@@ -39,7 +44,19 @@ Create a nice table with links to download each data set...
 |[Billboard List](#)| 29,128 | 1.6       |
 |[Pre-cleaned](#)   | 29,128 | 92.5      |
 |[Cleaned](#)       | 25,419 | 44.2      |
-[Table caption, works as a reference][section-mmd-tables-table1]
+
+## Characteristics of the data
+Big:
+Always-on:
+Non-reactive:
+Incomplete:
+Inaccessable:
+Nonrepresentative:
+Drifting:
+Algorithmically confounded:
+Dirty:
+Sensitive:
+
 
 
 
