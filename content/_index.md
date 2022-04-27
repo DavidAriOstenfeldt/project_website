@@ -4,8 +4,13 @@ layout: single
 next: data-description
 ---
 
-This is a test to see if it works. That would be quite cool. Testing testing testing 1 2 3...
-Testing again again again...
+Music artists often collaborate on songs, either via features or creating them together. But which artists collaborate more? Do collaborations happen more often in some genres, than others? Are artists collaborating more today, than in the 1960's? Does the lyrics used in songs change through the years? What about between genres? All good questions, which we hope to answer in this project.
+
+The data used for this investigation is gathered via [Billboards 'Hot-100' list](https://www.billboard.com/charts/hot-100/).
+
+
+
+
 Donec posuere justo at risus [efficitur convallis](#). Donec enim nibh, aliquet vel risus id, tincidunt consectetur felis. Proin porttitor odio a orci accumsan bibendum id at risus. Sed a posuere odio, ac lobortis augue. Maecenas aliquet ipsum vel libero dignissim, non aliquet justo eleifend. Fusce mollis, ante eget tincidunt imperdiet, mi ligula venenatis ex, ut pulvinar nunc ipsum tempus eros. Aliquam erat volutpat. Sed id _iaculis arcu_, sit amet varius libero. Etiam quis nisl pretium, eleifend quam nec, rutrum sapien. **Donec rutrum accumsan orci.**
 
 
