@@ -9,7 +9,12 @@ First, we got the songs we wanted to investigate from the [Billboard 'Hot-100' l
 
 ![](/images/billboard_py.png)
 
-We used the songs from this list to limit our scope, as otherwise the amount of data we would have to download would be insurmountable. This of course means that the data set does not provide a full picture of the entire network and vocabulary of artists, but as the data is collected from the most popular songs each week, we believe it to be a sufficient representation of the general trends in artists and lyrics through the years. We used the list of artists and song titles to collect lyrics, release year, collaborations, genres and titles from [genius.com](https://genius.com/Rick-astley-never-gonna-give-you-up-lyrics). For this part the [LyricsGenius API](https://lyricsgenius.readthedocs.io/en/master/) was used, which is an extension of the [base genius API](https://docs.genius.com/) that also collects the lyrics from each song via the python module [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/). However, this 
+We used the songs from this list to limit our scope, as otherwise the amount of data we would have to download would be insurmountable. This of course means that the data set does not provide a full picture of the entire network and vocabulary of artists, but as the data is collected from the most popular songs each week, we believe it to be a sufficient representation of the general trends in artists and lyrics through the years. We used the list of artists and song titles to collect lyrics, release year, collaborations, genres and titles from [genius.com](https://genius.com/Rick-astley-never-gonna-give-you-up-lyrics). For this part the [LyricsGenius API](https://lyricsgenius.readthedocs.io/en/master/) was used, which is an extension of the [base genius API](https://docs.genius.com/) that also collects the lyrics from each song via the python module [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/). However, the LyricsGenius API does not collect the genres of the songs it collects, and thus we had to modify the code to allow us to collect genres as well:
+
+```Python
+def SomeShit(some, shit):
+  return some += shit
+````
 
 
 
@@ -22,7 +27,7 @@ We used the songs from this list to limit our scope, as otherwise the amount of 
 Create a nice table with links to download each data set...
 
 |      Data Set     | Songs | Size (mb) |
-|:-----------------:|------:|----------:|
+|:------------------|------:|----------:|
 |[Billboard List](#)| 29128 | 1.6       |
 |[Pre-cleaned](#)   | 29128 | 92.5      |
 
