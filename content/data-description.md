@@ -21,10 +21,10 @@ We used the songs from this list to limit our scope, as otherwise the amount of 
 
 Create a nice table with links to download each data set...
 
-|   Data Set   | Songs | Size (mb) |
-|--------------|-------|-----------|
-|Billboard List| 29128 | 1.6       |
-|Pre-cleaned   | 29128 | 92.5      |
+|      Data Set     | Songs | Size (mb) |
+|:-----------------:|------:|----------:|
+|[Billboard List](#)| 29128 | 1.6       |
+|[Pre-cleaned](#)   | 29128 | 92.5      |
 
 
 
