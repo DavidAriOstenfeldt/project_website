@@ -4,9 +4,9 @@ layout: single
 next: data-description
 ---
 
-Music artists often collaborate on songs, either via features or creating them together. But which artists collaborate more? Do collaborations happen more often in some genres, than others? Are artists collaborating more today, than in the 1960's? Does the lyrics used in songs change through the years? What about between genres? All good questions, which we hope to answer in this project.
+Music artists often collaborate on songs, either via features or creating them together. But which artists collaborate more? Do collaborations happen more often in some genres, than others? Are artists collaborating more today, than in the 1960's? Does the lyrics used in songs change through the years? What about between genres? Has Drake collaborated with more artists than DJ Khaled? All good questions, which we hope to answer in this project.
 
-The data used for this investigation is gathered via [Billboards 'Hot-100' list](https://www.billboard.com/charts/hot-100/).
+To get a list of songs to investigate, we looked at the [Billboard 'Hot-100' list](https://www.billboard.com/charts/hot-100/). Here, we collected song titles and artist names of all songs that appeared on the list starting from the first week of 1960, all the way to today. Then we used this data to collect lyrics, release year, collaborations and titles from [genius.com](https://genius.com/Rick-astley-never-gonna-give-you-up-lyrics).
 
 
 
