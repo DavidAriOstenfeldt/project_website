@@ -80,6 +80,78 @@ This is tab **Windows** content.
 Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
 stringit, frustra Saturnius uteroque inter!
 {{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
 {{< /tabs >}}
 
 THIS IS AN EXAMPLE OF HOW TO USE PLOTLY:
