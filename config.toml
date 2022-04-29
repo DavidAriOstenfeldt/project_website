@@ -2,7 +2,7 @@ baseURL = "https://davidariostenfeldt.github.io/project_website/"
 title = "Analysing Song Artists and Lyrics Through Genius"
 description = "In this project we analyse the connections between artists and their lexical diversity. The data has been gathered via Billboards 'Hot 100' list and Genius.com's API"
 relativeURLs = true
-theme = "theme" 
+theme = "theme"
 [params]
     authors = ["David Ari Ostenfeldt", "Kristian Rhindal Møllmann", "Kristoffer Marboe"]
     notebook = "/explainer-notebook.html"
