@@ -3,15 +3,15 @@
   margin-bottom: 1rem;
   border: 1px solid #757575;
   border-radius: 5px;
-  overflow: scroll;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: nowrap; }
   .md-tabs label {
     display: inline-block;
     padding: 0.5rem 1rem;
     border-bottom: 1px transparent;
     cursor: pointer; }
   .md-tabs .md-tabs-content {
+    overflow-x: auto;
     order: 999;
     width: 100%;
     border-top: 1px solid #03a9f4;
