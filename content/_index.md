@@ -80,4 +80,4 @@ stringit, frustra Saturnius uteroque inter!
 
 THIS IS AN EXAMPLE OF HOW TO USE PLOTLY:
 
-{{/*< plotly json="/plotly/plotly-hugo/ccpp_ep_hist.json" height="400px" >/*}}
+{{/*< plotly json="/plotly/ccpp_ep_hist.json" height="400px" >/*}}
