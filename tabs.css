@@ -3,6 +3,7 @@
   margin-bottom: 1rem;
   border: 1px solid #757575;
   border-radius: 5px;
+  overflow-x: auto;
   display: flex;
   flex-wrap: nowrap; }
   .md-tabs label {
@@ -11,7 +12,6 @@
     border-bottom: 1px transparent;
     cursor: pointer; }
   .md-tabs .md-tabs-content {
-    overflow-x: auto;
     order: 999;
     width: 100%;
     border-top: 1px solid #03a9f4;
