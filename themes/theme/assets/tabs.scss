@@ -5,11 +5,10 @@
   border: 1px solid #757575;
   border-radius: 5px;
 
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow: hidden
 
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
   label {
     display: inline-block;
