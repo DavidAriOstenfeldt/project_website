@@ -2,7 +2,7 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 
-  border: 1px solid var(teal-50);
+  border: 1px solid #e0f2f1;
   border-radius: 5px;
 
   overflow: hidden;
@@ -20,13 +20,13 @@
   .md-tabs-content {
     order: 999; //Move content blocks to the end
     width: 100%;
-    border-top: 1px solid var(light-blue-600);
+    border-top: 1px solid #03a9f4;
     padding: 1rem;
     display: none;
   }
 
   input[type="radio"]:checked+label {
-    border-bottom: 1px solid var(green-900);
+    border-bottom: 1px solid #2e7d32;
   }
 
   input[type="radio"]:checked+label+.md-tabs-content {
