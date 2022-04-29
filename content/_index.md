@@ -25,7 +25,7 @@ $$ x^n + y^n = z^n $$
 
 INLINE MATH:
 
-This is a a line of text $5 + 5 = 10$ with some math in the middle of it.
+This is a a line of text $5 + 5^2 = 30$ with some math in the middle of it.
 
 ## Code chunk
 
