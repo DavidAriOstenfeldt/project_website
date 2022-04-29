@@ -23,6 +23,10 @@ The notebook containing all code used for the completion of this project can be 
 
 $$ x^n + y^n = z^n $$
 
+INLINE MATH:
+
+This is a a line of text $5 + 5^2 = 30$ with some math in the middle of it.
+
 ## Code chunk
 
 ```
@@ -38,3 +42,118 @@ df = pd.DataFrame()
 | 1 | 4 | 7 |
 | 2 | 5 | 8 |
 | 3 | 6 | 9 |
+
+
+THIS IS A SONG EMBEDDED VIA SHORTCODES:
+
+{{< spotify type="track" id="2dR5WkrpwylTuT3jRWNufa" width="50%" height="80" >}}
+
+
+THIS IS A SONG EMBEDDED VIA SPOTIFY SHARE:
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/31dynF6Vm6s6cLsHEBL8kp?utm_source=generator" width="50%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+
+THIS IS AN EXAMPLE OF HOW TO USE TABS
+{{< tabs >}}
+{{< tab "MacOS" >}}
+### MacOS
+
+This is tab **MacOS** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Linux" >}}
+## Linux
+
+This is tab[^example2] **Linux** content.[^example3]
+
+Example text that *may* contain **markdown** `markup`.[^example]
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+### Windows
+
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
+{{< /tab >}}
+{{< /tabs >}}
+
+THIS IS AN EXAMPLE OF HOW TO USE PLOTLY:
+
+{{/*< plotly json="/plotly/ccpp_ep_hist.json" height="400px" >/*}}
