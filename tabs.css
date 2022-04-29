@@ -3,9 +3,10 @@
   margin-bottom: 1rem;
   border: 1px solid #757575;
   border-radius: 5px;
-  overflow: hidden;
+  overflow-x: auto;
   display: flex;
-  flex-wrap: nowrap; }
+  flex-wrap: wrap;
+  flex-direction: column; }
   .md-tabs label {
     display: inline-block;
     padding: 0.5rem 1rem;
