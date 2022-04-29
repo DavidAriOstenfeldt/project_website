@@ -78,3 +78,6 @@ stringit, frustra Saturnius uteroque inter!
 {{< /tab >}}
 {{< /tabs >}}
 
+THIS IS AN EXAMPLE OF HOW TO USE PLOTLY:
+
+{{/*< plotly json="/plotly/plotly-hugo/ccpp_ep_hist.json" height="400px" >/*}}
