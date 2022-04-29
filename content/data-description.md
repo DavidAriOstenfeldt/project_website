@@ -21,11 +21,12 @@ Since song titles on Billboard's 'The Hot 100' have horrible naming schemes, whi
 
 When searching for songs using the Genius API, we used a sequential searching strategy. This means that we would first search for the song title and full artist name and if that does not yield any results, we first split the artist name at *'feature'*, *'feat.'*, *'ft.'* or *'with'* and then search for the song title and the first partition of the artists name query. If this still doesn't result in any valid song, we remove parentheses from the artist names and replace *'and'* with *'&'*, after which we again search for the song title and artists name. If this fails as well, we try splitting the modified artist names at *'&'* and *','* and search again. If none of these steps result in a valid song, we simply search for the song title and hope for the best.
 
-Immediately after loading a song, we make sure it is actually a song. To do this, we filter out songs with a genre as Genius also house texts which are not song lyrics. We therefore used the following list of bad genres to avoid those; 
+## Filtering out bad genres and separating artists
+Immediately after loading a song, we make sure it is actually a song. To do this, we filter out songs with specific genres/tags, as Genius also house texts which are not song lyrics. We therefore used the following list of bad genres to avoid those; `['track\\s?list', 'album art(work)?', 'liner notes', 'booklet', 'credits', 'interview', 'skit', 'instrumental', 'setlist', 'non-music', 'literature']`.
 
-## Filtering out bad genres
+The last step before all the raw data was gathered, was to separate all artists for each song. This was done using regex to find and split artists at *','*, *'and'*, *'featuring'* and so on. This results in the artists *Megan Thee Stallion & Dua Lipa* for the song *Sweetest Pie* to be changed to `[Megan Thee Stallion, Dua Lipa]` and the artists *Lil Durk Featuring Gunna* for the song *What Happened To Virgil* to be changed to `[Lil Durk, Gunna]`. However, a negative side effect of this processing is, that artists like the previously mentioned *Earth, Wind & Fire* was changed to `[Earth, Wind, Fire]`. This was a necesary part of the preprocessing and 
 
-This way, when collecting data for each song through the modified LyricsGenius API, we would retrieve five attributes: year of release, artists who collaborated on the song, lyrics, genres and the song title. The data looks as follows: \['track\\s?list', 'album art(work)?', 'liner notes', 'booklet', 'credits', 'interview', 'skit', 'instrumental', 'setlist', 'non-music', 'literature'\].
+This way, when collecting data for each song through the modified LyricsGenius API, we would retrieve five attributes: date of release, artists who collaborated on the song, lyrics, genres and the song title. The data looks as follows: 
 
 |   released |    artists       |                                              lyrics |    genres        |   title                        |
 |     ----:  |           ---:   |                                               ---:  |     ---:         |   ----:                        |
@@ -36,12 +37,16 @@ This way, when collecting data for each song through the modified LyricsGenius A
 | 1960-01-04 | [guy mitchell]   | Heartaches by the Number Lyrics\nHeartaches by...   | [country, cover] | Heartaches by the Number       |
 
 # Preliminary investigation and cleaning
+At this point we had all the raw data, but it was apparant that in spite of our efforts during the data gathering, a lot of cleaning still had to be done.
+
+
+
 Removing duplicates..
 Removing translated songs..
 Removing non-english songs..
 Removing gimmick songs..
 
-## Cleaning artists names
+
 
 
 
