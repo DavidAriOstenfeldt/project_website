@@ -5,7 +5,7 @@ next: network-analysis
 ---
 
 # Gathering the data
-First, we got the songs we wanted to investigate from the [Billboard 'Hot-100' list](https://www.billboard.com/charts/hot-100/). Here, we collected song titles and artist names of all songs that appeared on the list starting from the first week of 1960, all the way to today. This was done with the [billboard.py API](https://github.com/guoguo12/billboard-charts). We made sure to only collect the songs if it was either the first time they appeared on the board, or if we hadn't already added them to the list. This way we collected a total of 29,128 unique songs, out of the total possible 322,400 songs (5,200 a year $$ \cdot $$ 62 years), which means 293,272 songs had multiple appearances on the Billboard 'Hot-100' list.
+First, we got the songs we wanted to investigate from the [Billboard 'Hot-100' list](https://www.billboard.com/charts/hot-100/). Here, we collected song titles and artist names of all songs that appeared on the list starting from the first week of 1960, all the way to today. This was done with the [billboard.py API](https://github.com/guoguo12/billboard-charts). We made sure to only collect the songs if it was either the first time they appeared on the chart, or if we hadn't already added them to the list. This way we collected a total of 29,128 unique songs, out of the total possible 322,400 songs (5,200 a year * 62 years), which means 293,272 songs had multiple appearances on the Billboard 'Hot-100' list.
 
 ![](/images/billboard_py.png)
 
@@ -32,6 +32,15 @@ Removing translated songs..
 Removing non-english songs..
 Removing gimmick songs..
 
+## Clearning artists names
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7FXj7Qg3YorUxdrzvrcY25?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+## Filtering out bad genres
+
+Since song titles on Billboard's 'The Hot 100' have horrible naming schemes, which differs a lot from one song to another, some preprocessing need to take place. An example of this, is the artist *Earth, Wind \& Fire with The Emotions* which actually denotes *Earth, Wind \& Fire* featuring *The Emotions*. The problem comes when we search for *Earth, Wind \& Fire with The Emotions* using the Genius API, since this wont return any valid artist. 
+
+When searching for artists using the Genius API, we will use a sequential searching strategy. This means that we will first search for the unique artist name and if that does not yield any results, we first split the artist name at \textit{'with'} and then search for the first partition of the query. Processing like this will be done for a few keywords, like \textit{'and', '\&', featuring} and \textit{feat}, until the correct artist is found.
 
 
 # Properties of the data
