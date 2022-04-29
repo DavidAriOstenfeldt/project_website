@@ -42,4 +42,4 @@ df = pd.DataFrame()
 
 THIS IS A SONG
 
-{{< spotify type="track" id="2dR5WkrpwylTuT3jRWNufa" width="100%" height="250" >}}
+{{< spotify type="track" id="2dR5WkrpwylTuT3jRWNufa" width="50%" height="80" >}}
