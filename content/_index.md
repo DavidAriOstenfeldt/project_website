@@ -42,4 +42,4 @@ df = pd.DataFrame()
 
 THIS IS A SONG
 
-{% include spotifySong.html id="3V9Ndh1badVfBXnv3niDgE" %}
+{{< spotify type="album" id="5vqILcEeCT0N1DeJBsLrGE" width="100%" height="250" >}}
