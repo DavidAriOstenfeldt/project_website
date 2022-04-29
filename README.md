@@ -1,6 +1,6 @@
 # project-website-template
 
-[**Link to our website**](https://davidariostenfeldt.github.io/project_website/)
+# [**Link to our website**](https://davidariostenfeldt.github.io/project_website/)
 
 
 __A website template for your final project__ 🔮
