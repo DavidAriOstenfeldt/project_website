@@ -49,3 +49,21 @@ THIS IS A SONG EMBEDDED VIA SPOTIFY SHARE:
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/31dynF6Vm6s6cLsHEBL8kp?utm_source=generator" width="50%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
 
+THIS IS AN EXAMPLE OF HOW TO USE TABS
+{{< tabs tabTotal="3" tabRightAlign="2">}}
+{{< tab tabName="Tab 1" >}}
+
+**Tab 1 Content**
+
+{{< /tab >}}
+{{< tab tabName="Tab 2" >}}
+
+**Tab 2 Content**
+
+{{< /tab >}}
+{{< tab tabName="Tab 3">}}
+
+**Tab 3 Content**
+
+{{< /tab >}}
+{{< /tabs >}}
