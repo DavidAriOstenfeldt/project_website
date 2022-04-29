@@ -5,6 +5,7 @@
   {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
   {{ $sass := resources.Get "tabs.scss" }}
   {{ $style := $sass | resources.ToCSS }}
+  {{ partial "helpers/katex.html" . }}
   <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
   <title>{{ $title }}</title>
   <script src="https://cdn.tailwindcss.com"></script>
