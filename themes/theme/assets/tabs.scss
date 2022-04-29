@@ -5,7 +5,8 @@
   border: 1px solid #757575;
   border-radius: 5px;
 
-  overflow: hidden;
+  overflow-x: scroll;
+  overflow-y: hidden;
 
   display: flex;
   flex-wrap: wrap;
