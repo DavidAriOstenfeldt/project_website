@@ -5,10 +5,10 @@
   border: 1px solid #757575;
   border-radius: 5px;
 
-  overflow-x: scroll;
+  overflow: hidden;
 
-  /*display: flex;
-  flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: wrap;
 
   label {
     display: inline-block;
@@ -22,9 +22,7 @@
     width: 100%;
     border-top: 1px solid #03a9f4;
     padding: 1rem;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
+    display: none;
   }
 
   input[type="radio"]:checked+label {
