@@ -50,7 +50,7 @@ THIS IS A SONG EMBEDDED VIA SPOTIFY SHARE:
 
 
 THIS IS AN EXAMPLE OF HOW TO USE TABS
-{{< tabs tabTotal="3" tabRightAlign="2">}}
+{{< tabs tabTotal="3">}}
 {{< tab tabName="Tab 1" >}}
 
 **Tab 1 Content**
