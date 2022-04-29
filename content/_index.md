@@ -65,13 +65,7 @@ stringit, frustra Saturnius uteroque inter!
 
 This is tab[^example2] **Linux** content.[^example3]
 
-{{% hint warning %}}
 Example text that *may* contain **markdown** `markup`.[^example]
-
-[^example]: footnote within a hint.
-{{% /hint %}}
-
-[^example2]: footnote within a tab
 {{< /tab >}}
 
 {{< tab "Windows" >}}
