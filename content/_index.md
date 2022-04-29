@@ -50,20 +50,37 @@ THIS IS A SONG EMBEDDED VIA SPOTIFY SHARE:
 
 
 THIS IS AN EXAMPLE OF HOW TO USE TABS
-{{< tabs tabTotal="3">}}
-{{< tab tabName="Tab 1" >}}
+{{< tabs >}}
+{{< tab "MacOS" >}}
+### MacOS
 
-**Tab 1 Content**
+This is tab **MacOS** content.
 
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
 {{< /tab >}}
-{{< tab tabName="Tab 2" >}}
 
-**Tab 2 Content**
+{{< tab "Linux" >}}
+## Linux
 
+This is tab[^example2] **Linux** content.[^example3]
+
+{{% hint warning %}}
+Example text that *may* contain **markdown** `markup`.[^example]
+
+[^example]: footnote within a hint.
+{{% /hint %}}
+
+[^example2]: footnote within a tab
 {{< /tab >}}
-{{< tab tabName="Tab 3">}}
 
-**Tab 3 Content**
+{{< tab "Windows" >}}
+### Windows
 
+This is tab **Windows** content.
+
+Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
+stringit, frustra Saturnius uteroque inter!
 {{< /tab >}}
 {{< /tabs >}}
+
