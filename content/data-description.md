@@ -39,27 +39,21 @@ This way, when collecting data for each song through the modified LyricsGenius A
 # Preliminary investigation and cleaning
 At this point we had all the raw data, but it was apparant that in spite of our efforts during the data gathering, a lot of cleaning still had to be done.
 
-First of all, unwanted unicodes like *\u200b*, *\u200e* and *\u200c*, which had slipped in when the data was loaded, was removed from artists, genres and the lyrics. Next up, duplicates were removed and songs which were not in english were removed by doing a language detection with the Python module `langdetect`.
+### Unwanted characters and non-english songs
+First of all, unwanted unicodes like *\u200b*, *\u200c* and *\u200e*, which had slipped in when the data was loaded, was removed from artists, genres and the lyrics. Next up, duplicates were removed and songs which were not in english were removed by doing a language detection with the Python module `langdetect`.
 
 As can be seen in the table above, each of the songs' lyric's begins with the title of the song and *'Lyrics'*. This was also removed, as it wasn't part of the actually lyrics, but rather an artifact from gathering the song info using the Genius API.
 
+### Removing long songs
+Afterwards, we made a decision to remove all songs where the lyrics were longer that 10,000 characters. This was done because, in spite of all the aforementioned approaches to clean the data, e.g. entire book chapters by the French novelist [Marcel Proust](https://en.wikipedia.org/wiki/Marcel_Proust) were still present in the dataset because they were labelled with the genre *rap*. The cut-off at 10,000 were chosen based on the fact that all songs we investigated that were longer, were songs that we clearly loaded in wrong. In addition to this, the 6 minute long song *Rap God* by *Eminem*, where he flexes his ability to rap fast, contains 7,984 characters.
 
+The full distribution of the song lengths can be seen in the figure below:
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-Removing duplicates..
-Removing translated songs..
-Removing non-english songs..
-Removing gimmick songs..
+### Blacklist
+While doing a finer combing of the data, we also produced a blacklist for artists that we deemed unwanted in the data set. This list includes *Glee Cast* as they were present in over 200 songs, even though their songs are covers. The full list is seen here `['highest to lowest', 'marcel proust', 'watsky', 'glee cast', 'harttsick', 'eric the red', 'fabvl', 'c-mob']`.
 
-
-
-
-
-## Filtering out non english songs
-Using **langdetect**
-
-
-## Removing duplicates, unwanted unicodes (\u200x), songs clearly loaded wrong (cut list), songs with length > 10,000 characters, regrouping artists 
-
+### Regrouping artists
 
 
 
