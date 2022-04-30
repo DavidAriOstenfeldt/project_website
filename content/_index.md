@@ -4,14 +4,24 @@ layout: single
 next: data-description
 ---
 
-Everyone consumes music one way or another, ...
-Music artists often collaborate on songs. But which artists collaborate more? Do collaborations happen more often in some genres, than others? Are artists collaborating more today, than in the 1960's? Does the lyrics used in songs change through the years? What about between genres? Has Drake collaborated with more artists than DJ Khaled? All good questions, which we hope to answer in this project.
+Music is a large part of our daily lives. A study shows that [only 4% of Danes do not listen to any music whatsoever, leaving 96% listening through various means, such as radio, streaming, live music, tv etc](https://www.dst.dk/da/Statistik/emner/kultur-og-fritid/musik/musikvaner). But how much do we actually know about the various connections and intersections that happen to make our favourite pastime work? How do artists get together to create the music we love to listen to? Which artists collaborate more? Are some genres more prone to collaboration than others? Are artists collaborating more today, than in the 1960s? Does the language used in songs change through the years? What about between genres? Has Drake collaborated with more artists than DJ Khaled? All good questions, which we hope to answer in this project.
+
+The project is carried out in three main parts:
+1. [Collect data](./data-description).
+2. [Create various networks](./network-analysis) to investigate the collaboration between artists.
+3. [Analyse the lyrics](./text-analysis) of all the songs collected.
+
+Here is a small preview of what we are going to create:
+
+INSERT IMAGE OF WHOLE NETWORK HERE
+
+
 
 To get a list of songs to investigate, we looked at the [Billboard 'Hot-100' list](https://www.billboard.com/charts/hot-100/). Here, we collected song titles and artist names of all songs that appeared on the list starting from the first week of 1960, all the way to today. Then we used this data to collect lyrics, release year, collaborations, genres and titles from [genius.com](https://genius.com/Rick-astley-never-gonna-give-you-up-lyrics). This was done via two APIs: the [billboard.py API](https://github.com/guoguo12/billboard-charts) and the [LyricsGenius API](https://lyricsgenius.readthedocs.io/en/master/).
 
 ![](https://upload.wikimedia.org/wikipedia/commons/5/51/Genius-logo.png)
 
-The data was then cleaned via various methods (link til section?), ...
+The data was then cleaned via various methods (see [Data](./data-description) for more info), such that we were only left with unique songs
 
 
 ## [Explainer Notebook](explainer-notebook.html)
@@ -25,7 +35,7 @@ $$ x^n + y^n = z^n $$
 
 INLINE MATH:
 
-This is a a line of text $5 + 5^2 = 30$ with some math in the middle of it.
+This is a line of text $5 + 5^2 = 30$ with some math in the middle of it.
 
 ## Code chunk
 
