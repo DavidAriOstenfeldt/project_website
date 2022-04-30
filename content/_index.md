@@ -25,7 +25,7 @@ The data was then cleaned via various methods (see [Data](./data-description) fo
 
 
 ## Explainer Notebook
-The notebook containing all code used for the completion of this project can be seen [here](explainer-notebook.html). In it is a detailed walkthrough of every step of the process. As there is a lot of code, and it might become unwieldy, we have also split it into three separate notebooks, one for each section: [Data notebook](data_notebook.html), [network notebook](network_notebook.html), [text notebook](text_notebook.html).
+The notebook containing all code used for the completion of this project can be seen [here](explainer-notebook.html). In it is a detailed walkthrough of every step of the process.
 
 
 ## Math formula
@@ -176,30 +176,229 @@ TESTING OUT TABS IN TABS
 <br></br>
 
 {{< tabs >}}
+{{< tab "Pop" >}}
+  {{< tabs >}}
+  {{< tab "Ariana Grande" >}}
+  ### Ariana Grande
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Beyoncé" >}}
+  ### Beyoncé
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Billie Eilish" >}}
+  ### Billie Eilish
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Britney Spears" >}}
+  ### Britney Spears
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Cher" >}}
+  ### Cher
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Ed Sheeran" >}}
+  ### Ed Sheeran
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Elton John" >}}
+  ### Elton John
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Frank Sinatra" >}}
+  ### Frank Sinatra
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Justin Bieber" >}}
+  ### Justin Bieber
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Katy Perry" >}}
+  ### Katy Perry
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Madonna" >}}
+  ### Madonna
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Michael Jackson" >}}
+  ### Michael Jackson
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Miley Cyrus" >}}
+  ### Miley Cyrus
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Taylor Swift" >}}
+  ### Taylor Swift
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< /tabs >}}
+{{< /tab >}}
+
+{{< tab "R&B" >}}
+  {{< tabs >}}
+  {{< tab "Aretha Franklin" >}}
+  ### Aretha Franklin
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Chris Brown" >}}
+  ### Chris Brown
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "James Brown" >}}
+  ### James Brown
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Marvin Gaye" >}}
+  ### Marvin Gaye
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Prince" >}}
+  ### Prince
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Stevie Wonder" >}}
+  ### Stevie Wonder
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "The Weeknd" >}}
+  ### The Weeknd
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< /tabs >}}
+{{< /tab >}}
+
 {{< tab "Rap" >}}
-{{< tabs >}}
+  {{< tabs >}}
   {{< tab "Drake" >}}
   ### Inner Tab 1
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
-
-  {{< tab "Lil Wayne" >}}
-  ### Inner Tab 2
-  This is an inner tab
+  {{< tab "Eminem" >}}
+  ### Eminem
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
+  {{< tab "Future" >}}
+  ### Future
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
+  {{< /tab >}}
+  {{< tab "J. Cole" >}}
+  ### J. Cole
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Jay-Z" >}}
+  ### Jay-z
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Juice Wrld" >}}
+  ### Juice Wrld
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Kanye West" >}}
+  ### Kanye West
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "DJ Khaled" >}}
+  ### DJ Khaled
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Lil Baby" >}}
+  ### Lil Baby
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Lil Durk" >}}
+  ### Lil Durk
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Lil Uzi Vert" >}}
+  ### Lil Uzi Vert
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Lil Wayne" >}}
+  ### Lil Wayne
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Nicki Minaj" >}}
+  ### Nicki Minaj
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Snoop Dogg" >}}
+  ### Snoop Dogg
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Travis Scott" >}}
+  ### Travis Scott
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Young Thug" >}}
+  ### Young Thug
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< tab "Youngboy Never Broke Again" >}}
+  ### Youngboy Never Broke Again
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
   {{< /tabs >}}
 {{< /tab >}}
 
-{{< tab "Outer Tab 2" >}}
-## Outer Tab 2
-Frank Sinatra 
+{{< tab "Rock" >}}
+  {{< tabs >}}
+  {{< tab "Elvis Presley" >}}
+  ### Elvis Presley
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
-![](/images/frank_sinatra_no_bg.png)
+  {{< /tab >}}
+  {{< tab "Queen" >}}
+  ### Queen
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
-Example text that *may* contain **markdown** `markup`.[^example]
+  {{< /tab >}}
+  {{< tab "The Beatles" >}}
+  ### The Beatles
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+  {{< /tabs >}}
 {{< /tab >}}
 {{< /tabs >}}
 
