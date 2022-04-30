@@ -21,11 +21,11 @@ To get a list of songs to investigate, we looked at the [Billboard 'Hot-100' lis
 
 ![](https://upload.wikimedia.org/wikipedia/commons/5/51/Genius-logo.png)
 
-The data was then cleaned via various methods (see [Data](./data-description) for more info), such that we were only left with unique songs
+The data was then cleaned via various methods (see [Data](./data-description) for more info), such that we were only left with unique songs.
 
 
-## [Explainer Notebook](explainer-notebook.html)
-The notebook containing all code used for the completion of this project can be seen [here](explainer-notebook.html).
+## Explainer Notebook
+The notebook containing all code used for the completion of this project can be seen [here](explainer-notebook.html). In it is a detailed walkthrough of every step of the process. As there is a lot of code, and it might become unwieldy, we have also split it into three separate notebooks, one for each section: [Data notebook](data_notebook.html), [network notebook](network_notebook.html), [text notebook](text_notebook.html).
 
 
 ## Math formula
@@ -167,8 +167,10 @@ stringit, frustra Saturnius uteroque inter!
 
 THIS IS AN EXAMPLE OF HOW TO USE PLOTLY (with json):
 {{< load-plotly >}}
-{{< plotly json="plotly/songs_per_artist.json" height="300px" >}}
+{{< plotly json="plotly/songs_per_artist.json" height="325px" >}}
 
+
+This is a long test to see what will happen when the text goes over the middle, maybe we need a higher container.
 
 TESTING OUT TABS IN TABS
 <br></br>
