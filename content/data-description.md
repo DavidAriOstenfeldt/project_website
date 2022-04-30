@@ -13,8 +13,8 @@ First, we got the songs we wanted to investigate from the [Billboard 'The Hot 10
 We used the songs from this list to limit our scope, as otherwise the amount of data we would have to download would be insurmountable. This of course means that the data set does not provide a full picture of the entire network and vocabulary of artists, but as the data is collected from the most popular songs each week, we believe it to be a sufficient representation of the general trends in artists and lyrics through the years. We used the list of artists and song titles to collect lyrics, release year, collaborations, genres and titles from [genius.com](https://genius.com/Rick-astley-never-gonna-give-you-up-lyrics). For this part the [LyricsGenius API](https://lyricsgenius.readthedocs.io/en/master/) was used, which is an extension of the [base genius API](https://docs.genius.com/) that also collects the lyrics from each song via the python module [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/). However, the LyricsGenius API does not collect the genres of the songs (known as tags on the genius website), thus we had to modify the code to allow us to collect genres as well:
 
 ```Python
-def SomeShit(some, shit):
-  return some += shit
+def something(some, thing):
+  return some += thing
 ````
 
 ## Avoiding incorrect songs
@@ -94,13 +94,15 @@ Reactivity describes whether subjects know researchers are observing them becaus
 
 Completeness express if the data set manages to capture the entire unfolding of a specific event or, e.g., the entire network of a specific group. In the case of this project, we are attempting to analyse the network and text of the most popular artists and songs through modern time. With this in mind, we believe that using Billboard's 'The Hot 100' chart gives a good indication of the most popular artists and songs, though arguments could be made for the case that the chart might be skewed towards music popular in the states.
 
+
 > ### Inaccessable:
 
-
+The data used in this project is very much accessible. As was accounted for earlier on this page, everything has been downloaded freely off the internet via different APIs.
 
 > ### Nonrepresentative:
 
-
+Representativity denotes whether the data can generalise to, e.g., social phenomena more in general - out-of-sample generalisation. To this end, being a musician is quite a unique occupation when it comes to a social network of collaboration, in comparison to, e.g. a profession like acting. One could presume the typical actor is more connected than the typical musician since many actors are associated with a movie or tv-show, while often not many musicians are working on a song. At least not many musicians are seen shown as the artists on a given song, while many people might have worked on it during the songwriting and musical production.
+Additionally, since our data set only contains songs in English from a popular music chart in the west, the data might not be suited for generalisation of the network, or text, for musicians from other parts of the planet. With this being said, the data set is probably still perfectly applicable for within-sample comparisons.
 
 > ### Drifting:
 
@@ -108,11 +110,12 @@ Completeness express if the data set manages to capture the entire unfolding of 
 
 > ### Algorithmically confounded:
 
-
+Noget med hvordan sangene bliver valgt til listen
 
 > ### Dirty:
 
-
+Sange loaded ind ved en fejl
 
 > ### Sensitive:
 
+Nah
