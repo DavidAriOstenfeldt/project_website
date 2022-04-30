@@ -4,8 +4,7 @@ prev: network-analysis
 ---
 
 Here we will analyse the lyrics of all the songs we have collected.
-
-THIS IS AN EXAMPLE OF HOW TO USE TABS
+<br></br>
 {{< tabs >}}
 {{< tab "Ariana Grande" >}}
 ### Ariana Grande
@@ -16,12 +15,18 @@ Ariana Grande is a pop singer, ...
 {{< /tab >}}
 
 {{< tab "Frank Sinatra" >}}
-## Frank Sinatra
-Frank Sinatra 
-
 ![](/images/frank_sinatra_no_bg.png)
 
-Example text that *may* contain **markdown** `markup`.[^example]
+{{< spotify type="track" id="2dR5WkrpwylTuT3jRWNufa" width="50%" height="80" >}}
+
+## Frank Sinatra
+Frank Sinatra was ...
+
 {{< /tab >}}
 {{< /tabs >}}
+
+
+
+
+
 

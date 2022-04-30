@@ -64,6 +64,7 @@ THIS IS A SONG EMBEDDED VIA SPOTIFY SHARE:
 
 
 THIS IS AN EXAMPLE OF HOW TO USE TABS
+<br></br>
 {{< tabs >}}
 {{< tab "MacOS" >}}
 ### MacOS
@@ -167,4 +168,36 @@ stringit, frustra Saturnius uteroque inter!
 THIS IS AN EXAMPLE OF HOW TO USE PLOTLY (with json):
 {{< load-plotly >}}
 {{< plotly json="plotly/songs_per_artist.json" height="300px" >}}
+
+
+TESTING OUT TABS IN TABS
+<br></br>
+
+{{< tabs >}}
+{{< tab "Rap" >}}
+{{< tabs >}}
+  {{< tab "Drake" >}}
+  ### Inner Tab 1
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
+
+  {{< tab "Lil Wayne" >}}
+  ### Inner Tab 2
+  This is an inner tab
+
+  {{< /tab >}}
+
+  {{< /tabs >}}
+{{< /tab >}}
+
+{{< tab "Outer Tab 2" >}}
+## Outer Tab 2
+Frank Sinatra 
+
+![](/images/frank_sinatra_no_bg.png)
+
+Example text that *may* contain **markdown** `markup`.[^example]
+{{< /tab >}}
+{{< /tabs >}}
 
