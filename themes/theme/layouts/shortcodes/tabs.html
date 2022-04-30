@@ -4,7 +4,7 @@
 {{ $group := printf "tabs-%d" $id }}
 
 <div class="md-tabs">
-{{- range $index, $tab :=  .Scratch.Get $group -}}
+  {{- range $index, $tab :=  .Scratch.Get $group -}}
   {{ $individualTabId := printf "%s-%d" $group $index }}
   <input type="radio" class="hidden" name="{{ $group }}" id="{{ $individualTabId }}" {{ if not $index }}checked="checked"{{ end }} />
   <label for="{{ $individualTabId }}">
