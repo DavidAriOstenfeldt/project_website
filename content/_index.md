@@ -210,6 +210,12 @@ TESTING OUT TABS IN TABS
 
 {{< tab "Rap" >}}
   {{< tabs >}}
+  {{< tab "DJ Khaled" >}}
+  ![](/images/dj_khaled.png)
+  ### DJ Khaled
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
   {{< tab "Drake" >}}
   ![](/images/drake.png)
   ### Inner Tab 1
