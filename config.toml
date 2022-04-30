@@ -6,7 +6,7 @@ theme = "theme"
 [params]
     authors = ["David Ari Ostenfeldt", "Kristian Rhindal Møllmann", "Kristoffer Marboe"]
     notebook = "/explainer-notebook.html"
-    data = "https://drive.google.com"
+    data = "https://drive.google.com/drive/folders/1x3XgiGxGmbnON743wyg5egq4grl4L1bi?usp=sharing"
     github = "https://github.com/DavidAriOstenfeldt/project_website"
     [[params.nav]]
         label = "Data"
@@ -17,5 +17,3 @@ theme = "theme"
     [[params.nav]]
         label = "Text"
         link = "/text-analysis"
-
-# comment
