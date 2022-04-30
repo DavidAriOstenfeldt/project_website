@@ -156,8 +156,5 @@ stringit, frustra Saturnius uteroque inter!
 
 THIS IS AN EXAMPLE OF HOW TO USE PLOTLY (with json):
 {{< load-plotly >}}
-{{< plotly json="/plotly/songs_per_artist.json" height="400px" >}}
-
-
-THIS IS AN EXAMPLE OF HOW TO USE PLOTLY (with html):
+{{< plotly json="plotly/songs_per_artist.json" height="300px" >}}
 
