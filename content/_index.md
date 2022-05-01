@@ -62,188 +62,116 @@ THIS IS A SONG EMBEDDED VIA SHORTCODES:
 THIS IS A SONG EMBEDDED VIA SPOTIFY SHARE:
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/31dynF6Vm6s6cLsHEBL8kp?utm_source=generator" width="50%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
 
-
-THIS IS AN EXAMPLE OF HOW TO USE TABS
-<br></br>
-{{< tabs >}}
-{{< tab "MacOS" >}}
-### MacOS
-
-This is tab **MacOS** content.
-
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter!
-{{< /tab >}}
-
-{{< tab "Linux" >}}
-## Linux
-
-This is tab[^example2] **Linux** content.[^example3]
-
-Example text that *may* contain **markdown** `markup`.[^example]
-{{< /tab >}}
-
-{{< tab "Windows" >}}
-### Windows
-
-This is tab **Windows** content.
-
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter!
-{{< /tab >}}
-
-{{< tab "Windows" >}}
-### Windows
-
-This is tab **Windows** content.
-
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter!
-{{< /tab >}}
-
-{{< tab "Windows" >}}
-### Windows
-
-This is tab **Windows** content.
-
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter!
-{{< /tab >}}
-
-{{< tab "Windows" >}}
-### Windows
-
-This is tab **Windows** content.
-
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter!
-{{< /tab >}}
-
-{{< tab "Windows" >}}
-### Windows
-
-This is tab **Windows** content.
-
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter!
-{{< /tab >}}
-
-{{< tab "Windows" >}}
-### Windows
-
-This is tab **Windows** content.
-
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter!
-{{< /tab >}}
-
-{{< tab "Windows" >}}
-### Windows
-
-This is tab **Windows** content.
-
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter!
-{{< /tab >}}
-
-{{< tab "Windows" >}}
-### Windows
-
-This is tab **Windows** content.
-
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter!
-{{< /tab >}}
-
-{{< tab "Windows" >}}
-### Windows
-
-This is tab **Windows** content.
-
-Lorem markdownum insigne. Olympo signis Delphis! Retexi Nereius nova develat
-stringit, frustra Saturnius uteroque inter!
-{{< /tab >}}
-{{< /tabs >}}
-
 THIS IS AN EXAMPLE OF HOW TO USE PLOTLY (with json):
 {{< load-plotly >}}
-{{< plotly json="plotly/songs_per_artist.json" height="325px" >}}
+{{< plotly json="plotly/songs_per_artist.json" height="350px" >}}
+
+{{< plotly json="plotly/songs_per_genre.json" height="350px" >}}
 
 
 This is a long test to see what will happen when the text goes over the middle, maybe we need a higher container.
 
 TESTING OUT TABS IN TABS
 <br></br>
-
 {{< tabs >}}
 {{< tab "Pop" >}}
   {{< tabs >}}
   {{< tab "Ariana Grande" >}}
+  ![](/images/ariana_grande.png)
+  {{< spotify type="track" id="6ocbgoVGwYJhOv1GgI9NsF" width="50%" height="80" >}}
+        
+  
   ### Ariana Grande
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Beyoncé" >}}
+  ![](/images/beyoncé.png)
+  {{< spotify type="track" id="2CvOqDpQIMw69cCzWqr5yr" width="50%" height="80" >}}
   ### Beyoncé
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Billie Eilish" >}}
+  ![](/images/billie_eilish.png)
+  {{< spotify type="track" id="2Fxmhks0bxGSBdJ92vM42m" width="50%" height="80" >}}
   ### Billie Eilish
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Britney Spears" >}}
+  ![](/images/britney_spears.png)
+  {{< spotify type="track" id="6I9VzXrHxO9rA9A5euc8Ak" width="50%" height="80" >}}
   ### Britney Spears
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Cher" >}}
+  ![](/images/cher.png)
+  {{< spotify type="track" id="2goLsvvODILDzeeiT4dAoR" width="50%" height="80" >}}
   ### Cher
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Ed Sheeran" >}}
+  ![](/images/ed_sheeran.png)
+  {{< spotify type="track" id="0tgVpDi06FyKpA1z0VMD4v" width="50%" height="80" >}}
   ### Ed Sheeran
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Elton John" >}}
+  ![](/images/elton_john.png)
+  {{< spotify type="track" id="3gdewACMIVMEWVbyb8O9sY" width="50%" height="80" >}}
   ### Elton John
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Frank Sinatra" >}}
+  ![](/images/frank_sinatra.png)
+  {{< spotify type="track" id="2dR5WkrpwylTuT3jRWNufa" width="50%" height="80" >}}
   ### Frank Sinatra
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Justin Bieber" >}}
+  ![](/images/justin_bieber.png)
+  {{< spotify type="track" id="50kpGaPAhYJ3sGmk6vplg0" width="50%" height="80" >}}
   ### Justin Bieber
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Katy Perry" >}}
+  ![](/images/katy_perry.png)
+  {{< spotify type="track" id="4jbmgIyjGoXjY01XxatOx6" width="50%" height="80" >}}
   ### Katy Perry
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Madonna" >}}
+  ![](/images/madonna.png)
+  {{< spotify type="track" id="22sLuJYcvZOSoLLRYev1s5" width="50%" height="80" >}}
   ### Madonna
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Michael Jackson" >}}
+  ![](/images/michael_jackson.png)
+  {{< spotify type="track" id="5ChkMS8OtdzJeqyybCc9R5" width="50%" height="80" >}}
   ### Michael Jackson
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Miley Cyrus" >}}
+  ![](/images/miley_cyrus.png)
+  {{< spotify type="track" id="3E7dfMvvCLUddWissuqMwr" width="50%" height="80" >}}
   ### Miley Cyrus
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Taylor Swift" >}}
+  ![](/images/taylor_swift.png)
+  {{< spotify type="track" id="55n9yjI6qqXh5F2mYvUc2y" width="50%" height="80" >}}
   ### Taylor Swift
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -254,36 +182,50 @@ TESTING OUT TABS IN TABS
 {{< tab "R&B" >}}
   {{< tabs >}}
   {{< tab "Aretha Franklin" >}}
+  ![](/images/aretha_franklin.png)
+  {{< spotify type="track" id="7s25THrKz86DM225dOYwnr" width="50%" height="80" >}}
   ### Aretha Franklin
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Chris Brown" >}}
+  ![](/images/chris_brown.png)
+  {{< spotify type="track" id="6XHVuErjQ4XNm6nDPVCxVX" width="50%" height="80" >}}
   ### Chris Brown
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "James Brown" >}}
+  ![](/images/james_brown.png)
+  {{< spotify type="track" id="5XeSAezNDk9tuw3viiCbZ3" width="50%" height="80" >}}
   ### James Brown
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Marvin Gaye" >}}
+  ![](/images/marvin_gaye.png)
+  {{< spotify type="track" id="7tqhbajSfrz2F7E1Z75ASX" width="50%" height="80" >}}
   ### Marvin Gaye
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Prince" >}}
+  ![](/images/prince.png)
+  {{< spotify type="track" id="54X78diSLoUDI3joC2bjMz" width="50%" height="80" >}}
   ### Prince
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Stevie Wonder" >}}
+  ![](/images/stevie_wonder.png)
+  {{< spotify type="track" id="4N0TP4Rmj6QQezWV88ARNJ" width="50%" height="80" >}}
   ### Stevie Wonder
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "The Weeknd" >}}
+  ![](/images/the_weeknd.png)
+  {{< spotify type="track" id="0VjIjW4GlUZAMYd2vXMi3b" width="50%" height="80" >}}
   ### The Weeknd
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -293,87 +235,121 @@ TESTING OUT TABS IN TABS
 
 {{< tab "Rap" >}}
   {{< tabs >}}
+  {{< tab "DJ Khaled" >}}
+  ![](/images/dj_khaled.png)
+  {{< spotify type="track" id="3DXncPQOG4VBw3QHh3S817" width="50%" height="80" >}}
+  ### DJ Khaled
+  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+
+  {{< /tab >}}
   {{< tab "Drake" >}}
+  ![](/images/drake.png)
+  {{< spotify type="track" id="1zi7xx7UVEFkmKfv06H8x0" width="50%" height="80" >}}
   ### Inner Tab 1
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Eminem" >}}
+  ![](/images/eminem.png)
+  {{< spotify type="track" id="1v7L65Lzy0j0vdpRjJewt1" width="50%" height="80" >}}
   ### Eminem
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Future" >}}
+  ![](/images/future.png)
+  {{< spotify type="track" id="0VgkVdmE4gld66l8iyGjgx" width="50%" height="80" >}}
   ### Future
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "J. Cole" >}}
+  ![](/images/j._cole.png)
+  {{< spotify type="track" id="68Dni7IE4VyPkTOH9mRWHr" width="50%" height="80" >}}
   ### J. Cole
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Jay-Z" >}}
+  ![](/images/jay-z.png)
+  {{< spotify type="track" id="4Li2WHPkuyCdtmokzW2007" width="50%" height="80" >}}
   ### Jay-z
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Juice Wrld" >}}
+  ![](/images/juice_wrld.png)
+  {{< spotify type="track" id="285pBltuF7vW8TeWk8hdRR" width="50%" height="80" >}}
   ### Juice Wrld
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Kanye West" >}}
-  ### Kanye West
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
-
-  {{< /tab >}}
-  {{< tab "DJ Khaled" >}}
-  ### DJ Khaled
+  ![](/images/kanye_west.png)
+  {{< spotify type="track" id="0j2T0R9dR9qdJYsB7ciXhf" width="50%" height="80" >}}
+  ### Juice Wrld
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Lil Baby" >}}
+  ![](/images/lil_baby.png)
+  {{< spotify type="track" id="78QR3Wp35dqAhFEc2qAGjE" width="50%" height="80" >}}
   ### Lil Baby
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Lil Durk" >}}
+  ![](/images/lil_durk.png)
+  {{< spotify type="track" id="2SAqBLGA283SUiwJ3xOUVI" width="50%" height="80" >}}
   ### Lil Durk
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Lil Uzi Vert" >}}
+  ![](/images/lil_uzi_vert.png)
+  {{< spotify type="track" id="7GX5flRQZVHRAGd6B4TmDO" width="50%" height="80" >}}
   ### Lil Uzi Vert
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Lil Wayne" >}}
+  ![](/images/lil_wayne.png)
+  {{< spotify type="track" id="5UsLjwBaTHBX4ektWIr4XX" width="50%" height="80" >}}
   ### Lil Wayne
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Nicki Minaj" >}}
+  ![](/images/nicki_minaj.png)
+  {{< spotify type="track" id="0dKg2vGC1hFqcK5LGTaKzX" width="50%" height="80" >}}
   ### Nicki Minaj
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Snoop Dogg" >}}
+  ![](/images/snoop_dogg.png)
+  {{< spotify type="track" id="3FNy4yzOhHhFBeA5p4ofoq" width="50%" height="80" >}}
   ### Snoop Dogg
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Travis Scott" >}}
+  ![](/images/travis_scott.png)
+  {{< spotify type="track" id="6gBFPUFcJLzWGx4lenP6h2" width="50%" height="80" >}}
   ### Travis Scott
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Young Thug" >}}
+  ![](/images/young_thug.png)
+  {{< spotify type="track" id="1IIKrJVP1C9N7iPtG6eOsK" width="50%" height="80" >}}
   ### Young Thug
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Youngboy Never Broke Again" >}}
+  ![](/images/youngboy_never_broke_again.png)
+  {{< spotify type="track" id="1oWM79mUVdZGCGYjSirHZR" width="50%" height="80" >}}
   ### Youngboy Never Broke Again
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -384,16 +360,22 @@ TESTING OUT TABS IN TABS
 {{< tab "Rock" >}}
   {{< tabs >}}
   {{< tab "Elvis Presley" >}}
+  ![](/images/elvis_presley.png)
+  {{< spotify type="track" id="44AyOl4qVkzS48vBsbNXaC" width="50%" height="80" >}}
   ### Elvis Presley
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "Queen" >}}
+  ![](/images/queen.png)
+  {{< spotify type="track" id="4u7EnebtmKWzUH433cf5Qv" width="50%" height="80" >}}
   ### Queen
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
   {{< /tab >}}
   {{< tab "The Beatles" >}}
+  ![](/images/the_beatles.png)
+  {{< spotify type="track" id="6dGnYIeXmHdcikdzNNDMm2" width="50%" height="80" >}}
   ### The Beatles
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 

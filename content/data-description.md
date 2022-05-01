@@ -74,48 +74,58 @@ After doing all data processing and cleaning, the final data set is comprised of
 | [Pre-cleaned](https://drive.google.com/file/d/1cyiIWnXD_0CHLsj8C0tcwNadfYI7z8FD/view?usp=sharing)    | 29,128 |      92.5 |
 | [Cleaned](https://drive.google.com/file/d/1Zhof84KbTJa3a1zfhN3TcwdWqPFCTnEv/view?usp=sharing)        | 25,419 |      44.2 |
 
+The distribution of songs per artist (for artists with over 50 songs on the 'Hot-100' list) looks as follows:
+{{< load-plotly >}}
+{{< plotly json="plotly/songs_per_artist.json" height="325px" >}}
+
+The distribution over genres:
+{{< plotly json="plotly/songs_per_genre.json" height="325px" >}}
+
+And finally the distribution over decades:
+{{< plotly json="plotly/songs_per_decade.json" height="325px" >}}
+
 ## Characteristics of the data
 The data has now been gathered and thoroughly cleaned, but before we are ready to apply our network science and text analysing techniques to it, we will first look at [_the ten characteristics of Big Data_](https://www.bitbybitbook.com/en/1st-ed/observing-behavior/characteristics/):
 
-> ### Big:
+> ### Big
 
 As mentioned previously, the data set comprises 25,419 songs and 7,855 unique artists, but in addition, the lyric corpus has a total size of 8,476,446 with 74,915 unique tokens. With this type of information, a data set of this size would be tough to come by other than scraping the internet.
 
 
-> ### Always-on: 
+> ### Always-on
 
 Billboard updates their 'The Hot 100' chart each week, which means the list has been updated since we first collected the data. Because it updates each week, the data set can be updated 52 times a year, which makes the data longitudinal, but since it updates only 52 times a year and not constantly like, e.g. Twitter, it is not entirely _always-on_.
 
-> ### Non-reactive:
+> ### Non-reactive
 
 Reactivity describes whether subjects know researchers are observing them because that might change the subjects' behaviour. All musical artists are most likely aware that they are present on the chart and might follow their ranking closely, but the question is how much they change their behaviour and musical style to get a higher ranking on the chart. One could speculate that some artists might change their use of words and language to appeal to a broader audience to perform better on the chart, while others follow their musical heart. Though, with this being said, we do not believe that the fact that researchers might also be looking at the chart with the intent to do network science and text analysis will change the behaviour of the artists.
 
-> ### Incomplete:
+> ### Incomplete
 
 Completeness express if the data set manages to capture the entire unfolding of a specific event or, e.g., the entire network of a specific group. In the case of this project, we are attempting to analyse the network and text of the most popular artists and songs through modern time. With this in mind, we believe that using Billboard's 'The Hot 100' chart gives a good indication of the most popular artists and songs, though arguments could be made for the case that the chart might be skewed towards music popular in the states.
 
 
-> ### Inaccessable:
+> ### Inaccessable
 
 The data used in this project is very much accessible. As was accounted for earlier on this page, everything has been downloaded freely off the internet via different APIs.
 
-> ### Nonrepresentative:
+> ### Nonrepresentative
 
 Representativity denotes whether the data can generalise to, e.g., social phenomena more in general - out-of-sample generalisation. To this end, being a musician is quite a unique occupation when it comes to a social network of collaboration, in comparison to, e.g. a profession like acting. One could presume the typical actor is more connected than the typical musician since many actors are associated with a movie or tv-show, while often not many musicians are working on a song. At least not many musicians are seen shown as the artists on a given song, while many people might have worked on it during the songwriting and musical production.
 Additionally, since our data set only contains songs in English from a popular music chart in the west, the data might not be suited for generalisation of the network, or text, for musicians from other parts of the planet. With this being said, the data set is probably still perfectly applicable for within-sample comparisons.
 
-> ### Drifting:
+> ### Drifting
 
+There is some systemic drifting in the data set, as the way songs were picked for the 'Hot-100' list has changed since its inception back in 1958. Originally, songs were picked purely based on how well they sold, but as the music industry evolved and radio, tv and streaming started becoming more prevalent, all these factors are now considered, when songs are picked for the list.
 
+> ### Algorithmically confounded
 
-> ### Algorithmically confounded:
+As the songs are only picked from the Billboard 'Hot-100' list, there is some amount of algorithmic confounding going on.
 
-Noget med hvordan sangene bliver valgt til listen
+> ### Dirty
 
-> ### Dirty:
+The data set could be dirty as some songs could still be loaded wrongly, or we might have missed something via the cleaning. Furthermore, the data is not a complete overview of the connections between artists or the language they use, as we only chose songs that appeared on the 'Hot-100' list.
 
-Sange loaded ind ved en fejl
-
-> ### Sensitive:
-
-Nah
+> ### Sensitive
+> 
+The data is not sensitive, as there is no information in it, that isn't already public, as well as the data just being very basic stats, release year, song title, song artists.
