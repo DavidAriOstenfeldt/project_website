@@ -106,16 +106,16 @@ Additionally, since our data set only contains songs in English from a popular m
 
 > ### Drifting
 
-
+There is some systemic drifting in the data set, as the way songs were picked for the 'Hot-100' list has changed since its inception back in 1958. Originally, songs were picked purely based on how well they sold, but as the music industry evolved and radio, tv and streaming started becoming more prevalent, all these factors are now considered, when songs are picked for the list.
 
 > ### Algorithmically confounded
 
-Noget med hvordan sangene bliver valgt til listen
+As the songs are only picked from the Billboard 'Hot-100' list, there is some amount of algorithmic confounding going on.
 
 > ### Dirty
 
-Sange loaded ind ved en fejl
+The data set could be dirty as some songs could still be loaded wrongly, or we might have missed something via the cleaning. Furthermore, the data is not a complete overview of the connections between artists or the language they use, as we only chose songs that appeared on the 'Hot-100' list.
 
 > ### Sensitive
-
-Nah
+> 
+The data is not sensitive, as there is no information in it, that isn't already public, as well as the data just being very basic stats, release year, song title, song artists.
