@@ -74,6 +74,16 @@ After doing all data processing and cleaning, the final data set is comprised of
 | [Pre-cleaned](https://drive.google.com/file/d/1cyiIWnXD_0CHLsj8C0tcwNadfYI7z8FD/view?usp=sharing)    | 29,128 |      92.5 |
 | [Cleaned](https://drive.google.com/file/d/1Zhof84KbTJa3a1zfhN3TcwdWqPFCTnEv/view?usp=sharing)        | 25,419 |      44.2 |
 
+The distribution of songs per artist (for artists with over 50 songs on the 'Hot-100' list) looks as follows:
+{{< load-plotly >}}
+{{< plotly json="plotly/songs_per_artist.json" height="325px" >}}
+
+The distribution over genres:
+{{< plotly json="plotly/songs_per_genre.json" height="325px" >}}
+
+And finally the distribution over decades:
+{{< plotly json="plotly/songs_per_decade.json" height="325px" >}}
+
 ## Characteristics of the data
 The data has now been gathered and thoroughly cleaned, but before we are ready to apply our network science and text analysing techniques to it, we will first look at [_the ten characteristics of Big Data_](https://www.bitbybitbook.com/en/1st-ed/observing-behavior/characteristics/):
 
