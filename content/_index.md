@@ -64,7 +64,9 @@ THIS IS A SONG EMBEDDED VIA SPOTIFY SHARE:
 
 THIS IS AN EXAMPLE OF HOW TO USE PLOTLY (with json):
 {{< load-plotly >}}
-{{< plotly json="plotly/songs_per_artist.json" height="325px" >}}
+{{< plotly json="plotly/songs_per_artist.json" height="350px" >}}
+
+{{< plotly json="plotly/songs_per_genre.json" height="350px" >}}
 
 
 This is a long test to see what will happen when the text goes over the middle, maybe we need a higher container.
