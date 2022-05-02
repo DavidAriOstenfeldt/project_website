@@ -128,4 +128,4 @@ The data set could be dirty as some songs could still be loaded wrongly, or we m
 
 > ### Sensitive
 > 
-The data is not sensitive, as there is no information in it, that isn't already public, as well as the data just being very basic stats, release year, song title, song artists.
+The data is not sensitive, as the data set consists of basic stats such as release year, song title, song artists, which are all things used by artists themselves to describe the titles.
