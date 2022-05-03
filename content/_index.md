@@ -1,5 +1,5 @@
 ---
-title: Home Page
+title: Introduction
 layout: single
 next: data-description
 ---
@@ -27,51 +27,24 @@ The data was then cleaned via various methods (see [Data](./data-description) fo
 ## Explainer Notebook
 The notebook containing all code used for the completion of this project can be seen [here](explainer-notebook.html). In it is a detailed walkthrough of every step of the process.
 
-
-## Math formula
-
-
-$$ x^n + y^n = z^n $$
-
-INLINE MATH:
-
-This is a line of text $5 + 5^2 = 30$ with some math in the middle of it.
-
-## Code chunk
-
-```
-import pandas as pd
-
-df = pd.DataFrame()
-```
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nec mauris aliquet, convallis ligula vel, mollis est. Fusce accumsan massa vel lectus dapibus, at vehicula elit auctor.
-
-| Column 1  | Column 2  |  Column 3 |
-|---|---|---|
-| 1 | 4 | 7 |
-| 2 | 5 | 8 |
-| 3 | 6 | 9 |
-
-
-THIS IS A SONG EMBEDDED VIA SHORTCODES:
-
-{{< spotify type="track" id="2dR5WkrpwylTuT3jRWNufa" width="50%" height="80" >}}
-
-
-THIS IS A SONG EMBEDDED VIA SPOTIFY SHARE:
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/31dynF6Vm6s6cLsHEBL8kp?utm_source=generator" width="50%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-
-THIS IS AN EXAMPLE OF HOW TO USE PLOTLY (with json):
+The distribution of songs per artist (for artists with over 50 songs on the 'Hot-100' list) looks as follows:
 {{< load-plotly >}}
-{{< plotly json="plotly/songs_per_artist.json" height="350px" >}}
+{{< plotly json="plotly/songs_per_artist.json" height="325px" >}}
 
-{{< plotly json="plotly/songs_per_genre.json" height="350px" >}}
+As we can see on the plot, it is mostly pop artists, with some rap, r&b and rock mixed in between.  Drake is leading with 253 songs on the chart, and most of the artists are big names from the last 10-20 years. Some well known names from before still manage to break through, like the king of rock, Elvis, with 89 songs on the chart.
+
+Likewise, the distribution of songs over genres (for genres with more than 500 songs in them):
+{{< plotly json="plotly/songs_per_genre.json" height="325px" >}}
+
+Here, it becomes clear to see that the genres are dominated by pop, rock r&b and rap, with there being as many pop songs as the next three genres combined.
 
 
-This is a long test to see what will happen when the text goes over the middle, maybe we need a higher container.
+Finally, the distribution of songs per decade looks as following:
+{{< plotly json="plotly/songs_per_decade.json" height="325px" >}}
 
-TESTING OUT TABS IN TABS
+We can see that most decades tend to 
+
+
 <br></br>
 {{< tabs >}}
 {{< tab "Pop" >}}
