@@ -32,14 +32,22 @@ After doing all data processing and cleaning, the final data set is comprised of
 | [Cleaned](https://drive.google.com/file/d/1Zhof84KbTJa3a1zfhN3TcwdWqPFCTnEv/view?usp=sharing)        | 25,419 |      44.2 |
 
 The distribution of songs per artist (for artists with over 50 songs on the 'Hot-100' list) looks as follows:
-{{< load-plotly >}}
-{{< plotly json="plotly/songs_per_artist.json" height="325px" >}}
+![](/images/songs_per_artist.png)
 
-As we can see on the plot, it is mostly pop artists, with some rap, r&b and rock mixed in between.  Drake is leading with 253 songs on the chart, and most of the artists are big names from the last 10-20 years. Some well known names from before still manage to sneak in, however, like the king of rock, Elvis, with 89 songs on the chart.
+As we can see on the plot, it is mostly pop artists, with some rap, r&b and rock mixed in between.  Drake is leading with 253 songs on the chart, and most of the artists are big names from the last 10-20 years. Some well known names from before still manage to break through, like the king of rock, Elvis, with 89 songs on the chart.
+
+Likewise, the distribution of songs over genres (for genres with more than 500 songs in them):
+![](/images/songs_per_genre.png)
+
+Here, it becomes clear to see that the genres are dominated by pop, rock r&b and rap, with there being as many pop songs as the next three genres combined.
 
 
-The distribution over genres (for genres with more than 500 songs in them):
-{{< plotly json="plotly/songs_per_genre.json" height="325px" >}}
+Finally, the distribution of songs per decade looks as following:
+![](/images/songs_per_decade.png)
 
-And finally the distribution over decades:
-{{< plotly json="plotly/songs_per_decade.json" height="325px" >}}
+We can see that each decade has between 3000 and 5000 songs, with the most being the 1960s and the 2010s. 1920 to 1940 is of course substantially lower, since the chart started in 1958, and 2020 incomplete, as there are still 8 years left in this decade.
+
+For good measure, we also plot the distribution of lengths of all songs:
+![](/images/song_lengths_sns.png)
+
+Here we see that a large majority of the collected songs fall between lengths of 0 to 500, with a few going for longer. For comparison Eminems 'Rap God' is 1560 words long.

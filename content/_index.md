@@ -29,20 +29,20 @@ The notebook containing all code used for the completion of this project can be 
 
 The distribution of songs per artist (for artists with over 50 songs on the 'Hot-100' list) looks as follows:
 {{< load-plotly >}}
-{{< plotly json="plotly/songs_per_artist.json" height="325px" >}}
+{{< plotly json="plotly/songs_per_artist.json" height="475px" >}}
 
 As we can see on the plot, it is mostly pop artists, with some rap, r&b and rock mixed in between.  Drake is leading with 253 songs on the chart, and most of the artists are big names from the last 10-20 years. Some well known names from before still manage to break through, like the king of rock, Elvis, with 89 songs on the chart.
 
 Likewise, the distribution of songs over genres (for genres with more than 500 songs in them):
-{{< plotly json="plotly/songs_per_genre.json" height="325px" >}}
+{{< plotly json="plotly/songs_per_genre.json" height="475px" >}}
 
 Here, it becomes clear to see that the genres are dominated by pop, rock r&b and rap, with there being as many pop songs as the next three genres combined.
 
 
 Finally, the distribution of songs per decade looks as following:
-{{< plotly json="plotly/songs_per_decade.json" height="325px" >}}
+{{< plotly json="plotly/songs_per_decade.json" height="475px" >}}
 
-We can see that most decades tend to 
+We can see that each decade has between 3000 and 5000 songs, with the most being the 1960s and the 2010s. 1920 to 1940 is of course substantially lower, since the chart started in 1958, and 2020 incomplete, as there are still 8 years left in this decade.
 
 
 <br></br>
