@@ -71,7 +71,7 @@
 }
 
 /* Change the link color to #111 (black) on hover */
-.network_menu_item:hover {
+.active, .network_menu_item:hover {
 	cursor: pointer;
 	filter: brightness(80%);
 }
