@@ -1,0 +1,11 @@
+pop
+rap
+rock
+r&b
+country
+soul
+ballad
+hip-hop
+trap
+singer-songwriter
+funk
