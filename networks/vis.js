@@ -240,7 +240,6 @@ function vis(new_controls) {
     }
   }, true)
 
-
   // Parameter controls //
   // ------------------ //
 
