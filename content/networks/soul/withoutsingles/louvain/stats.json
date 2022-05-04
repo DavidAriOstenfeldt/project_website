@@ -1,1 +1,1 @@
-{"Number of nodes": 419, "Number of links": 756, "Denisty": 0.00863, "Average clustering": 0.21, "Average degree": 3.61, "Max degree": 32}
+{"Number of nodes": 422, "Number of links": 758, "Denisty": 0.00853, "Average clustering": 0.21, "Average degree": 3.59, "Max degree": 32, "Betweenness centrality": {"jay-z": 0.06, "mariah carey": 0.0484, "kanye west": 0.0416, "quincy jones": 0.0408, "r. kelly": 0.0405, "drake": 0.0355, "usher": 0.0316, "diddy": 0.0307, "babyface": 0.0295, "mary j. blige": 0.0294}}
