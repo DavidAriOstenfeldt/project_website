@@ -1,6 +1,6 @@
 :root {
-	--major-width: 831px;/*95vw;*/
-	--major-height: 831px;/*65.19607845vw;*/
+	--major-width: 900px;/*95vw;*/
+	--major-height: 900px;/*65.19607845vw;*/
 	--canvas-dim: 64.730392155vw;
 }
 
@@ -47,24 +47,34 @@
 }
 
 .network_menu {
-	/*height: 100px;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;*/
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+	text-align: center;
 }
 
+
 .network_menu_item {
-	display: inline;
-	color: white;
-	text-align: center;
-	padding: 12px 14px;
-	text-decoration: none;
+	display: inline-block;
 	border-width: 1px;
 	border-color: black;
-	border-radius: 30px;
+	border-radius: 35px;
+}
+
+.network_menu_item p {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 /* Change the link color to #111 (black) on hover */
 .network_menu_item:hover {
 	cursor: pointer;
+}
+
+.network_menu:hover {
+	cursor: default;
 }

@@ -5,3 +5,4 @@
 
 custom_css = ["css/style.css"]
 custom_js = ["js/vis.js"]
+custom_js2 = ["js/parse_options.js"]
