@@ -32,16 +32,6 @@ function vis(new_controls) {
     .style("height", height + "px").node()
   context.scale(devicePixelRatio, devicePixelRatio)
 
-  // Input/Output //
-  // ------------ //
-
-  // Download figure function (must be defined before control variables)
-  var download = function() {
-    var link = document.createElement('a');
-    link.download = 'network.png';
-    link.href = document.getElementById('canvas').toDataURL();
-    link.click();
-  }
 
   // Simulation //
   // ---------- //
@@ -79,7 +69,6 @@ function vis(new_controls) {
     controls[key] = new_controls[key];
   });
 
-  //controls['file_path'] = "https://gist.githubusercontent.com/ulfaslak/6be66de1ac3288d5c1d9452570cbba5a/raw/0b9595c09b9f70a77ee05ca16d5a8b42a9130c9e/miserables.json";
 
   // Force layout
   var simulation = d3.forceSimulation()
@@ -125,14 +114,13 @@ function vis(new_controls) {
     simulation.force("link")
       .links(graph.links);
 
-    /*d3.select(canvas)
+    d3.select(canvas)
       .call(d3.drag()
         .container(canvas)
         .subject(dragsubject)
         .on("start", dragstarted)
         .on("drag", dragged)
-        .on("end", dragended));*/
-
+        .on("end", dragended));
 
     if (nodePositions || controls['freeze_nodes']) {
       simulation.alpha(0).restart();
@@ -305,13 +293,6 @@ function vis(new_controls) {
         }
         restartIfValidJSON(_graph);
       })
-    } else if (controls['file_path'].endsWith(".csv")) {
-      try {
-        fetch(controls['file_path']).then(r => r.text()).then(r => restartIfValidCSV(r));
-      } catch (error) {
-        throw error;
-        Swal.fire({ text: "File not found", type: "error" })
-      }
     }
   }
 
@@ -375,6 +356,7 @@ function vis(new_controls) {
       return false;
     }
     countSize = masterGraph.nodes.filter(n => { return 'size' in n }).length
+
     if (0 < countSize & countSize < masterGraph.nodes.length) {
       Swal.fire({ text: "Found nodes with and nodes without 'size' attribute", type: "error" });
       return false;
@@ -388,7 +370,6 @@ function vis(new_controls) {
 
     // Size and weight norms, colors and degrees
     computeMasterGraphGlobals();
-    console.log("minNonzeroNodeSize = "+minNonzeroNodeSize);
 
     // Check for really weak links
     if (minLinkWeight < 1e-9) {

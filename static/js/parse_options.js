@@ -1,15 +1,28 @@
 // =========== GET DATA AND CONFIG FROM URL PARAMETERS =================
 window.addEventListener('load', () => {
-    network_load('../networks/full/')
+    change_genre('../networks/rap/withsingles/genre/')
 })
-function network_load(d) {
+
+var d1 = "../networks/rap/";
+var d2 = "withsingles/genre/";
+
+function change_genre(d) {
+    d1 = d;
     controls = {};
-    console.log(window.location.href + d)
-    controls['file_path'] = d + 'network.json';
+    controls['file_path'] = d1 + d2 + 'network.json';
 
+    d3.json(d1 + d2 + 'config.json', new_controls => {
+        controls = {...controls, ...new_controls}
+        vis(controls);
+    })
+}
 
+function change_type(d) {
+    d2 = d;
+    controls = {};
+    controls['file_path'] = d1 + d2 + 'network.json';
 
-    d3.json(d + 'config.json', new_controls => {
+    d3.json(d1 + d2 + 'config.json', new_controls => {
         controls = {...controls, ...new_controls}
         vis(controls);
     })
