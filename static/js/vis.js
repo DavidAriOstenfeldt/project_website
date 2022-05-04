@@ -114,14 +114,13 @@ function vis(new_controls) {
     simulation.force("link")
       .links(graph.links);
 
-    /*d3.select(canvas)
+    d3.select(canvas)
       .call(d3.drag()
         .container(canvas)
         .subject(dragsubject)
         .on("start", dragstarted)
         .on("drag", dragged)
-        .on("end", dragended));*/
-
+        .on("end", dragended));
 
     if (nodePositions || controls['freeze_nodes']) {
       simulation.alpha(0).restart();

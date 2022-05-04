@@ -1,7 +1,7 @@
 :root {
 	--major-width: 900px;/*95vw;*/
 	--major-height: 900px;/*65.19607845vw;*/
-	--canvas-dim: 64.730392155vw;
+	--canvas-dim: 900px;
 }
 
 .parent_div {
@@ -49,7 +49,7 @@
 .network_menu {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 5px 0px;
   overflow: hidden;
 	text-align: center;
 }
@@ -73,6 +73,7 @@
 /* Change the link color to #111 (black) on hover */
 .network_menu_item:hover {
 	cursor: pointer;
+	filter: brightness(80%);
 }
 
 .network_menu:hover {
