@@ -5,7 +5,7 @@ prev: network-analysis
 
 The lyrics retrieved from Genius.com provide a rich look into the language which has been used in mainstream music throughout the last sixty years. There is a lot to analyse which is why the page is divided into 3 separate sections. The first section goes over differences and similarities between genres. Next comes a section exposing the trends of each decade, and lastly, the reader is invited on a deep dive into the linguistic proficiency of the most successful artist in modern times.
 
-# Genre
+# Investigating each genre
 For the text part, we have chosen the following genres to inspect:
 > pop, rock, rap, folk, blues, country, uk, funk and r&b
 
@@ -19,7 +19,7 @@ Let's start by inspecting the happiness of the different genres:
 We can see that most genres tend to have the same sentiment. All genres of music we have identified fall between an average sentiment of 5.4 and 5.7, and as one would probably expect, rap and trap are at the lower end of that spectrum. However, all genres are still above the average sentiment of all the words in the [Hedonometer](https://www.wikiwand.com/en/Tf%E2%80%93idf) data.
 # NOTE: Forklar hvad scoren betyder - de ligger allesammen mellem 5.4 og 5.7 ish?
 
-Let's take a closer look at the words that are important for each genre. We do this by calculating a term frequency for inverse document frequencies (TF-IDF). What is that? Basically, it is a measure of how important a word is to a document in a collection. It increases every time the word appears in the document, and is then offset by the number of documents in the corpus that contains the word (for more see: [wikipedia](https://www.wikiwand.com/en/Tf%E2%80%93idf)). For us this means that our documents are the individual lyrics to each song, and our corpus is the total collection of lyrics in each genre.
+Let's take a closer look at the words that are important for each genre. We do this by calculating a term frequency for inverse document frequencies (TF-IDF). What is that? Basically, it is a measure of how important a word is to a document in a collection. It increases every time the word appears in the document, and is then offset by the number of documents in the corpus that contains the word (for more see: [wikipedia](https://www.wikiwand.com/en/Tf%E2%80%93idf)).
 
 Using the words deemed important by the TF-IDF we can create wordclouds to visualise them:
 
@@ -206,22 +206,183 @@ Some interesting trends we can see:
 
 {{< /tabs >}}
 
-# Decade
-We now take a look at the music through the decades. We thus split our corpus by release year instead of by genre. Once again, we compute the TFIDF for each decade, and that leaves us with the following wordcloud:
+# Music through the decades
+We now take a look at the music through the decades. We start by looking at the sentiment through the years.
 
+![](/images/decade_sentiment.png)
+
+We see much the same trend as with decades - higher sentiment values in the early decades than in the later. This is probably explained by the rise of rap and hip hop from the 90s and onwards. Let's also try to look at the sentiment more closely:
+
+![](/images/rolling_sentiment.png)
+
+We can see much the same trend here as in the above plot. However, it is clear to see that there are spikes in sentiment, going both up and down. It is imprtant to note however, that almost all songs are still above the average sentiment from labMT, which could indicate that generally we just prefer to listen to happier music, since all the songs we are investigating is only taken from the 'Hot-100' list.
+
+To take a look at the lyrics used through the years we split our corpus by release year instead of by genre. Once again, we compute the TFIDF for each decade, and that leaves us with the following wordclouds:
+
+# NOTE: Opdater farverne på plot
 ![](/images/decade_wordcloud.png)
 
 
 
-Some text about decades. Once again show wordclouds and comment on them.
+{{< tabs >}}
+{{< tab "1960" >}}
+### 1960
+[The 1960s](https://www.wikiwand.com/en/1960s_in_music) were quite revolutionary for music. Rock was becoming more evolved, and artists were beginning to release more albums than singles. 
+Looking at the defining words of the decade, a lot of people seemed to enjoy partaking in the [watusi dance](https://www.wikiwand.com/en/Watusi_(dance)). Furthermore, songs were affectionate, using words such as "tenderly" and "fickle". 
 
-Show the distribution of genres throughout the decades.
+|     | Word |     TF |     Word |   TFIDF |
+|-----|-----:|-------:|---------:|--------:|
+| 1.  | love | 0.0122 |   watusi | 0.00011 |
+| 2.  | know | 0.0103 | tenderly | 0.00009 |
+| 3.  |   oh | 0.0083 |    looka | 0.00007 |
+| 4.  |   go | 0.0069 |   sighin | 0.00007 |
+| 5.  |  got | 0.0069 |    hully | 0.00006 |
+| 6.  | like | 0.0068 |    rovin | 0.00006 |
+| 7.  | come | 0.0067 |   billow | 0.00006 |
+| 8.  |  one | 0.0066 |   fickle | 0.00005 |
+| 9.  | baby | 0.0065 |    twine | 0.00005 |
+| 10. | time | 0.0064 |  doggone | 0.00005 |
 
-Show the dispersion plot.
+{{< /tab >}}
 
-Show sentiment pr month.
+{{< tab "1970" >}}
+### 1970
+[The 1970s](https://www.wikiwand.com/en/1970s_in_music) are probably best known for the rise and popularity of disco. If you simply look at the TF-IDF scores of the lyrics, you might believe that "nigger" was the most defining word of the decade. However, 5 different songs in 1970 had the word appear in them (in mostly provoking context), and it does not appear in any other decade. Another interesting word is "doggone", whose modern counterpart you might be more familiar with - "damn".
 
-# artists
+|     | Word |     TF |       Word |   TFIDF |
+|-----|-----:|-------:|-----------:|--------:|
+| 1.  | know | 0.0099 |     nigger | 0.00006 |
+| 2.  | love | 0.0098 |    doggone | 0.00005 |
+| 3.  |  got | 0.0079 | gentleness | 0.00005 |
+| 4.  |   oh | 0.0078 |       toad | 0.00004 |
+| 5.  | like | 0.0073 |     unkind | 0.00004 |
+| 6.  | time | 0.0071 |     salina | 0.00004 |
+| 7.  |  get | 0.0065 | thoughtful | 0.00004 |
+| 8.  | come | 0.0063 |   softness | 0.00004 |
+| 9.  |   go | 0.0062 |    crowing | 0.00004 |
+| 10. |   na | 0.0061 |   marianne | 0.00004 |
+
+{{< /tab >}}
+
+{{< tab "1980" >}}
+### 1980
+[The 1980s](https://www.wikiwand.com/en/1980s_in_music) had the rise electronic dance music and modern rock. Most of the important words from this decade appear quite normal at a glance. Apparently musicians really liked jellybeans in the 80s!
+
+|     | Word |     TF |          Word |   TFIDF |
+|-----|-----:|-------:|--------------:|--------:|
+| 1.  | know | 0.0100 |      glancing | 0.00005 |
+| 2.  | love | 0.0098 | temperamental | 0.00005 |
+| 3.  | time | 0.0078 |   marketplace | 0.00004 |
+| 4.  |  got | 0.0074 |       untried | 0.00004 |
+| 5.  |   oh | 0.0072 |     jellybean | 0.00004 |
+| 6.  | like | 0.0072 |     sightless | 0.00004 |
+| 7.  |  one | 0.0065 |       trouper | 0.00004 |
+| 8.  |   go | 0.0064 |      outgrown | 0.00004 |
+| 9.  |  say | 0.0063 |       frantic | 0.00004 |
+| 10. |  get | 0.0063 |           oho | 0.00003 |
+
+
+{{< /tab >}}
+
+{{< tab "1990" >}}
+### 1990
+[The 1990s](https://www.wikiwand.com/en/1990s_in_music) truly saw the rise in hip hop/rap. A lot of the words here are slang terms, used mainly in rap.
+
+|     | Word |     TF |        Word |   TFIDF |
+|-----|-----:|-------:|------------:|--------:|
+| 1.  | know | 0.0076 |     cristal | 0.00009 |
+| 2.  | love | 0.0066 |        quik | 0.00008 |
+| 3.  | like | 0.0064 |        dank | 0.00008 |
+| 4.  | time | 0.0060 |     phillie | 0.00007 |
+| 5.  |  got | 0.0059 |       floss | 0.00007 |
+| 6.  |  get | 0.0053 |    buckwild | 0.00007 |
+| 7.  | make | 0.0053 |       betta | 0.00006 |
+| 8.  |  see | 0.0053 | representin | 0.00006 |
+| 9.  |   na | 0.0053 |     ballers | 0.00006 |
+| 10. |   go | 0.0052 |        rump | 0.00006 |
+
+{{< /tab >}}
+
+{{< tab "2000" >}}
+### 2000
+[The 2000s](https://www.wikiwand.com/en/2000s_in_music) were truly a mixed year. All genres saw a healthy consumption, but particularly teen pop and rap got increased participation. This is the decade where slang truly started taking over the lyrics of the music we listen to. Popular words such as ["luda" and "cris"](https://www.wikiwand.com/en/Ludacris) dominate, as well as "swag", "shorty" and its variation "shawty".
+
+|     | Word |     TF |      Word |   TFIDF |
+|-----|-----:|-------:|----------:|--------:|
+| 1.  | know | 0.0074 |     crunk | 0.00013 |
+| 2.  | like | 0.0069 |      luda | 0.00013 |
+| 3.  |  got | 0.0063 |    shorty | 0.00011 |
+| 4.  |  get | 0.0058 |      cris | 0.00010 |
+| 5.  |   go | 0.0055 |    shawty | 0.00010 |
+| 6.  | love | 0.0054 |      swag | 0.00009 |
+| 7.  |  see | 0.0053 | darkchild | 0.00008 |
+| 8.  |   na | 0.0052 |   konvict | 0.00008 |
+| 9.  | yeah | 0.0052 |       dro | 0.00007 |
+| 10. |  one | 0.0051 |     titty | 0.00007 |
+
+{{< /tab >}}
+
+{{< tab "2010" >}}
+### 2010
+[The 2010s](https://www.wikiwand.com/en/2010s_in_music) had an increased popularity in a hushed style of vocal delivery (dubbed "whisperpop") as well as a steep rise in traditional instruments: Ukuleles, banjos, mandolins and bongos from indie-rock bands. Most notably, however, is probably the growth of hip hop, dominating most charts. Ad-libs played a huge role in the 10s, and we saw the introdcution of "instagram" to the vocabulary of the artists.
+
+|     | Word |     TF |      Word |   TFIDF |
+|-----|-----:|-------:|----------:|--------:|
+| 1.  | like | 0.0070 |    wraith | 0.00028 |
+| 2.  | know | 0.0066 |     skrrt | 0.00027 |
+| 3.  |  got | 0.0063 |       ayy | 0.00022 |
+| 4.  | yeah | 0.0057 |      brrt | 0.00019 |
+| 5.  |  get | 0.0056 | instagram | 0.00017 |
+| 6.  |   go | 0.0051 |      thot | 0.00016 |
+| 7.  |   na | 0.0047 |      swag | 0.00013 |
+| 8.  | love | 0.0046 |   maybach | 0.00013 |
+| 9.  | time | 0.0045 |    hunnid | 0.00012 |
+| 10. | make | 0.0044 |       bae | 0.00012 |
+
+{{< /tab >}}
+
+{{< tab "2020" >}}
+### 2020
+Although [the 2020s](https://www.wikiwand.com/en/2020s_in_music) are still young, a clear trend in ad-libbing can clearly be seen. The words scoring highest TF-IDF scores are all ad-libs, and they have become a huge part of our daily listenings.
+
+|     | Word |     TF |   Word |   TFIDF |
+|-----|-----:|-------:|-------:|--------:|
+| 1.  | like | 0.0064 |    opp | 0.00069 |
+| 2.  |  got | 0.0061 |  skrrt | 0.00048 |
+| 3.  | know | 0.0060 |   opps | 0.00047 |
+| 4.  | yeah | 0.0057 |    ayy | 0.00035 |
+| 5.  |  get | 0.0055 |   brrt | 0.00034 |
+| 6.  |   ai | 0.0047 |   baow | 0.00033 |
+| 7.  |   go | 0.0047 |  grrah | 0.00031 |
+| 8.  |   wa | 0.0045 | wraith | 0.00030 |
+| 9.  |   ca | 0.0042 |  draco | 0.00030 |
+| 10. |  one | 0.0042 | hunnid | 0.00029 |
+
+{{< /tab >}}
+{{< /tabs >}}
+
+We investigated some select words from these, and made a dispersion plot, to see how the use of them changed through the decades.
+
+![](/images/dispersion.png)
+
+Let's go through some of the words:  
+Swag: The popularity of swag happened in the 00s and ended around the 10s. Few people still use it today, but the amount has declined steeply.  
+Shawty: A popular term for a young woman. Popular in rap and hip hop music.  
+Boogie and funky: Boogie was a popular genre of music at the end of the disco-era of the 70s.  
+Darling and bitch: Two words often used to describe women, but with very different meanings. It is interesting to see how the popularity of them are almost opposite, with darling being phased out as bitch is being phased in.  
+Drug: Singing about drugs is a staple in rap music, and it's not surprising to see its popularity increase through the 90s.  
+Skrrt: A popular ad-lib used in most rap/trap songs.  
+Nigga: Often used in rap music, which saw a steep increase in popularity from it's inception in the 90s, and has become a staple in most rap music.
+
+
+
+Now, let's take a look at what genres we listened to throughout the last 6 decades. The plot below shows the ratio between genres as a % of the total amount of genres. Note that not all genres are included, but only a pre-selected list of genres.
+
+![](/images/genre_per_decade.png)
+
+We can clearly see that over 50% of all music on the Billboard 'Hot-100' list was pop, with rock starting out on second and R&B and blues coming in on third and fourth. In 1990 R&B would take over as second, but more notably, rap would become the third most represented genre on the list, rising from almost 0 the decade before. The popularity of rap would increase until it in 2010 overtook pop music as the most represented genre on the 'Hot-100' list. In 2020 we are also seeing trap music overtaking pop.
+
+# Inspecting individual artists
 Some text about artists? All artists are used for tf-idf scores.
 
 Goal: Summary statistics should be needly confined for each artist letting the reader click on the desired artist.
