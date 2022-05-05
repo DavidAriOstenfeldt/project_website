@@ -7,9 +7,9 @@
 .parent_div {
 	width: var(--major-width);
 	height: var(--major-height);
-	max-width: 138.428571415vh;
-	max-height: 95vh;
-	position: static;
+	max-width: 900px; /*138.428571415vh;*/
+	max-height: 900px; /*95vh;*/
+	position: center;
 	margin: auto;
 	top: 0;
 	right: 0;
@@ -23,16 +23,17 @@
 .child_div1 {
 	width: var(--major-height);
 	height: var(--major-height);
-	max-width: 95vh;
-	max-height: 95vh;
+	max-width: 900px; /*95vh;*/
+	max-height: 900px; /*95vh;*/
 	/*float: left;*/
+	text-align: center;
 }
 
 .canvas_container {
-	width: 831px; /*var(--canvas-dim);*/
-	height: 831px; /*var(--canvas-dim);*/
-	max-width: 94.321428542vh;
-	max-height: 94.321428542vh;
+	width: 900px; /*var(--canvas-dim);*/
+	height: 900px; /*var(--canvas-dim);*/
+	max-width: 900px; /*94.321428542vh;*/
+	max-height: 900px; /*94.321428542vh;*/
 	/*border-style: solid;
 	border-color: #cacaca;
 	border-width: 2px;*/
