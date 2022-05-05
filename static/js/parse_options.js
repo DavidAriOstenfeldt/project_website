@@ -12,8 +12,6 @@ var t3 = "all"
 
 function change_genre(d, n) {
     d1 = d;
-    console.log(d1)
-    console.log(d2)
     controls = {};
     controls['file_path'] = d1 + d2 + 'network.json';
 
@@ -54,9 +52,9 @@ function change_statistics(stats) {
             let rows = document.getElementsByClassName(key);
             let between_centrals = Object.entries(value);
             for (let i=0; i<rows.length; i++) {
-                let children = rows[i].childNodes;
-                children[1].textContent = between_centrals[i][0]
-                children[3].textContent = between_centrals[i][1]
+                let children = rows[i].getElementsByTagName("td");
+                children[0].innerHTML = between_centrals[i][0]
+                children[1].innerHTML = between_centrals[i][1]
             }
         }
     })
