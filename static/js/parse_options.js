@@ -71,5 +71,5 @@ function change_title(n, t, l) {
     if (l != null) {
         t3 = l;
     }
-    document.getElementById("network_title").innerHTML = t1 + " colored by " + t2 + t3 + "singletons";
+    document.getElementById("network_title").innerHTML = t1 + " colored by " + t2 + " " + t3 + " singletons";
 }
