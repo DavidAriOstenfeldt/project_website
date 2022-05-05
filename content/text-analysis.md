@@ -399,7 +399,15 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Ariana Grande" >}}
   ![](/images/ariana_grande.png)
   {{< spotify type="track" id="6ocbgoVGwYJhOv1GgI9NsF" width="50%" height="80" >}}
-        
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <div class="row">
+    <div class="column">
+      {{< artist_stats artist="ariana grande">}}
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/ariana grande.png">
+    </div>
+  </div>
   
   ### Ariana Grande
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer

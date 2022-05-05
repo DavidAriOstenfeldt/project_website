@@ -7,9 +7,9 @@
 .parent_div {
 	width: var(--major-width);
 	height: var(--major-height);
-	max-width: 138.428571415vh;
-	max-height: 95vh;
-	position: static;
+	max-width: 900px; /*138.428571415vh;*/
+	max-height: 900px; /*95vh;*/
+	position: center;
 	margin: auto;
 	top: 0;
 	right: 0;
@@ -23,16 +23,17 @@
 .child_div1 {
 	width: var(--major-height);
 	height: var(--major-height);
-	max-width: 95vh;
-	max-height: 95vh;
+	max-width: 900px; /*95vh;*/
+	max-height: 900px; /*95vh;*/
 	/*float: left;*/
+	text-align: center;
 }
 
 .canvas_container {
-	width: 831px; /*var(--canvas-dim);*/
-	height: 831px; /*var(--canvas-dim);*/
-	max-width: 94.321428542vh;
-	max-height: 94.321428542vh;
+	width: 900px; /*var(--canvas-dim);*/
+	height: 900px; /*var(--canvas-dim);*/
+	max-width: 900px; /*94.321428542vh;*/
+	max-height: 900px; /*94.321428542vh;*/
 	/*border-style: solid;
 	border-color: #cacaca;
 	border-width: 2px;*/
@@ -49,7 +50,7 @@
 .network_menu {
   list-style-type: none;
   margin: 0;
-  padding: 5px 0px;
+  padding: 5px 0;
   overflow: hidden;
 	text-align: center;
 }
@@ -71,11 +72,42 @@
 }
 
 /* Change the link color to #111 (black) on hover */
-.network_menu_item:hover {
+.active, .network_menu_item:hover {
 	cursor: pointer;
 	filter: brightness(80%);
 }
 
 .network_menu:hover {
 	cursor: default;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 75%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }

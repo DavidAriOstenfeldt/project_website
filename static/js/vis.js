@@ -130,6 +130,9 @@ function vis(new_controls) {
   }
 
 
+  var init_x = (document.documentElement || document.body.parentNode || document.body).scrollLeft;
+
+  var init_y = (document.documentElement || document.body.parentNode || document.body).scrollTop;
 
   // Network functions
   // -----------------
@@ -147,9 +150,13 @@ function vis(new_controls) {
   }
 
   function dragged() {
+
+    const x = (document.documentElement || document.body.parentNode || document.body).scrollLeft - init_x;
+    const y = (document.documentElement || document.body.parentNode || document.body).scrollTop - init_y;
+
     console.log("dragged")
-    d3.event.subject.fx = zoomScaler.invert(event.clientX - canvasOffsetX);
-    d3.event.subject.fy = zoomScaler.invert(event.clientY - canvasOffsetY);
+    d3.event.subject.fx = zoomScaler.invert(event.clientX - (canvasOffsetX - x));
+    d3.event.subject.fy = zoomScaler.invert(event.clientY - (canvasOffsetY - y));
     if (controls['freeze_nodes']) simulation.restart();
   }
 
