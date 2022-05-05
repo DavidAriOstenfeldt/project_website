@@ -1,1 +1,1 @@
-{"Number of nodes": 2481, "Number of links": 4495, "Denisty": 0.00146, "Average clustering": 0.33, "Average degree": 3.62, "Max degree": 108}
+{"Number of nodes": 2601, "Number of links": 4889, "Denisty": 0.00145, "Average clustering": 0.34, "Average degree": 3.76, "Max degree": 108, "Betweenness centrality": {"lil wayne": 0.0273, "kanye west": 0.0208, "drake": 0.0201, "snoop dogg": 0.0169, "nicki minaj": 0.0147, "jay-z": 0.0142, "ludacris": 0.0127, "fat joe": 0.0125, "t.i.": 0.0122, "chris brown": 0.0119}}

@@ -190,9 +190,12 @@ function vis(new_controls) {
   function drawText(d) {
     if (controls['display_node_labels'] || d.id == hoveredNode || selectedNodes.includes(d.id)) {
       var thisNodeSize = valIfValid(d.size, 1) ** (controls['node_size_variation']) * nodeSizeNorm * controls['node_size'];
-      context.font = clip(thisNodeSize * controls['zoom'] * 2, 10, 20) + "px Helvetica"
-      context.fillStyle = controls['node_label_color']
-      context.fillText(d.id, zoomScaler(d.x), zoomScaler(d.y))
+      context.font = clip(thisNodeSize * controls['zoom'] * 2, 10, 20) + "px Helvetica";
+      context.fillStyle = "white"; //controls['node_label_color'] //
+      context.strokeStyle = "black";
+      context.lineWidth = Math.max(3, Math.min(d.size, 2));
+      context.strokeText(d.id, zoomScaler(d.x), zoomScaler(d.y));
+      context.fillText(d.id, zoomScaler(d.x), zoomScaler(d.y));
     }
   }
 
