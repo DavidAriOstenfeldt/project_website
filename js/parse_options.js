@@ -1,14 +1,14 @@
 // =========== GET DATA AND CONFIG FROM URL PARAMETERS =================
 window.addEventListener('load', () => {
-    change_genre('../networks/soul/')
+    change_genre('../networks/all/')
 })
 
-var d1 = "../networks/soul/";
+var d1 = "../networks/all/";
 var d2 = "withsingles/genre/";
 
-var t1 = "soul";
+var t1 = "all";
 var t2 = "genre";
-var t3 = "all"
+var t3 = "with all"
 
 function change_genre(d, n) {
     d1 = d;
@@ -71,5 +71,5 @@ function change_title(n, t, l) {
     if (l != null) {
         t3 = l;
     }
-    document.getElementById("network_title").innerHTML = t1 + " colored by " + t2 + " with " + t3 + " singeltons";
+    document.getElementById("network_title").innerHTML = t1 + " colored by " + t2 + t3 + "singletons";
 }
