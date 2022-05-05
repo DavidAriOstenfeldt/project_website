@@ -18,12 +18,8 @@ Here is a small preview of what we are going to create:
 
 # INSERT IMAGE OF WHOLE NETWORK HERE
 
-
-
-# Det her er måske ikke nødvendigt... (eller ryk til data?) Måske skal links til download af data også være her?
+# Det her er måske ikke nødvendigt... Måske skal links til download af data også/i stedet være her?
 To get a list of songs to investigate, we looked at the [Billboard 'Hot-100' list](https://www.billboard.com/charts/hot-100/). Here, we collected song titles and artist names of all songs that appeared on the list starting from the first week of 1960, all the way to today. Then we used this data to collect lyrics, release year, collaborations, genres and titles from [genius.com](https://genius.com/Rick-astley-never-gonna-give-you-up-lyrics). This was done via two APIs: the [billboard.py API](https://github.com/guoguo12/billboard-charts) and the [LyricsGenius API](https://lyricsgenius.readthedocs.io/en/master/).
-
-![](https://upload.wikimedia.org/wikipedia/commons/5/51/Genius-logo.png)
 
 The data was then cleaned via various methods (see [Data](./data-description) for more info), such that we were only left with unique songs.
 
