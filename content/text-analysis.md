@@ -219,29 +219,60 @@ We can see much the same trend here as in the above plot. However, it is clear t
 
 To take a look at the lyrics used through the years we split our corpus by release year instead of by genre. Once again, we compute the TFIDF for each decade, and that leaves us with the following wordclouds:
 
-# NOTE: Opdater farverne på plot
-![](/images/decade_wordcloud.png)
-
+<div class="row">
+    <div class="column_img">
+      <img class="decade" src="/images/decades/1960.png">
+    </div>
+    <div class="column_img">
+      <img class="decade" src="/images/decades/1970.png">
+    </div>
+    <div class="column_img">
+      <img class="decade" src="/images/decades/1980.png">
+    </div>
+</div>
+<div class="row">
+    <div class="column_img">
+      <img class="decade" src="/images/decades/1990.png">
+    </div>
+    <div class="column_img">
+      <img class="decade" src="/images/decades/2000.png">
+    </div>
+    <div class="column_img">
+      <img class="decade" src="/images/decades/2010.png">
+    </div>
+    <div class="column_img">
+      <img class="decade" src="/images/decades/2020.png">
+    </div>
+</div>
 
 
 {{< tabs >}}
 {{< tab "1960" >}}
 ### 1960
+
+
 [The 1960s](https://www.wikiwand.com/en/1960s_in_music) were quite revolutionary for music. Rock was becoming more evolved, and artists were beginning to release more albums than singles. 
 Looking at the defining words of the decade, a lot of people seemed to enjoy partaking in the [watusi dance](https://www.wikiwand.com/en/Watusi_(dance)). Furthermore, songs were affectionate, using words such as "tenderly" and "fickle". 
+<div class="row">
+  <div class="column_decade_table">
 
-|     | Word |     TF |     Word |   TFIDF |
-|-----|-----:|-------:|---------:|--------:|
-| 1.  | love | 0.0122 |   watusi | 0.00011 |
-| 2.  | know | 0.0103 | tenderly | 0.00009 |
-| 3.  |   oh | 0.0083 |    looka | 0.00007 |
-| 4.  |   go | 0.0069 |   sighin | 0.00007 |
-| 5.  |  got | 0.0069 |    hully | 0.00006 |
-| 6.  | like | 0.0068 |    rovin | 0.00006 |
-| 7.  | come | 0.0067 |   billow | 0.00006 |
-| 8.  |  one | 0.0066 |   fickle | 0.00005 |
-| 9.  | baby | 0.0065 |    twine | 0.00005 |
-| 10. | time | 0.0064 |  doggone | 0.00005 |
+|     |     Word |   TFIDF |
+|-----|---------:|--------:|
+| 1.  |   watusi | 0.00011 |
+| 2.  | tenderly | 0.00009 |
+| 3.  |    looka | 0.00007 |
+| 4.  |   sighin | 0.00007 |
+| 5.  |    hully | 0.00006 |
+| 6.  |    rovin | 0.00006 |
+| 7.  |   billow | 0.00006 |
+| 8.  |   fickle | 0.00005 |
+| 9.  |    twine | 0.00005 |
+| 10. |  doggone | 0.00005 |
+  </div>
+  <div class="column">
+    <img src="/images/decades/1960.png">
+  </div>
+</div>
 
 {{< /tab >}}
 
@@ -402,7 +433,32 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <div class="row">
     <div class="column">
-      {{< artist_stats artist="ariana grande">}}
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Justin Bieber</td>
+          <td>0.615</td>
+        </tr>
+        <tr>
+          <td>Chris Brown</td>
+          <td>0.604</td>
+        </tr>
+        <tr>
+          <td>The Weeknd</td>
+          <td>0.594</td>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.584</td>
+        </tr>
+        <tr>
+          <td>Rihanna</td>
+          <td>0.558</td>
+        </tr>
+      </table>
     </div>
     <div class="column">
       <img src="/images/artist_dists/ariana grande.png">
@@ -416,6 +472,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Beyoncé" >}}
   ![](/images/beyoncé.png)
   {{< spotify type="track" id="2CvOqDpQIMw69cCzWqr5yr" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Jay-Z</td>
+          <td>0.617</td>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.594</td>
+        </tr>
+        <tr>
+          <td>Chris Brown</td>
+          <td>0.591</td>
+        </tr>
+        <tr>
+          <td>Kanye West</td>
+          <td>0.582</td>
+        </tr>
+        <tr>
+          <td>Lil Wayne</td>
+          <td>0.557</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/beyoncé.png">
+    </div>
+  </div>
+
   ### Beyoncé
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -423,6 +513,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Billie Eilish" >}}
   ![](/images/billie_eilish.png)
   {{< spotify type="track" id="2Fxmhks0bxGSBdJ92vM42m" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Taylor Swift</td>
+          <td>0.432</td>
+        </tr>
+        <tr>
+          <td>Ariana Grande</td>
+          <td>0.417</td>
+        </tr>
+        <tr>
+          <td>Justin Bieber</td>
+          <td>0.414</td>
+        </tr>
+        <tr>
+          <td>The Weeknd</td>
+          <td>0.390</td>
+        </tr>
+        <tr>
+          <td>Demi Lovato</td>
+          <td>0.384</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/billie eilish.png">
+    </div>
+  </div>
+
   ### Billie Eilish
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -430,6 +554,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Britney Spears" >}}
   ![](/images/britney_spears.png)
   {{< spotify type="track" id="6I9VzXrHxO9rA9A5euc8Ak" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Justin Bieber</td>
+          <td>0.494</td>
+        </tr>
+        <tr>
+          <td>Chris Brown</td>
+          <td>0.471</td>
+        </tr>
+        <tr>
+          <td>Rihanna</td>
+          <td>0.457</td>
+        </tr>
+        <tr>
+          <td>Taylor Swift</td>
+          <td>0.457</td>
+        </tr>
+        <tr>
+          <td>Ariana Grande</td>
+          <td>0.455</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/britney spears.png">
+    </div>
+  </div>
+
   ### Britney Spears
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -437,6 +595,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Cher" >}}
   ![](/images/cher.png)
   {{< spotify type="track" id="2goLsvvODILDzeeiT4dAoR" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Sonny</td>
+          <td>0.726</td>
+        </tr>
+        <tr>
+          <td>Taylor Swift</td>
+          <td>0.558</td>
+        </tr>
+        <tr>
+          <td>Dionne Warwick</td>
+          <td>0.546</td>
+        </tr>
+        <tr>
+          <td>Elvis Presley</td>
+          <td>0.538</td>
+        </tr>
+        <tr>
+          <td>Stevie Wonder</td>
+          <td>0.522</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/cher.png">
+    </div>
+  </div>
+
   ### Cher
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -444,6 +636,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Ed Sheeran" >}}
   ![](/images/ed_sheeran.png)
   {{< spotify type="track" id="0tgVpDi06FyKpA1z0VMD4v" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Taylor Swift</td>
+          <td>0.575</td>
+        </tr>
+        <tr>
+          <td>Justin Bieber</td>
+          <td>0.526</td>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.512</td>
+        </tr>
+        <tr>
+          <td>Kanye West</td>
+          <td>0.490</td>
+        </tr>
+        <tr>
+          <td>The Weekend</td>
+          <td>0.490</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/ed sheeran.png">
+    </div>
+  </div>
+
   ### Ed Sheeran
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -451,6 +677,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Elton John" >}}
   ![](/images/elton_john.png)
   {{< spotify type="track" id="3gdewACMIVMEWVbyb8O9sY" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Taylor Swift</td>
+          <td>0.528</td>
+        </tr>
+        <tr>
+          <td>George Michael</td>
+          <td>0.509</td>
+        </tr>
+        <tr>
+          <td>Keith Urban</td>
+          <td>0.483</td>
+        </tr>
+        <tr>
+          <td>Justin Bieber</td>
+          <td>0.481</td>
+        </tr>
+        <tr>
+          <td>Tim Mcgraw</td>
+          <td>0.479</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/elton john.png">
+    </div>
+  </div>
+
   ### Elton John
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -458,6 +718,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Frank Sinatra" >}}
   ![](/images/frank_sinatra.png)
   {{< spotify type="track" id="2dR5WkrpwylTuT3jRWNufa" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Elvis Presley</td>
+          <td>0.442</td>
+        </tr>
+        <tr>
+          <td>Dionne Warwick</td>
+          <td>0.422</td>
+        </tr>
+        <tr>
+          <td>Taylor Swift</td>
+          <td>0.420</td>
+        </tr>
+        <tr>
+          <td>Stevie Wonder</td>
+          <td>0.401</td>
+        </tr>
+        <tr>
+          <td>Neil Diamond</td>
+          <td>0.400</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/frank sinatra.png">
+    </div>
+  </div>
+
   ### Frank Sinatra
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -465,6 +759,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Justin Bieber" >}}
   ![](/images/justin_bieber.png)
   {{< spotify type="track" id="50kpGaPAhYJ3sGmk6vplg0" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Ariana Grande</td>
+          <td>0.615</td>
+        </tr>
+        <tr>
+          <td>Taylor Swift</td>
+          <td>0.615</td>
+        </tr>
+        <tr>
+          <td>Chris Brown</td>
+          <td>0.610</td>
+        </tr>
+        <tr>
+          <td>The Weekend</td>
+          <td>0.606</td>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.599</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/justin bieber.png">
+    </div>
+  </div>
+
   ### Justin Bieber
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -472,6 +800,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Katy Perry" >}}
   ![](/images/katy_perry.png)
   {{< spotify type="track" id="4jbmgIyjGoXjY01XxatOx6" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Taylor Swift</td>
+          <td>0.462</td>
+        </tr>
+        <tr>
+          <td>Justin Bieber</td>
+          <td>0.447</td>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.424</td>
+        </tr>
+        <tr>
+          <td>Kanye West</td>
+          <td>0.424</td>
+        </tr>
+        <tr>
+          <td>Chris Brown</td>
+          <td>0.414</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/katy perry.png">
+    </div>
+  </div>
+
   ### Katy Perry
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -479,6 +841,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Madonna" >}}
   ![](/images/madonna.png)
   {{< spotify type="track" id="22sLuJYcvZOSoLLRYev1s5" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Taylor Swift</td>
+          <td>0.541</td>
+        </tr>
+        <tr>
+          <td>Justin Bieber</td>
+          <td>0.522</td>
+        </tr>
+        <tr>
+          <td>Stevie Wonder</td>
+          <td>0.508</td>
+        </tr>
+        <tr>
+          <td>Diana Ross</td>
+          <td>0.507</td>
+        </tr>
+        <tr>
+          <td>Aretha Franklin</td>
+          <td>0.498</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/madonna.png">
+    </div>
+  </div>
+
   ### Madonna
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -486,6 +882,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Michael Jackson" >}}
   ![](/images/michael_jackson.png)
   {{< spotify type="track" id="5ChkMS8OtdzJeqyybCc9R5" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Aretha Franklin</td>
+          <td>0.494</td>
+        </tr>
+        <tr>
+          <td>Stevie Wonder</td>
+          <td>0.488</td>
+        </tr>
+        <tr>
+          <td>Justin Bieber</td>
+          <td>0.486</td>
+        </tr>
+        <tr>
+          <td>The Temptations</td>
+          <td>0.482</td>
+        </tr>
+        <tr>
+          <td>Diana Ross</td>
+          <td>0.473</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/michael jackson.png">
+    </div>
+  </div>
+
   ### Michael Jackson
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -493,6 +923,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Miley Cyrus" >}}
   ![](/images/miley_cyrus.png)
   {{< spotify type="track" id="3E7dfMvvCLUddWissuqMwr" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Justin Bieber</td>
+          <td>0.517</td>
+        </tr>
+        <tr>
+          <td>Taylor Swift</td>
+          <td>0.510</td>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.479</td>
+        </tr>
+        <tr>
+          <td>The Weekend</td>
+          <td>0.476</td>
+        </tr>
+        <tr>
+          <td>Chris Brown</td>
+          <td>0.475</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/miley cyrus.png">
+    </div>
+  </div>
+
   ### Miley Cyrus
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -500,6 +964,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Taylor Swift" >}}
   ![](/images/taylor_swift.png)
   {{< spotify type="track" id="55n9yjI6qqXh5F2mYvUc2y" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Justin Bieber</td>
+          <td>0.615</td>
+        </tr>
+        <tr>
+          <td>Keith Urban</td>
+          <td>0.589</td>
+        </tr>
+        <tr>
+          <td>Kenny Chesney</td>
+          <td>0.578</td>
+        </tr>
+        <tr>
+          <td>Tim Mcgraw</td>
+          <td>0.578</td>
+        </tr>
+        <tr>
+          <td>Ed Sheeran</td>
+          <td>0.575</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/taylor swift.png">
+    </div>
+  </div>
+
   ### Taylor Swift
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -512,6 +1010,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Aretha Franklin" >}}
   ![](/images/aretha_franklin.png)
   {{< spotify type="track" id="7s25THrKz86DM225dOYwnr" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Marvin Gaye</td>
+          <td>0.593</td>
+        </tr>
+        <tr>
+          <td>Elvis Presley</td>
+          <td>0.567</td>
+        </tr>
+        <tr>
+          <td>Stevie Wonder</td>
+          <td>0.565</td>
+        </tr>
+        <tr>
+          <td>The Temptations</td>
+          <td>0.555</td>
+        </tr>
+        <tr>
+          <td>Diana Ross</td>
+          <td>0.549</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/aretha franklin.png">
+    </div>
+  </div>
+
   ### Aretha Franklin
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -519,6 +1051,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Chris Brown" >}}
   ![](/images/chris_brown.png)
   {{< spotify type="track" id="6XHVuErjQ4XNm6nDPVCxVX" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.722</td>
+        </tr>
+        <tr>
+          <td>Lil Wayne</td>
+          <td>0.704</td>
+        </tr>
+        <tr>
+          <td>Nicki Minaj</td>
+          <td>0.677</td>
+        </tr>
+        <tr>
+          <td>T-Pain</td>
+          <td>0.659</td>
+        </tr>
+        <tr>
+          <td>Kanye West</td>
+          <td>0.656</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/chris brown.png">
+    </div>
+  </div>
+
   ### Chris Brown
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -526,6 +1092,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "James Brown" >}}
   ![](/images/james_brown.png)
   {{< spotify type="track" id="5XeSAezNDk9tuw3viiCbZ3" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>The Famous Flames</td>
+          <td>0.789</td>
+        </tr>
+        <tr>
+          <td>Aretha Franklin</td>
+          <td>0.459</td>
+        </tr>
+        <tr>
+          <td>Stevie Wonder</td>
+          <td>0.418</td>
+        </tr>
+        <tr>
+          <td>Wilson Pickett</td>
+          <td>0.417</td>
+        </tr>
+        <tr>
+          <td>The Temptations</td>
+          <td>0.409</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/james brown.png">
+    </div>
+  </div>
+
   ### James Brown
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -533,6 +1133,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Marvin Gaye" >}}
   ![](/images/marvin_gaye.png)
   {{< spotify type="track" id="7tqhbajSfrz2F7E1Z75ASX" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Tammi Terrell</td>
+          <td>0.667</td>
+        </tr>
+        <tr>
+          <td>Aretha Franklin</td>
+          <td>0.593</td>
+        </tr>
+        <tr>
+          <td>Diana Ross</td>
+          <td>0.556</td>
+        </tr>
+        <tr>
+          <td>Stevie Wonder</td>
+          <td>0.528</td>
+        </tr>
+        <tr>
+          <td>The Four Tops</td>
+          <td>0.528</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/marvin gaye.png">
+    </div>
+  </div>
+
   ### Marvin Gaye
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -540,6 +1174,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Prince" >}}
   ![](/images/prince.png)
   {{< spotify type="track" id="54X78diSLoUDI3joC2bjMz" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Stevie Wonder</td>
+          <td>0.478</td>
+        </tr>
+        <tr>
+          <td>Aretha Franklin</td>
+          <td>0.477</td>
+        </tr>
+        <tr>
+          <td>Taylor Swift</td>
+          <td>0.468</td>
+        </tr>
+        <tr>
+          <td>Justin Bieber</td>
+          <td>0.459</td>
+        </tr>
+        <tr>
+          <td>The Temptations</td>
+          <td>0.444</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/prince.png">
+    </div>
+  </div>
+
   ### Prince
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -547,6 +1215,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Stevie Wonder" >}}
   ![](/images/stevie_wonder.png)
   {{< spotify type="track" id="4N0TP4Rmj6QQezWV88ARNJ" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Aretha Franklin</td>
+          <td>0.565</td>
+        </tr>
+        <tr>
+          <td>Taylor Swift</td>
+          <td>0.555</td>
+        </tr>
+        <tr>
+          <td>Dionne Warwick</td>
+          <td>0.540</td>
+        </tr>
+        <tr>
+          <td>Elvis Presley</td>
+          <td>0.539</td>
+        </tr>
+        <tr>
+          <td>The Temptations</td>
+          <td>0.538</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/stevie wonder.png">
+    </div>
+  </div>
+
   ### Stevie Wonder
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -554,6 +1256,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "The Weeknd" >}}
   ![](/images/the_weeknd.png)
   {{< spotify type="track" id="0VjIjW4GlUZAMYd2vXMi3b" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.661</td>
+        </tr>
+        <tr>
+          <td>Chris Brown</td>
+          <td>0.635</td>
+        </tr>
+        <tr>
+          <td>Kanye West</td>
+          <td>0.619</td>
+        </tr>
+        <tr>
+          <td>Justin Bieber</td>
+          <td>0.606</td>
+        </tr>
+        <tr>
+          <td>Ariana Grande</td>
+          <td>0.594</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/the weekend.png">
+    </div>
+  </div>
+
   ### The Weeknd
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -566,6 +1302,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "DJ Khaled" >}}
   ![](/images/dj_khaled.png)
   {{< spotify type="track" id="3DXncPQOG4VBw3QHh3S817" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Rick Ross</td>
+          <td>0.685</td>
+        </tr>
+        <tr>
+          <td>Lil Wayne</td>
+          <td>0.648</td>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.627</td>
+        </tr>
+        <tr>
+          <td>Chris Brown</td>
+          <td>0.601</td>
+        </tr>
+        <tr>
+          <td>Lil Baby</td>
+          <td>0.591</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/dj khaled.png">
+    </div>
+  </div>
+
   ### DJ Khaled
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -573,6 +1343,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Drake" >}}
   ![](/images/drake.png)
   {{< spotify type="track" id="1zi7xx7UVEFkmKfv06H8x0" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Lil Wayne</td>
+          <td>0.784</td>
+        </tr>
+        <tr>
+          <td>Kanye West</td>
+          <td>0.753</td>
+        </tr>
+        <tr>
+          <td>Lil Baby</td>
+          <td>0.736</td>
+        </tr>
+        <tr>
+          <td>Future</td>
+          <td>0.725</td>
+        </tr>
+        <tr>
+          <td>Nicki Minaj</td>
+          <td>0.722</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/drake.png">
+    </div>
+  </div>
+
   ### Inner Tab 1
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -580,6 +1384,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Eminem" >}}
   ![](/images/eminem.png)
   {{< spotify type="track" id="1v7L65Lzy0j0vdpRjJewt1" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.661</td>
+        </tr>
+        <tr>
+          <td>Lil Wayne</td>
+          <td>0.649</td>
+        </tr>
+        <tr>
+          <td>kanye West</td>
+          <td>0.633</td>
+        </tr>
+        <tr>
+          <td>Jay-Z</td>
+          <td>0.598</td>
+        </tr>
+        <tr>
+          <td>50 Cent</td>
+          <td>0.595</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/eminem.png">
+    </div>
+  </div>
+
   ### Eminem
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -587,6 +1425,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Future" >}}
   ![](/images/future.png)
   {{< spotify type="track" id="0VgkVdmE4gld66l8iyGjgx" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Lil Baby</td>
+          <td>0.764</td>
+        </tr>
+        <tr>
+          <td>Young Thug</td>
+          <td>0.754</td>
+        </tr>
+        <tr>
+          <td>Lil Uzi Vert</td>
+          <td>0.736</td>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.725</td>
+        </tr>
+        <tr>
+          <td>Gunna</td>
+          <td>0.719</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/future.png">
+    </div>
+  </div>
+
   ### Future
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -594,6 +1466,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "J. Cole" >}}
   ![](/images/j._cole.png)
   {{< spotify type="track" id="68Dni7IE4VyPkTOH9mRWHr" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.688</td>
+        </tr>
+        <tr>
+          <td>Kanye West</td>
+          <td>0.646</td>
+        </tr>
+        <tr>
+          <td>Lil Wayne</td>
+          <td>0.635</td>
+        </tr>
+        <tr>
+          <td>Jay-Z</td>
+          <td>0.603</td>
+        </tr>
+        <tr>
+          <td>Lil Baby</td>
+          <td>0.602</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/j. cole.png">
+    </div>
+  </div>
+
   ### J. Cole
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -601,6 +1507,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Jay-Z" >}}
   ![](/images/jay-z.png)
   {{< spotify type="track" id="4Li2WHPkuyCdtmokzW2007" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Kanye West</td>
+          <td>0.713</td>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.694</td>
+        </tr>
+        <tr>
+          <td>Lil Wayne</td>
+          <td>0.676</td>
+        </tr>
+        <tr>
+          <td>Rick Ross</td>
+          <td>0.636</td>
+        </tr>
+        <tr>
+          <td>Nicki Minaj</td>
+          <td>0.620</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/jay-z.png">
+    </div>
+  </div>
+
   ### Jay-z
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -608,6 +1548,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Juice Wrld" >}}
   ![](/images/juice_wrld.png)
   {{< spotify type="track" id="285pBltuF7vW8TeWk8hdRR" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.646</td>
+        </tr>
+        <tr>
+          <td>Future</td>
+          <td>0.637</td>
+        </tr>
+        <tr>
+          <td>Lil Wayne</td>
+          <td>0.613</td>
+        </tr>
+        <tr>
+          <td>Lil Uzi Vert</td>
+          <td>0.609</td>
+        </tr>
+        <tr>
+          <td>Lil Baby</td>
+          <td>0.607</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/juice wrld.png">
+    </div>
+  </div>
+
   ### Juice Wrld
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -615,6 +1589,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Kanye West" >}}
   ![](/images/kanye_west.png)
   {{< spotify type="track" id="0j2T0R9dR9qdJYsB7ciXhf" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.753</td>
+        </tr>
+        <tr>
+          <td>Jay-Z</td>
+          <td>0.713</td>
+        </tr>
+        <tr>
+          <td>Lil Wayne</td>
+          <td>0.692</td>
+        </tr>
+        <tr>
+          <td>Big Sean</td>
+          <td>0.685</td>
+        </tr>
+        <tr>
+          <td>Chris Brown</td>
+          <td>0.656</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/kanye west.png">
+    </div>
+  </div>
+
   ### Juice Wrld
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -622,6 +1630,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Lil Baby" >}}
   ![](/images/lil_baby.png)
   {{< spotify type="track" id="78QR3Wp35dqAhFEc2qAGjE" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Lil Durk</td>
+          <td>0.802</td>
+        </tr>
+        <tr>
+          <td>Gunna</td>
+          <td>0.780</td>
+        </tr>
+        <tr>
+          <td>Future</td>
+          <td>0.764</td>
+        </tr>
+        <tr>
+          <td>Meek Mill</td>
+          <td>0.748</td>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.736</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/lil baby.png">
+    </div>
+  </div>
+
   ### Lil Baby
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -629,6 +1671,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Lil Durk" >}}
   ![](/images/lil_durk.png)
   {{< spotify type="track" id="2SAqBLGA283SUiwJ3xOUVI" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Lil Baby</td>
+          <td>0.802</td>
+        </tr>
+        <tr>
+          <td>Polo G</td>
+          <td>0.710</td>
+        </tr>
+        <tr>
+          <td>Meek Mill</td>
+          <td>0.675</td>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.661</td>
+        </tr>
+        <tr>
+          <td>Youngnoy Never Broke Again</td>
+          <td>0.660</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/lil durk.png">
+    </div>
+  </div>
+
   ### Lil Durk
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -636,6 +1712,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Lil Uzi Vert" >}}
   ![](/images/lil_uzi_vert.png)
   {{< spotify type="track" id="7GX5flRQZVHRAGd6B4TmDO" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Future</td>
+          <td>0.736</td>
+        </tr>
+        <tr>
+          <td>Young Thug</td>
+          <td>0.714</td>
+        </tr>
+        <tr>
+          <td>Lil Baby</td>
+          <td>0.686</td>
+        </tr>
+        <tr>
+          <td>Gunna</td>
+          <td>0.674</td>
+        </tr>
+        <tr>
+          <td>Travis Scott</td>
+          <td>0.647</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/lil uzi vert.png">
+    </div>
+  </div>
+
   ### Lil Uzi Vert
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -643,6 +1753,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Lil Wayne" >}}
   ![](/images/lil_wayne.png)
   {{< spotify type="track" id="5UsLjwBaTHBX4ektWIr4XX" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.784</td>
+        </tr>
+        <tr>
+          <td>Nicki Minaj</td>
+          <td>0.753</td>
+        </tr>
+        <tr>
+          <td>Rick Ross</td>
+          <td>0.708</td>
+        </tr>
+        <tr>
+          <td>Chris Brown</td>
+          <td>0.704</td>
+        </tr>
+        <tr>
+          <td>Kanye West</td>
+          <td>0.692</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/lil wayne.png">
+    </div>
+  </div>
+
   ### Lil Wayne
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -650,6 +1794,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Nicki Minaj" >}}
   ![](/images/nicki_minaj.png)
   {{< spotify type="track" id="0dKg2vGC1hFqcK5LGTaKzX" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Lil Wayne</td>
+          <td>0.753</td>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.722</td>
+        </tr>
+        <tr>
+          <td>Chris Brown</td>
+          <td>0.677</td>
+        </tr>
+        <tr>
+          <td>Kanye West</td>
+          <td>0.647</td>
+        </tr>
+        <tr>
+          <td>Future</td>
+          <td>0.645</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/nicki minaj.png">
+    </div>
+  </div>
+
   ### Nicki Minaj
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -657,6 +1835,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Snoop Dogg" >}}
   ![](/images/snoop_dogg.png)
   {{< spotify type="track" id="3FNy4yzOhHhFBeA5p4ofoq" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Dr. Dre</td>
+          <td>0.587</td>
+        </tr>
+        <tr>
+          <td>Nate Dogg</td>
+          <td>0.586</td>
+        </tr>
+        <tr>
+          <td>Lil Wayne</td>
+          <td>0.543</td>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.537</td>
+        </tr>
+        <tr>
+          <td>Pharrell Williams</td>
+          <td>0.534</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/snoop dogg.png">
+    </div>
+  </div>
+
   ### Snoop Dogg
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -664,6 +1876,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Travis Scott" >}}
   ![](/images/travis_scott.png)
   {{< spotify type="track" id="6gBFPUFcJLzWGx4lenP6h2" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Future</td>
+          <td>0.693</td>
+        </tr>
+        <tr>
+          <td>Young Thug</td>
+          <td>0.683</td>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.679</td>
+        </tr>
+        <tr>
+          <td>Lil Baby</td>
+          <td>0.672</td>
+        </tr>
+        <tr>
+          <td>Gunna</td>
+          <td>0.651</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/travis scott.png">
+    </div>
+  </div>
+
   ### Travis Scott
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -671,6 +1917,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Young Thug" >}}
   ![](/images/young_thug.png)
   {{< spotify type="track" id="1IIKrJVP1C9N7iPtG6eOsK" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Gunna</td>
+          <td>0.780</td>
+        </tr>
+        <tr>
+          <td>Future</td>
+          <td>0.754</td>
+        </tr>
+        <tr>
+          <td>Lil Baby</td>
+          <td>0.721</td>
+        </tr>
+        <tr>
+          <td>Lil Uzi Vert</td>
+          <td>0.714</td>
+        </tr>
+        <tr>
+          <td>Travis Scott</td>
+          <td>0.683</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/young thug.png">
+    </div>
+  </div>
+
   ### Young Thug
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -678,6 +1958,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Youngboy Never Broke Again" >}}
   ![](/images/youngboy_never_broke_again.png)
   {{< spotify type="track" id="1oWM79mUVdZGCGYjSirHZR" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Lil Baby</td>
+          <td>0.692</td>
+        </tr>
+        <tr>
+          <td>Dababy</td>
+          <td>0.662</td>
+        </tr>
+        <tr>
+          <td>Polo G</td>
+          <td>0.661</td>
+        </tr>
+        <tr>
+          <td>Lil Durk</td>
+          <td>0.660</td>
+        </tr>
+        <tr>
+          <td>Drake</td>
+          <td>0.645</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/youngboy never broke again.png">
+    </div>
+  </div>
+
   ### Youngboy Never Broke Again
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -690,6 +2004,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Elvis Presley" >}}
   ![](/images/elvis_presley.png)
   {{< spotify type="track" id="44AyOl4qVkzS48vBsbNXaC" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Aretha Franklin</td>
+          <td>0.567</td>
+        </tr>
+        <tr>
+          <td>taylor Swift</td>
+          <td>0.558</td>
+        </tr>
+        <tr>
+          <td>Dionne Warwick</td>
+          <td>0.555</td>
+        </tr>
+        <tr>
+          <td>Stevie Wonder</td>
+          <td>0.539</td>
+        </tr>
+        <tr>
+          <td>Cher</td>
+          <td>0.538</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/elvis presley.png">
+    </div>
+  </div>
+
   ### Elvis Presley
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -697,6 +2045,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "Queen" >}}
   ![](/images/queen.png)
   {{< spotify type="track" id="4u7EnebtmKWzUH433cf5Qv" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Aretha Franklin</td>
+          <td>0.401</td>
+        </tr>
+        <tr>
+          <td>Justin Bieber</td>
+          <td>0.393</td>
+        </tr>
+        <tr>
+          <td>Stevie Wonder</td>
+          <td>0.390</td>
+        </tr>
+        <tr>
+          <td>The Temptations</td>
+          <td>0.389</td>
+        </tr>
+        <tr>
+          <td>Bee Gees</td>
+          <td>0.382</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/queen.png">
+    </div>
+  </div>
+
   ### Queen
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
@@ -704,6 +2086,40 @@ Note: artist clouds may not be indicative of the average word usage by an artist
   {{< tab "The Beatles" >}}
   ![](/images/the_beatles.png)
   {{< spotify type="track" id="6dGnYIeXmHdcikdzNNDMm2" width="50%" height="80" >}}
+  <div class="row">
+    <div class="column">
+      <table>
+        <tr>
+          <th>Most similar artists</th>
+          <th>Similarity score</th>
+        </tr>
+        <tr>
+          <td>Aretha Franklin</td>
+          <td>0.516</td>
+        </tr>
+        <tr>
+          <td>Taylor Swift</td>
+          <td>0.488</td>
+        </tr>
+        <tr>
+          <td>Stevie Wonder</td>
+          <td>0.486</td>
+        </tr>
+        <tr>
+          <td>Elvis Presley</td>
+          <td>0.484</td>
+        </tr>
+        <tr>
+          <td>Ray Charles</td>
+          <td>0.484</td>
+        </tr>
+      </table>
+    </div>
+    <div class="column">
+      <img src="/images/artist_dists/the beatles.png">
+    </div>
+  </div>
+
   ### The Beatles
   This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
 
