@@ -30,25 +30,34 @@ Some interesting trends we can see:
 {{< tab "Pop" >}}
   ### Pop
   [The pop genre](https://www.wikiwand.com/en/Pop_music) seems to typically be about love, heartbreak and partying. We see words such as "broken", "breaking", "fear" and "return" but also words such as "promised" and "amor". And then of course there are the party words: "chorus", "party", "fame" etc.
+<div class="row">
+  <div class="column_table">
 
-|    |  Word     |      TF   |     Word |   TFIDF  |
-| --:| --:    | --:          |      --:    |        --:|
-|1.  |know   |  0.0100   |        chorus| 0.00009   |
-|2.  |love   |  0.0099   | miscellaneous |0.00007   |
-|3.  |oh     |  0.0077   |        broken| 0.00006   |
-|4.  |like   |  0.0077   |         party |0.00006   |
-|5.  |got    |  0.0072   |      breaking |0.00006   |
-|6.  |time  |   0.0070   |       breathe |0.00005   |
-|7.  |go     |  0.0066   |       rainbow |0.00005   |
-|8.  |one   |   0.0063   |        happen |0.00005   |
-|9.  |na    |   0.0062   |         nigga |0.00005   |
-|10. |see   |   0.0062   |        spoken| 0.00005   |
+|     |  Word |     TF |          Word |   TFIDF |
+|-----|------:|-------:|--------------:|--------:|
+| 1.  |  know | 0.0100 |        chorus | 0.00009 |
+| 2.  |  love | 0.0099 | miscellaneous | 0.00007 |
+| 3.  |    oh | 0.0077 |        broken | 0.00006 |
+| 4.  |  like | 0.0077 |         party | 0.00006 |
+| 5.  |   got | 0.0072 |      breaking | 0.00006 |
+| 6.  |  time | 0.0070 |       breathe | 0.00005 |
+| 7.  |    go | 0.0066 |       rainbow | 0.00005 |
+| 8.  |   one | 0.0063 |        happen | 0.00005 |
+| 9.  |    na | 0.0062 |         nigga | 0.00005 |
+| 10. |   see | 0.0062 |        spoken | 0.00005 |
+  </div>
+  <div class="column">
+    <img src="/images/genres/pop.png">
+  </div>
+</div>
 {{< /tab >}}
 
 
 {{< tab "Folk" >}}
 ### Folk
 [Folk music](https://www.wikiwand.com/en/Folk_music) is often about cultural or national identites. The words seem to suggest some type of wasted opportunity, with words such as "Annihilation", "squandered" and "pursuit" valued highest.
+<div class="row">
+  <div class="column_table">
 
 |     | Word |     TF |         Word |   TFIDF |
 |-----|-----:|-------:|-------------:|--------:|
@@ -62,31 +71,43 @@ Some interesting trends we can see:
 | 8.  |   go | 0.0055 |   suppertime | 0.00018 |
 | 9.  |  say | 0.0052 |      pursuit | 0.00018 |
 | 10. |  day | 0.0052 |    bojangles | 0.00018 |
-
+  </div>
+  <div class="column">
+    <img src="/images/genres/folk.png">
+  </div>
+</div>
 {{< /tab >}}
 
 {{< tab "Blues" >}}
 ### Blues
 [Blues](https://www.wikiwand.com/en/Blues) originates from the deep south of the United States. Important words are "layla", "yakka" and enriched, although all the words seem to have the same importance. This could maybe be explained by the low amount of blues songs - only 149.
+<div class="row">
+  <div class="column_table">
 
-|     | Word |     TF |         Word |   TFIDF |
-|-----|-----:|-------:|-------------:|--------:|
-| 1.  | know | 0.0097 | layla | 0.0.00039 |
-| 2.  |   oh | 0.0096 |   yakka | 0.00035 |
-| 3.  | love | 0.0083 |       enriched  | 0.00035 |
-| 4.  |  got | 0.0082 |       flaying  | 0.00035 |
-| 5.  | baby | 0.0082 |        goanna  | 0.00035 |
-| 6.  | like | 0.0076 |       conveniency  | 0.00035 |
-| 7.  | yeah | 0.0073 |        alluded  | 0.00035 |
-| 8.  |   go | 0.0069 |   pled  | 0.00035 |
-| 9.  | time | 0.0068 |      seeped  | 0.00035 |
-| 10. |   na | 0.0068 |    scroungy  | 0.00035 |
-
+|     | Word |     TF |        Word |    TFIDF |
+|-----|-----:|-------:|------------:|---------:|
+| 1.  | know | 0.0097 |       layla |  0.00039 |
+| 2.  |   oh | 0.0096 |       yakka |  0.00035 |
+| 3.  | love | 0.0083 |    enriched |  0.00035 |
+| 4.  |  got | 0.0082 |     flaying |  0.00035 |
+| 5.  | baby | 0.0082 |      goanna |  0.00035 |
+| 6.  | like | 0.0076 | conveniency |  0.00035 |
+| 7.  | yeah | 0.0073 |     alluded |  0.00035 |
+| 8.  |   go | 0.0069 |        pled |  0.00035 |
+| 9.  | time | 0.0068 |      seeped |  0.00035 |
+| 10. |   na | 0.0068 |    scroungy |  0.00035 |
+  </div>
+  <div class="column">
+    <img src="/images/genres/blues.png">
+  </div>
+</div>
 {{< /tab >}}
 
 {{< tab "R&B" >}}
 ### R&B
 [R&B](https://www.wikiwand.com/da/Rhythm_and_blues) stands for rhytm and blues. It encompasses a lot of genres and today a lot of rap and electronic dance music is classified as R&B as well. The important words are mostly slang terms used in african american communities, which makes sense as it originated in black communities in the 1940s.
+<div class="row">
+  <div class="column_table">
 
 |     | Word |     TF |   Word |   TFIDF |
 |-----|-----:|-------:|-------:|--------:|
@@ -100,14 +121,19 @@ Some interesting trends we can see:
 | 8.  |   na | 0.0070 |  pussy | 0.00011 |
 | 9.  |  get | 0.0067 |  booty | 0.00010 |
 | 10. | time | 0.0066 |   dick | 0.00009 |
-
+  </div>
+  <div class="column">
+    <img src="/images/genres/r&b.png">
+  </div>
+</div>
 {{< /tab >}}
 
 
 {{< tab "Country" >}}
 ### Country
 [Country](https://www.wikiwand.com/en/Country_music) is a genre of music often associated with cowboy western music, living on a farm and driving tractors. The words deemed important reflect this, with "hillbilly" and "tailgate" ranking highest, followed by a bunch of other words often associated with farming.
-
+<div class="row">
+  <div class="column_table">
 
 |     | Word |     TF |       Word |   TFIDF |
 |-----|-----:|-------:|-----------:|--------:|
@@ -121,13 +147,18 @@ Some interesting trends we can see:
 | 8.  |  get | 0.0059 |     gravel | 0.00012 |
 | 9.  |   wa | 0.0059 |   bocephus | 0.00012 |
 | 10. | yeah | 0.0055 |   southern | 0.00012 |
-
+  </div>
+  <div class="column">
+    <img src="/images/genres/country.png">
+  </div>
+</div>
 {{< /tab >}}
 
 {{< tab "Rock" >}}
 ### Rock
 [Rock](https://www.wikiwand.com/en/Rock_music) originated in the 50s and 60s and took the world by storm, and it spawned a myriad of sub-genres. Rock seems to be amix of pop and country, and some other genres as well, as it contains much the same words.
-
+<div class="row">
+  <div class="column_table">
 
 |     | Word |     TF |       Word |   TFIDF |
 |-----|-----:|-------:|-----------:|--------:|
@@ -141,13 +172,18 @@ Some interesting trends we can see:
 | 8.  |  get | 0.0060 |     escape | 0.00005 |
 | 9.  |  one | 0.0060 |   southern | 0.00005 |
 | 10. |  say | 0.0058 | floorboard | 0.00005 |
-
+  </div>
+  <div class="column">
+    <img src="/images/genres/rock.png">
+  </div>
+</div>
 {{< /tab >}}
 
 {{< tab "Rap" >}}
 ### Rap
 [Rap](https://www.wikiwand.com/en/Hip_hop_music) is a music genre primarily developed by urban black communities in the United States. It has a certain vocal rhythm, almost more like a spoken song, compared to more traditional genres of music. The tone of rap is harsher than other genres, with a lot of derogatory names for women being a mainstay of the genre. Furthermore, often rappers are said to have "beef" with one-another, which is reflected in their songs.
-
+<div class="row">
+  <div class="column_table">
 
 |     | Word |     TF |   Word |   TFIDF |
 |-----|-----:|-------:|-------:|--------:|
@@ -161,13 +197,18 @@ Some interesting trends we can see:
 | 8.  | back | 0.0038 |   opps | 0.00024 |
 | 9.  | make | 0.0038 |   beef | 0.00023 |
 | 10. |  see | 0.0038 |    wit | 0.00022 |
-
+  </div>
+  <div class="column">
+    <img src="/images/genres/rap.png">
+  </div>
+</div>
 {{< /tab >}}
 
 {{< tab "Funk" >}}
 ### Funk
 [Funk](https://www.wikiwand.com/en/Funk) is a music genre that originated in the 1960s. The TFIDF seems to suggest that funky musicians simply reallo love to funk it up, with top words being: "funk", "funky" and "funkin".
-
+<div class="row">
+  <div class="column_table">
 
 |     | Word |     TF |    Word |   TFIDF |
 |-----|-----:|-------:|--------:|--------:|
@@ -181,13 +222,18 @@ Some interesting trends we can see:
 | 8.  | like | 0.0073 |  aflame | 0.00012 |
 | 9.  |   na | 0.0072 | maganoo | 0.00012 |
 | 10. | time | 0.0069 |   karat | 0.00012 |
-
+  </div>
+  <div class="column">
+    <img src="/images/genres/funk.png">
+  </div>
+</div>
 {{< /tab >}}
 
 {{< tab "UK" >}}
 ### UK
 [UK](https://www.wikiwand.com/en/Grime_(music_genre)), or "grime" as it is often called, originated in the 2000s. It is primarily developed by british communities and as expected the most characteristic words for the genre are also british slang and ad-libs.
-
+<div class="row">
+  <div class="column_table">
 
 |     |  Word |     TF |         Word |   TFIDF |
 |-----|------:|-------:|-------------:|--------:|
@@ -201,7 +247,11 @@ Some interesting trends we can see:
 | 8.  |   see | 0.0057 |      paigons | 0.00012 |
 | 9.  | never | 0.0057 |      krishna | 0.00012 |
 | 10. |    ca | 0.0055 |          cuh | 0.00011 |
-
+  </div>
+  <div class="column">
+    <img src="/images/genres/uk.png">
+  </div>
+</div>
 {{< /tab >}}
 
 {{< /tabs >}}
@@ -254,20 +304,20 @@ To take a look at the lyrics used through the years we split our corpus by relea
 [The 1960s](https://www.wikiwand.com/en/1960s_in_music) were quite revolutionary for music. Rock was becoming more evolved, and artists were beginning to release more albums than singles. 
 Looking at the defining words of the decade, a lot of people seemed to enjoy partaking in the [watusi dance](https://www.wikiwand.com/en/Watusi_(dance)). Furthermore, songs were affectionate, using words such as "tenderly" and "fickle". 
 <div class="row">
-  <div class="column_decade_table">
+  <div class="column_table">
 
-|     |     Word |   TFIDF |
-|-----|---------:|--------:|
-| 1.  |   watusi | 0.00011 |
-| 2.  | tenderly | 0.00009 |
-| 3.  |    looka | 0.00007 |
-| 4.  |   sighin | 0.00007 |
-| 5.  |    hully | 0.00006 |
-| 6.  |    rovin | 0.00006 |
-| 7.  |   billow | 0.00006 |
-| 8.  |   fickle | 0.00005 |
-| 9.  |    twine | 0.00005 |
-| 10. |  doggone | 0.00005 |
+|     | Word |     TF |     Word |   TFIDF |
+|-----|-----:|-------:|---------:|--------:|
+| 1.  | love | 0.0122 |   watusi | 0.00011 |
+| 2.  | know | 0.0103 | tenderly | 0.00009 |
+| 3.  |   oh | 0.0083 |    looka | 0.00007 |
+| 4.  |   go | 0.0069 |   sighin | 0.00007 |
+| 5.  |  got | 0.0069 |    hully | 0.00006 |
+| 6.  | like | 0.0068 |    rovin | 0.00006 |
+| 7.  | come | 0.0067 |   billow | 0.00006 |
+| 8.  |  one | 0.0066 |   fickle | 0.00005 |
+| 9.  | baby | 0.0065 |    twine | 0.00005 |
+| 10. | time | 0.0064 |  doggone | 0.00005 |
   </div>
   <div class="column">
     <img src="/images/decades/1960.png">
@@ -279,6 +329,8 @@ Looking at the defining words of the decade, a lot of people seemed to enjoy par
 {{< tab "1970" >}}
 ### 1970
 [The 1970s](https://www.wikiwand.com/en/1970s_in_music) are probably best known for the rise and popularity of disco. If you simply look at the TF-IDF scores of the lyrics, you might believe that "nigger" was the most defining word of the decade. However, 5 different songs in 1970 had the word appear in them (in mostly provoking context), and it does not appear in any other decade. Another interesting word is "doggone", whose modern counterpart you might be more familiar with - "damn".
+<div class="row">
+  <div class="column_table">
 
 |     | Word |     TF |       Word |   TFIDF |
 |-----|-----:|-------:|-----------:|--------:|
@@ -292,12 +344,18 @@ Looking at the defining words of the decade, a lot of people seemed to enjoy par
 | 8.  | come | 0.0063 |   softness | 0.00004 |
 | 9.  |   go | 0.0062 |    crowing | 0.00004 |
 | 10. |   na | 0.0061 |   marianne | 0.00004 |
-
+  </div>
+  <div class="column">
+    <img src="/images/decades/1970.png">
+  </div>
+</div>
 {{< /tab >}}
 
 {{< tab "1980" >}}
 ### 1980
 [The 1980s](https://www.wikiwand.com/en/1980s_in_music) had the rise electronic dance music and modern rock. Most of the important words from this decade appear quite normal at a glance. Apparently musicians really liked jellybeans in the 80s!
+<div class="row">
+  <div class="column_table">
 
 |     | Word |     TF |          Word |   TFIDF |
 |-----|-----:|-------:|--------------:|--------:|
@@ -311,13 +369,18 @@ Looking at the defining words of the decade, a lot of people seemed to enjoy par
 | 8.  |   go | 0.0064 |      outgrown | 0.00004 |
 | 9.  |  say | 0.0063 |       frantic | 0.00004 |
 | 10. |  get | 0.0063 |           oho | 0.00003 |
-
-
+  </div>
+  <div class="column">
+    <img src="/images/decades/1980.png">
+  </div>
+</div>
 {{< /tab >}}
 
 {{< tab "1990" >}}
 ### 1990
 [The 1990s](https://www.wikiwand.com/en/1990s_in_music) truly saw the rise in hip hop/rap. A lot of the words here are slang terms, used mainly in rap.
+<div class="row">
+  <div class="column_table">
 
 |     | Word |     TF |        Word |   TFIDF |
 |-----|-----:|-------:|------------:|--------:|
@@ -331,12 +394,18 @@ Looking at the defining words of the decade, a lot of people seemed to enjoy par
 | 8.  |  see | 0.0053 | representin | 0.00006 |
 | 9.  |   na | 0.0053 |     ballers | 0.00006 |
 | 10. |   go | 0.0052 |        rump | 0.00006 |
-
+  </div>
+  <div class="column">
+    <img src="/images/decades/1990.png">
+  </div>
+</div>
 {{< /tab >}}
 
 {{< tab "2000" >}}
 ### 2000
 [The 2000s](https://www.wikiwand.com/en/2000s_in_music) were truly a mixed year. All genres saw a healthy consumption, but particularly teen pop and rap got increased participation. This is the decade where slang truly started taking over the lyrics of the music we listen to. Popular words such as ["luda" and "cris"](https://www.wikiwand.com/en/Ludacris) dominate, as well as "swag", "shorty" and its variation "shawty".
+<div class="row">
+  <div class="column_table">
 
 |     | Word |     TF |      Word |   TFIDF |
 |-----|-----:|-------:|----------:|--------:|
@@ -350,12 +419,18 @@ Looking at the defining words of the decade, a lot of people seemed to enjoy par
 | 8.  |   na | 0.0052 |   konvict | 0.00008 |
 | 9.  | yeah | 0.0052 |       dro | 0.00007 |
 | 10. |  one | 0.0051 |     titty | 0.00007 |
-
+  </div>
+  <div class="column">
+    <img src="/images/decades/2000.png">
+  </div>
+</div>
 {{< /tab >}}
 
 {{< tab "2010" >}}
 ### 2010
 [The 2010s](https://www.wikiwand.com/en/2010s_in_music) had an increased popularity in a hushed style of vocal delivery (dubbed "whisperpop") as well as a steep rise in traditional instruments: Ukuleles, banjos, mandolins and bongos from indie-rock bands. Most notably, however, is probably the growth of hip hop, dominating most charts. Ad-libs played a huge role in the 10s, and we saw the introdcution of "instagram" to the vocabulary of the artists.
+<div class="row">
+  <div class="column_table">
 
 |     | Word |     TF |      Word |   TFIDF |
 |-----|-----:|-------:|----------:|--------:|
@@ -369,12 +444,18 @@ Looking at the defining words of the decade, a lot of people seemed to enjoy par
 | 8.  | love | 0.0046 |   maybach | 0.00013 |
 | 9.  | time | 0.0045 |    hunnid | 0.00012 |
 | 10. | make | 0.0044 |       bae | 0.00012 |
-
+  </div>
+  <div class="column">
+    <img src="/images/decades/2010.png">
+  </div>
+</div>
 {{< /tab >}}
 
 {{< tab "2020" >}}
 ### 2020
 Although [the 2020s](https://www.wikiwand.com/en/2020s_in_music) are still young, a clear trend in ad-libbing can clearly be seen. The words scoring highest TF-IDF scores are all ad-libs, and they have become a huge part of our daily listenings.
+<div class="row">
+  <div class="column_table">
 
 |     | Word |     TF |   Word |   TFIDF |
 |-----|-----:|-------:|-------:|--------:|
@@ -388,7 +469,11 @@ Although [the 2020s](https://www.wikiwand.com/en/2020s_in_music) are still young
 | 8.  |   wa | 0.0045 | wraith | 0.00030 |
 | 9.  |   ca | 0.0042 |  draco | 0.00030 |
 | 10. |  one | 0.0042 | hunnid | 0.00029 |
-
+  </div>
+  <div class="column">
+    <img src="/images/decades/2020.png">
+  </div>
+</div>
 {{< /tab >}}
 {{< /tabs >}}
 
