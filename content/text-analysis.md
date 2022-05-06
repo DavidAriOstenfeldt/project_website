@@ -10,7 +10,7 @@ The lyrics retrieved from Genius.com provide a rich look into the language used 
 For the text part, we have chosen the following genres to inspect:
 > pop, rock, rap, folk, blues, country, uk, funk and r&b
 
-These genres were chosen as they were most popular through time, and they show exciting differences and trends worth looking into.
+These genres were chosen as they have been popular through time, cover a large portion of the world of music and show exciting differences and trends worth looking into.
 Pop, in particular, is an interesting genre. It is defined as a genre of popular music (they are different, although often used interchangeably) that started developing in the mid-1950s. Back then, pop music encompassed rock and roll, and they were essentially synonymous until the 70s, at which point pop changed to become more accessible to wider audiences (source: [wikipedia](https://www.wikiwand.com/en/Pop_music)).
 
 Let's look at what genres we listened to throughout the last six decades. The plot below shows the ratio between genres as a % of the total amount of genres. Note that not all genres are included, but only a pre-selected list of genres.
