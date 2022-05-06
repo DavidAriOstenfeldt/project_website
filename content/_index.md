@@ -17,6 +17,8 @@ This website is intended as an experience in which you, dear reader, can explore
 
 In each section we have presented you with a myriad of options to inspect precisely the attributes of each artist that you want. The data section is a thorough description of the data we have gathered, and how it is divided into genres, artists and decades. The network analysis takes you through the intricacies of artist networks, where you will be able to explore the collaborations between artists across genres. Finally, the text is a walkthrough of the lyrics of the songs we have collected, wherein we will present identifying words for each decade, genre and artist, and so much more!
 
+Here you can see a short preview of what is in the 
+
 To get a list of songs to investigate, we looked at the [Billboard 'Hot-100' list](https://www.billboard.com/charts/hot-100/). Here, we collected song titles and artist names of all songs that appeared on the list starting from the first week of 1960, all the way to today. Then we used this data to collect lyrics, release year, collaborations, genres and titles from [genius.com](https://genius.com/Rick-astley-never-gonna-give-you-up-lyrics). This was done via two APIs: the [billboard.py API](https://github.com/guoguo12/billboard-charts) and the [LyricsGenius API](https://lyricsgenius.readthedocs.io/en/master/).
 
 The data was then cleaned via various methods (see [Data](./data-description) for more info), such that we were only left with unique songs.

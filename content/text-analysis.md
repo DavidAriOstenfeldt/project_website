@@ -16,7 +16,7 @@ Let's take a look at what genres we listened to throughout the last 6 decades. T
 
 ![](/images/genre_per_decade.png)
 
-We can clearly see that over 50% of all music on the Billboard 'Hot-100' list was pop, with rock starting out on second and R&B and blues coming in on third and fourth. In 1990 R&B would take over as second, but more notably, rap would become the third most represented genre on the list, rising from almost 0 the decade before. The popularity of rap would increase until it in 2010 overtook pop music as the most represented genre on the 'Hot-100' list. In 2020 we are also seeing trap music overtaking pop.
+We can clearly see that over 50% of all music on the Billboard 'Hot-100' list was pop, with rock starting out on second and R&B and blues coming in on third and fourth. In 1990 R&B would take over as second, but more notably, rap would become the third most represented genre on the list, rising from almost 0 the decade before. The popularity of rap would increase until it in 2010 overtook pop music as the most represented genre on the 'Hot-100' list. In 2020, we are also seeing trap music overtake pop.
 
 Now, let's inspect the happiness of the different genres:
 
@@ -25,9 +25,9 @@ Now, let's inspect the happiness of the different genres:
 We can see that most genres tend to have the same sentiment. All genres of music we have identified fall between an average sentiment of 5.4 and 5.7, and as one would probably expect, rap and trap are at the lower end of that spectrum. However, all genres are still above the average sentiment of all the words in the [Hedonometer](https://www.wikiwand.com/en/Tf%E2%80%93idf) data.
 # NOTE: Forklar hvad scoren betyder - de ligger allesammen mellem 5.4 og 5.7 ish?
 
-Let's take a closer look at the words that are important for each genre. We do this by calculating a term frequency for inverse document frequencies (TF-IDF). What is that? Basically, it is a measure of how important a word is to a document in a collection. It increases every time the word appears in the document, and is then offset by the number of documents in the corpus that contains the word (for more see: [wikipedia](https://www.wikiwand.com/en/Tf%E2%80%93idf)).
+Let's take a closer look at the words that are important for each genre. We do this by calculating a term frequency for inverse document frequencies (TF-IDF). What is that? Basically, it is a measure of how important a word is to a document in a collection of documents (corpus). It increases every time the word appears in the document, and is then offset by the number of documents in the corpus that contains the word (for more see: [wikipedia](https://www.wikiwand.com/en/Tf%E2%80%93idf)).
 
-Using the words deemed important by the TF-IDF we can create wordclouds to visualise them:
+Using the words deemed important by the TF-IDF we can create a representation of the scores with wordclouds:
 
 ![](/images/genre_clouds.png)
 
