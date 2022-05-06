@@ -6,16 +6,16 @@ next: data-description
 
 Music is a large part of our daily lives. A study shows that [only 4% of Danes do not listen to any music whatsoever](https://www.dst.dk/da/Statistik/emner/kultur-og-fritid/musik/musikvaner), which leaves 96% listening through various means such as radio, streaming, live music, tv etc. 
 
-But even though music is such a huge part of our lives, how much do we actually know about our favourite artists? For instance, do you know if DJ Khaled has collaborated with more artists than Drake? Or, is the language used is rock songs different from the language used in pop songs? Have lyrics changed since 1960, or are we still singing blues about our darlings? 
+But even though music is such a huge part of our lives, how much do we actually know about our favourite artists? For instance, do you know if DJ Khaled has collaborated with more artists than Drake? Or is the language used in rock songs different from that of pop songs? Have lyrics changed since 1960, or are we still singing blues about our darlings?
 
 We hope to answer all these questions and more through this project. We have gathered data on your favourite artists and have analysed their lyrics and connections to other artists.
 
-This website is intended as an experience in which you, dear reader, can explore the intricacies and nuances of your favourite music at your own leisure. It is split up into three main parts:
+This website is intended as an experience in which you, dear reader, can explore the intricacies and nuances of your favourite music at your leisure. It is split up into three main parts:
 1. [A description of the full data.](./data-description)
 2. [A network analysis of the connections between artists.](./network-analysis)
 3. [An analysis of the lyrics used by artists and their evolution.](./text-analysis)
 
-In each section we have presented you with a myriad of options to inspect precisely the attributes of each artist that you want. The data section is a thorough description of the data we have gathered, and how it is divided into genres, artists and decades. The network analysis takes you through the intricacies of artist networks, where you will be able to explore the collaborations between artists across genres. Finally, the text is a walkthrough of the lyrics of the songs we have collected, wherein we will present identifying words for each decade, genre and artist, and so much more!
+In each section, we have presented you with a myriad of options to precisely inspect the attributes of each artist you want. The data section is a thorough description of the data we have gathered and how it is divided into genres, artists and decades. The network analysis takes you through the intricacies of artist networks, where you will be able to explore the collaborations between artists across genres. Finally, the text is a walkthrough of the lyrics of the songs we have collected, wherein we will present identifying words for each decade, genre and artist, and so much more!
 
 Below, you can see a short preview of what we have created:
 
@@ -31,7 +31,7 @@ To get a list of songs to investigate, we looked at the [Billboard 'Hot-100' lis
 
 The data was then cleaned via various methods (see [Data](./data-description) for more info), such that we were only left with unique songs.
 
-The data can be downloaded from the table below. `Billboard List` is a list of songs on the Billboard 'Hot-100' list from 1958 to today. `Pre-cleaned` is the data we collected from Genius through the `Billboard List`. It has 4 attributes: The song title, the lyrics, the release date, and the artists who worked on the song. Finally, `Cleaned` is the cleaned final version of the data we are working with, where duplicates, non-english songs, non-songs, etc. have been removed.
+The data can be downloaded from the table below. `Billboard List` lists songs on the Billboard 'Hot-100' list from 1960 to today. `Pre-cleaned` is the data we collected from Genius through the `Billboard List`. It has four attributes: The song title, the lyrics, the release date, and the artists who worked on the song. Finally, `Cleaned` is the cleaned final version of the data we are working with, where duplicates, non-English songs, non-songs, etc., have been removed.
 
 | Data Set                                                                                             |  Songs | Size (mb) |
 |:-----------------------------------------------------------------------------------------------------|-------:|----------:|
