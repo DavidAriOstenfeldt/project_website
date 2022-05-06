@@ -1607,7 +1607,6 @@ His sentiment is comparatively low, and his songs were often associated with tur
 
   {{< /tab >}}
   {{< tab "Juice Wrld" >}}
-  {{< spotify type="track" id="285pBltuF7vW8TeWk8hdRR" width="50%" height="80" >}}
   <div class="row">
     <div class="column">
       <img src="/images/artist_dists/juice wrld.png">
