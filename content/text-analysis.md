@@ -24,10 +24,9 @@ Now, let's inspect the happiness of the different genres:
 
 ![](/images/genre_sentiment.png)
 
-We can see that most genres tend to have the same sentiment. All genres of music we have identified fall between an average sentiment of 5.4 and 5.7, and as one would probably expect, rap and trap are at the lower end of that spectrum. However, all genres are still above the average sentiment of all the words in the [Hedonometer](https://www.wikiwand.com/en/Tf%E2%80%93idf) data.
-# NOTE: Forklar hvad scoren betyder - de ligger allesammen mellem 5.4 og 5.7 ish?
+We can see that most genres tend to have the same sentiment. All genres of music we have identified fall between an average sentiment of 5.4 and 5.7, and as one would probably expect, rap and trap are at the lower end of that spectrum. However, all genres are still above the average sentiment of all the words in the [Hedonometer](https://hedonometer.org/timeseries/en_all/?from=2020-11-06&to=2022-05-05) data. The hedonometer score is assigned from a range of (1) sad to (9) happy. Many profanities fall in the range between 4 - 6, because of the uncertainty of the context they are used in.
 
-Let's take a closer look at the important words for each genre. We do this by calculating a term frequency for inverse document frequencies (TF-IDF). What is that? Basically, it measures how important a word is to a document in a collection of documents (corpus). It increases every time the word appears in the document and is then offset by the number of documents in the corpus that contains the word (for more, see: [wikipedia](https://www.wikiwand.com/en/Tf%E2%80%93idf)).
+Let's take a closer look at the important words for each genre. We do this by calculating a term frequency for inverse document frequencies (TF-IDF). What is that? Basically, it measures how important a word is to a document in a collection of documents (corpus). It increases every time the word appears in the document and is then offset by the number of documents in the corpus that contains the word (for more, see: [wikipedia](https://www.wikiwand.com/en/Tf%E2%80%93idf)). You use the TF-IDF instead of simply the term frequency because many words are common across the entire corpus, and won't show much, except the most commonly used words.
 
 Using the words deemed important by the TF-IDF, we can create a representation of the scores with wordclouds:
 
@@ -484,8 +483,6 @@ Let's go through some of the words:
 # Inspecting individual artists
 The top 41 artists by the number of songs on the Billboard 'Hot-100' list are split over four genres in the tabs below. Each artist has an associated word cloud, created from their TF-IDF scores and a similarity score that indicates which other artists are most similar to the given artist, based on the lyrics in our corpus. The TF-IDF scores were calculated using all artists. Finally, the average sentiment of the artist is presented with a comparison of all artists and top artists.
 
-We invite you to go through the tabs and see if you can recognise some of the artists and their similar artists or most defining words.
-
 One funny aspect of the word clouds is that most artists have their own name as one of the most significant words. This could be because they use tags in their songs, like DJ Khaled's iconic "It's DJ Khaled". Another explanation could be that when artists collaborate on a song, they often mention each other by name. Since we attribute the entire song to the artist and not just the part they wrote/sang, these lyrics will also be part of their TF-IDF scores.
 
 Let's take a closer look at three artists: _Ariana Grande_, _Drake_ and _Juice Wrld_.
@@ -513,6 +510,7 @@ Juice Wrld tended to sing about battling demons and doing all types of drugs, wh
 
 His sentiment is comparatively low, and his songs were often associated with turmoil, heartbreak and fragmented feelings.
 
+We invite you to go through the tabs and see if you can recognise some of the artists and their similar artists or most defining words.
 
 >Note: Artist clouds may not indicate the average word usage by an artist. The word clouds are most likely _skewed_ towards what is mainstream, as it is far from all songs by an artist which reach the top 100.
 
