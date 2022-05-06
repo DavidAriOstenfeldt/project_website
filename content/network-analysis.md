@@ -51,17 +51,32 @@ When looking at the network, we see some of the same tendencies as for the genre
 # NOTE: Mangler det fulde netværk med Louvain communities her
 
 ## Comparison with random networks
-# NOTE: Giver det mening at have sammenligning med random networks her på hjemmesiden?
+
+# NOTE: Mangler
 
 ## Betweenness centrality
-As mentioned previously, the size of the nodes in the networks are determined based on the number of songs they have on Bill
+As mentioned previously, the size of each node in the networks are determined based on the number of songs the artist has on The Hot 100 chart. The advantage of this, is that the most popular artists will be the ones that are easiest to see, this is especially the case for older artists that haven't collaborated as much - such as Elvis Presley or The Beatles. Artists like these would be virtually invisible if the size of the nodes was based on the strength of their connections. Though, scaling the nodes by the strength of their connections tell a great deal about which nodes are the biggest collaborators, and thereby some of the most central nodes in the graph.
+
+We will therefore in this section deal with [_betweenness centrality_](https://en.wikipedia.org/wiki/Betweenness_centrality) that, for each node in a graph, is a measure of how central that node is. The intuition is, that a node will get a large betweenness centrality score if they connect many nodes and parts of the network. Combining this with scaling the artists by the number of songs they have on the chart will give us a great overview of not just the most popular artists, but also the most central, colaboratory and connective artists. In the table below, the ten artists with the largest betweenness centrality score can be seen. Here we unsurprisingly see some artists that are also the largest in the networks, such as Lil Wayne, Kanye and Drake, but more surprisingly also Quincy Jones that 'just' has 13 songs on the chart - compared to Drake's 253 (though Jones has had a star-studded career that goes far beyond Billboard's 'The Hot 100').
+
+| Betweenness centrality score |
+|--------------|---------------|
+| Lil Wayne    | 	    0.0050 |
+| Kanye West   |        0.0044 |
+| Drake        |        0.0042 |
+| Nicki Minaj  |        0.0036 |
+| Chris Brown  |        0.0034 |
+| Quincy Jones |        0.0032 |
+| Ludacris     |        0.0031 |
+| Snoop Dogg   |        0.0031 | 
+| Mariah Carey |        0.0028 |
+| Usher        |        0.0027 |
+
+# All networks
+This brings us to the end of the full network's analysis, but were not done yet. The last part of this page will be dedicated to the exploratory part in all of us. Below it is possible to go on an adventure for different subnetworks based on some of the most influential genres in all music. These networks are made such that only artists that have made songs for the given genre is present. For each of the genres listed, four different networks can be seen: the full network where nodes are coloured based on each artists' genre, the full network where nodes are coloured based on they Louvain method partitioning and two other networks with the same colouring methods, but where singleton nodes with less than five songs are removed. This is done so that the networks are as clear as possible, while still maintaining the singleton artists that are influential for the genre at hand.
 
 
-# Argumentation for why we decided to also look at networks without small singletons, as well as why we picked the genres we did
-
-
-# All networks with stats und alles
-
+The reader is here encourage to explore all the networks we've made
 
 {{< networks >}}
 
