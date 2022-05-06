@@ -21,12 +21,12 @@ With the songs chosen, all that was left was to download the desired data from [
 
 # Properties of the data
 
-Unfortunately, scraping Genius.com for a song does not always yield the desired result. Therefore, some songs had to be removed in the data cleaning process. One particular _'artist'_ who managed to find his way into the data multiple times was the French novelist [Marcel Proust](https://genius.com/artists/Marcel-proust), with several chapters of one of his books. These chapters all have massive lengths of around 100,000 words, with Chapter 1 being almost 150,000 words long. In comparison, the figure below shows the distribution of song lyric lengths for the songs which made it through the cleaning process. The majority of the collected songs fall between lengths of 0 to 500, with only a small part reaching above 1000 words. In comparison, Eminem's famously long song, _Rap God_, is 1560 words long, which of course is puny in the scheme of full novels.
+Unfortunately, scraping Genius.com for a song does not always yield the desired result. Therefore, some songs had to be removed in the data cleaning process. One particular _'artist'_ who managed to find his way into the data multiple times was the French novelist [Marcel Proust](https://genius.com/artists/Marcel-proust), with several chapters of one of his books. These chapters all have massive lengths of around 100,000 words, with Chapter 1 being almost 150,000 words long. In comparison, the figure below shows the distribution of song lyric lengths for the songs which made it through the cleaning process. The majority of the collected songs are shorter than 500 words, with only a small part reaching above 1000 words. In comparison, Eminem's famously long song, _Rap God_, is 1560 words long, which of course is puny in the scheme of full novels.
 
 
 ![](/images/song_lengths_sns.png)
 
-About 13% of the downloaded songs turned out to be faulty. The final data set thus consists of 25,419 songs, 7,855 unique artists and 582 unique genres. The three data sets used throughout the project can be seen and downloaded in the table below. Note that removing the extremely long _'songs'_ from Marcel Proust and the likes reduces the data file size by more than 50%!
+About 13% of the downloaded songs turned out to be faulty. For example, songs and other literature which did in fact not appear on the 'Hot-100' chart or wrong versions of songs where the lyrics were translated to non-english languages. The final data set thus consists of 25,419 songs, 7,855 unique artists and 582 unique genres. The three data sets used throughout the project can be seen and downloaded in the table below. Note that removing the extremely long _'songs'_ from Marcel Proust and the likes reduces the data file size by more than 50%!
 
 | Data Set                                                                                             |  Songs | Size (mb) |
 |:-----------------------------------------------------------------------------------------------------|-------:|----------:|
@@ -34,18 +34,14 @@ About 13% of the downloaded songs turned out to be faulty. The final data set th
 | [Pre-cleaned](https://drive.google.com/file/d/1cyiIWnXD_0CHLsj8C0tcwNadfYI7z8FD/view?usp=sharing)    | 29,128 |      92.5 |
 | [Cleaned](https://drive.google.com/file/d/1Zhof84KbTJa3a1zfhN3TcwdWqPFCTnEv/view?usp=sharing)        | 25,419 |      44.2 |
 
-The distribution of songs per artist (for artists with over 50 songs on the 'Hot-100' list) looks as follows:
+
+Now, how is the data distributed amongst the artists, genres and decades? First, a barplot of the total number of songs the most successful artists appear on can be seen below. Specifically, all these artists have managed to reach the 'Hot-100' chart at least 60 times either alone or by collaborating with other artists. The most popular rappers and pop artists from the past 20 years heavily dominate the chart, but also some of the most famous artists throughout history appear as well. 'The King of Rock' Elvis Presley is the artist who have appeared 12'th most times, being there almost 100 times. Not too far behind comes 'The Queen of Soul' Aretha Franklin, The Beatles and Elton John. Who all have had a huge impact on the mainstream music scene. The canadian rapper, Drake, comfortably sits at the top with an impressive number of appearances, namely 253.
 ![](/images/songs_per_artist.png)
 
-As we can see on the plot, it is mostly pop artists, with some rap, r&b and rock mixed in between.  Drake is leading with 253 songs on the chart, and most of the artists are big names from the last 10-20 years. Some well known names from before still manage to break through, like the king of rock, Elvis, with 89 songs on the chart.
-
-Likewise, the distribution of songs over genres (for genres with more than 500 songs in them):
+Moving onto the genres, the barplot below shows the number of songs which have been labelled as the given genre for all the genres which appear on at least 500 songs. Keep in mind that many songs are labelled as several genres, but that is only natural since music often is a combination of genres. The most well-known genres; pop, rock, r&b, rap and country have appeared the most, but pop certainly lives up to its name as it appears on over twice as many songs as the next most frequent genre, rock. This also indicates that more than half of the songs have the pop-label.
 ![](/images/songs_per_genre.png)
 
-Here, it becomes clear to see that the genres are dominated by pop, rock r&b and rap, with there being as many pop songs as the next three genres combined.
-
-
-Finally, the distribution of songs per decade looks as following:
+Finally, the distribution of songs per decade looks the following:
 ![](/images/songs_per_decade.png)
 
-We can see that each decade has between 3000 and 5000 songs, with the most being the 1960s and the 2010s. 1920 to 1940 is of course substantially lower, since the chart started in 1958 and the songs from before that were old songs that still scored a place on the chart at some point after 1958. 2020 is  lower as well, as there are still 8 years left in this decade.
+Each decade has between 3000 and 5000 songs, with the most being the 1960s and the 2010s. There also are a handful of songs from 1920 and 1940 which managed to stay relevant for around 20-40 years. Even though we are only a quarter through the decade 2020 as of writing this analysis, just short of 1500 songs have reached the 'Hot-100' chart.
