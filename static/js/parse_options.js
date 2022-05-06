@@ -6,7 +6,7 @@ window.addEventListener('load', () => {
 var d1 = "../networks/all/";
 var d2 = "withsingles/genre/";
 
-var t1 = "all";
+var t1 = "All";
 var t2 = "genre";
 var t3 = "with all"
 
