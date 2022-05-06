@@ -510,6 +510,13 @@ Juice Wrld tended to sing about battling demons and doing all types of drugs, wh
 
 His sentiment is comparatively low, and his songs were often associated with turmoil, heartbreak and fragmented feelings.
 
+#### The Beatles
+[The Beatles](https://www.wikiwand.com/en/The_Beatles) were an English rock band formed in 1960. They are often regarded as the most influential band of all time, and played a huge role pop musics' recognition as a proper art form. Their sentiment is comparatively on the high end, and they share similarity with other famous musicians from the same time period: _Aretha Franklin_, _Elvis Presley_, _Ray Charles_. 
+
+Their defining words are classic English/British terms: _knickers_, _joob_, _gloucester_ etc.
+
+The Beatles has had 65 songs on the 'Hot-100' list, and were one of the first bands to experience the hyper-fan culture, with many calling the period of time they were active a period of _beatlemania_.
+
 We invite you to go through the tabs and see if you can recognise some of the artists and their similar artists or most defining words.
 
 >Note: Artist clouds may not indicate the average word usage by an artist. The word clouds are most likely _skewed_ towards what is mainstream, as it is far from all songs by an artist which reach the top 100.
