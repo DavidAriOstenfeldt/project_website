@@ -5,27 +5,27 @@ next: network-analysis
 ---
 
 # Gathering the data
-An impossibly large number of songs have been composed and released throughout the last century. Today songs are being released faster than one person can enjoy them due to the numerous platforms for music streaming such as [Spotify](https://www.spotify.com). In an attempt to gather music-related data which is both diverse in the number of artists, while focusing on the ones known by most, and also represents as many popular genres as possible, we turned to the [Billboard 'The Hot 100' list](https://www.billboard.com/charts/hot-100/). Each week a new chart containing the 100 most popular songs in the world (heavily tailored to the western world). Looking back all the way to Jan 1. 1960 until today the there is a roughly a potential 52$\cdot$100$\cdot$62 = 332,400 possible songs to find. Of course, most of the songs which hit the chart will stay there for more than a single week, so in reality there is a lot less. 
+An impossibly large number of songs have been composed and released throughout the last century. Today songs are being released faster than one person can enjoy them due to the numerous platforms for music streaming such as [Spotify](https://www.spotify.com). In an attempt to gather music-related data which is both diverse in the number of artists, while focusing on the ones known by most, and also represents as many popular genres as possible, we turned to the [Billboard 'The Hot 100' list](https://www.billboard.com/charts/hot-100/). Each week a new chart containing the 100 most popular songs in the world (heavily tailored to the western world). Looking back all the way to Jan 1. 1960 until today the there is a roughly a potential 52$\cdot$100$\cdot$62 = 332,400 possible songs to find. Of course, most of the songs which hit the chart will stay there for more than a single week, so in reality there is a lot less. In fact, a total of 29,128 unique songs hit the Hot 100 chart in the last 62 years.
 
 
-First, we got the songs we wanted to investigate from the [Billboard 'The Hot 100' list](https://www.billboard.com/charts/hot-100/). Here, we collected song titles and artist names of all songs that appeared on the list starting from the first week of 1960, all the way to today. This was done with the [billboard.py API](https://github.com/guoguo12/billboard-charts). We made sure to only collect the songs if it was either the first time they appeared on the chart, or if we hadn't already added them to the list. This way we collected a total of 29,128 unique songs, out of the total possible 322,400 songs (5,200 a year * 62 years), which means 293,272 songs had multiple appearances on the Billboard 'The Hot 100' list.
-
-We used the songs from this list to limit our scope, as otherwise the amount of data we would have to download would be insurmountable. This of course means that the data set does not provide a full picture of the entire network and vocabulary of artists, but as the data is collected from the most popular songs each week, we believe it to be a sufficient representation of the general trends in artists and lyrics through the years. We used the list of artists and song titles to collect lyrics, release year, collaborations, genres and titles from [genius.com](https://genius.com/Rick-astley-never-gonna-give-you-up-lyrics). For this part the [LyricsGenius API](https://lyricsgenius.readthedocs.io/en/master/) was used, which is an extension of the [base genius API](https://docs.genius.com/) that also collects the lyrics from each song via the python module [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/). Once we had collected the data, we cleaned it via various methods. For more information on this process see the [explainer notebook](https://davidariostenfeldt.github.io/project_website/explainer-notebook.html).
-
-This way, when collecting data for each song through the modified LyricsGenius API, we would retrieve five attributes: date of release, artists who collaborated on the song, lyrics, genres and the song title. The data looks as follows:
+With the songs chosen, all that was left was to download the desired data from [Genius.com](https://genius.com/Rick-astley-never-gonna-give-you-up-lyrics). For each song the _date of release_, _all artists who collaborated on the song_, _song lyrics_, _genre tags_ and _title_ was gathered. For further details on which tools where used to gather the data, the reader is referred to the [explainer notebook](https://davidariostenfeldt.github.io/project_website/explainer-notebook.html). Below the data of the first 5 songs is displayed. It is interesting to note that the two first songs are from before 1960, but still managed to hit the chart in that year.
 
 |   released |          artists |                                             lyrics |           genres |                          title |
 |-----------:|-----------------:|---------------------------------------------------:|-----------------:|-------------------------------:|
 |       1957 |  [marty robbins] |                  Out in the West Texas town of ... |        [country] |                        El Paso |
-| 1960-01-04 | [frankie avalon] |            I'll never let you go\nWhy? Because ... |            [pop] |                            Why |
 |       1959 | [johnny preston] |                     On the bank of the river\nS... |            [pop] |                   Running Bear |
+| 1960-01-04 | [frankie avalon] |            I'll never let you go\nWhy? Because ... |            [pop] |                            Why |
 | 1960-01-04 |  [freddy cannon] |                                      Well, way ... |            [pop] | Way Down Yonder in New Orleans |
 | 1960-01-04 |   [guy mitchell] |                                   Heartaches by... | [country, cover] |       Heartaches by the Number |
 
 
 # Properties of the data
 
-After doing all data processing and cleaning, the final data set is comprised of 25,419 songs and 7,855 unique artists. In the table below, the three data sets used throughout the project can be seen and downloaded.
+Unfortunately, scraping Genius.com for a song does not always yield the desired result. Therefore, some songs had to be removed in the data cleaning process. One particular _"artist"_ who managed to find his way into the data multiple times was the French novelist [Marcel Proust](https://genius.com/artists/Marcel-proust) with several chapters to one of his books. These chapters all have a huge length of around 100,000 words, with the Chapter 1 almost being 150,000 words long. In comparison, the figure below shows the distribution of song lyric lengths for the songs which made it through the cleaning process. The majority of the collected songs fall between lengths of 0 to 500, with only a small part reaching above 1000 words. For comparison Eminems famously long song, 'Rap God' is 1560 words long.
+
+![](/images/song_lengths_sns.png)
+
+About 13% of the downloaded songs turned out to be faulty. The final data set thus consists of 25,419 songs, 7,855 unique artists and 582 unique genres. In the table below, the three data sets used throughout the project can be seen and downloaded. Note that removing the extremely long _"songs"_ from Marcel Proust and the likes reduces the size of the data file by more than 50%!
 
 | Data Set                                                                                             |  Songs | Size (mb) |
 |:-----------------------------------------------------------------------------------------------------|-------:|----------:|
@@ -48,8 +48,3 @@ Finally, the distribution of songs per decade looks as following:
 ![](/images/songs_per_decade.png)
 
 We can see that each decade has between 3000 and 5000 songs, with the most being the 1960s and the 2010s. 1920 to 1940 is of course substantially lower, since the chart started in 1958 and the songs from before that were old songs that still scored a place on the chart at some point after 1958. 2020 is  lower as well, as there are still 8 years left in this decade.
-
-For good measure, we also plot the distribution of lengths of all songs:
-![](/images/song_lengths_sns.png)
-
-Here we see that a large majority of the collected songs fall between lengths of 0 to 500, with a few going for longer. For comparison Eminems 'Rap God' is 1560 words long.
