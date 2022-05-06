@@ -13,7 +13,7 @@ The network is created by making each artist into a node and link up two artists
 
 
 # Walk-through of the full network
-## Statistics, degree distribution
+## Statistics
 Having created the full network, we are now ready to analyse it to get a better understanding of the artist's colaboratory dynamics. The two simplest measures are the number of nodes and links in the graph.
 
 \begin{equation*}
@@ -33,11 +33,19 @@ Another measure that can be used to analyse a network is the [_average clusterin
 \end{equation*}
 
 ### Analysis of degrees
-The degree of a node in an undirected network denotes the number of other nodes it's connected to, or in this case, the number of artists they have collaborated with. Analysing the degrees can tell us a great deal about the workings of a network. The average degree of the network is, e.g. 1.8, which means each artist on average has collaborated with 1.8 
+The degree of a node in an undirected network denotes the number of other nodes it's connected to, or in this case, the number of artists they have collaborated with. Analysing the degrees can tell us a great deal about the workings of a network. The average degree of the network is 1.8, which means each artist on average has collaborated with 1.8 other artists. The node with the largest degree is Lil Wayne, who has a whopping degree of 108, meaning that he is the biggest collaborator of all.
 
+A common feature for real world networks are hubs - meaning that few nodes in the network are highly connected to other nodes. One way of investigating whether a network has this trait is by looking at the distribution of degrees. Specifically, [_Scale-free networks_](https://mathinsight.org/scale_free_network) have this feature, and they are characterised by what's called a _power-law_ degree distribution, which means their degree distribution is linear on a log-log scale. In the figure below, we see exactly such behaviour, meaning that few artists have collaborated much more than others.
 
+![](/images/distribution_of_degrees_90.png)
 
 ## Community detection, comparison with random networks
+In this section, we will explore the communities of the network. The most natural partitioning of the artists in the network is, as mention previously, by grouping them by their genre. Though this might not be the most optimal partitioning based on what's known as [_modularity_](https://en.wikipedia.org/wiki/Modularity_(networks)). Within network science, modularity is a measure of the strength of the partitioning of the nodes into _modules_ (or communities). This means that a network with high modularity has large connectivity within the communities, while each community is sparsely connected. The modularity is a value between -0.5, if the network consists of non-modular clustering, and 1 if the network has fully modular clustering. The modularity can thus be used to detect communities within the network by trying to optimise the modularity. This is exactly what the [_Louvain method_](https://en.wikipedia.org/wiki/Louvain_method) tries to do. By grouping artists into communities that optimise the modularity, interesting structures can be found, which the genre partitioning might not be able to illuminate. 
+
+# NOTE: Beskrivelsen herover er måske for teknisk - mangler andre øjne
+
+In the network below, we see the partitioning that the Louvain method managed to find. The modularity of this 
+
 
 
 ## Betweenness centrality
