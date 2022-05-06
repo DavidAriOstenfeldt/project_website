@@ -27,15 +27,15 @@ Below, you can see a short preview of what we have created:
 
 ![](/images/genre_clouds.png)
 
-To get a list of songs to investigate, we looked at the [Billboard 'Hot-100' list](https://www.billboard.com/charts/hot-100/). Here, we collected song titles and artist names of all songs that appeared on the list starting from the first week of 1960, all the way to today. Then we used this data to collect lyrics, release year, collaborations, genres and titles from [genius.com](https://genius.com/Rick-astley-never-gonna-give-you-up-lyrics). This was done via two APIs: the [billboard.py API](https://github.com/guoguo12/billboard-charts) and the [LyricsGenius API](https://lyricsgenius.readthedocs.io/en/master/).
+To get a list of songs to investigate, we looked at the [Billboard 'Hot-100' chart](https://www.billboard.com/charts/hot-100/). Here, we collected song titles and artist names of all songs that appeared on the list starting from the first week of 1960, all the way to today. Then we used this data to collect lyrics, release year, collaborations, genres and titles from [genius.com](https://genius.com/Rick-astley-never-gonna-give-you-up-lyrics). This was done via two APIs: the [billboard.py API](https://github.com/guoguo12/billboard-charts) and the [LyricsGenius API](https://lyricsgenius.readthedocs.io/en/master/).
 
 The data was then cleaned via various methods (see [Data](./data-description) for more info), such that we were only left with unique songs.
 
-The data can be downloaded from the table below. `Billboard List` lists songs on the Billboard 'Hot-100' list from 1960 to today. `Pre-cleaned` is the data we collected from Genius through the `Billboard List`. It has four attributes: The song title, the lyrics, the release date, and the artists who worked on the song. Finally, `Cleaned` is the cleaned final version of the data we are working with, where duplicates, non-English songs, non-songs, etc., have been removed.
+The data can be downloaded from the table below. `Billboard Chart` lists songs on the Billboard 'Hot-100' list from 1960 to today. `Pre-cleaned` is the data we collected from Genius through the `Billboard Chart`. It has four attributes: The song title, the lyrics, the release date, and the artists who worked on the song. Finally, `Cleaned` is the cleaned final version of the data we are working with, where duplicates, non-English songs, non-songs, etc., have been removed.
 
 | Data Set                                                                                             |  Songs | Size (mb) |
 |:-----------------------------------------------------------------------------------------------------|-------:|----------:|
-| [Billboard List](https://drive.google.com/file/d/1Gd4YH_U98Z8mellnIV_haINLL4UhLJKG/view?usp=sharing) | 29,128 |       1.6 |
+| [Billboard Chart](https://drive.google.com/file/d/1Gd4YH_U98Z8mellnIV_haINLL4UhLJKG/view?usp=sharing) | 29,128 |       1.6 |
 | [Pre-cleaned](https://drive.google.com/file/d/1cyiIWnXD_0CHLsj8C0tcwNadfYI7z8FD/view?usp=sharing)    | 29,128 |      92.5 |
 | [Cleaned](https://drive.google.com/file/d/1Zhof84KbTJa3a1zfhN3TcwdWqPFCTnEv/view?usp=sharing)        | 25,419 |      44.2 |
 
