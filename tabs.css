@@ -10,7 +10,9 @@
     display: inline-block;
     padding: 0.5rem 1rem;
     border-bottom: 1px transparent;
-    cursor: pointer; }
+    cursor: pointer;
+    font-family: "Segoe UI", sans-serif;
+    color: #0f766e; }
   .md-tabs .md-tabs-content {
     order: 999;
     width: 100%;
