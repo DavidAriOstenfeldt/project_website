@@ -4,23 +4,23 @@ prev: data-description
 next: text-analysis
 ---
 
-This section will cover the collaboration between artists aspect of the project. For this we will make use of different network theories and constructions in order to analyse the properties between artists. Specifically, we will go through how the full network of all artists were created and investigate it using various networks science analysis strategies. In addition to the network of all artists, we've also created smaller networks for specific genres. All this, and more, can be seen at the bottom of the page.
+This section will cover the collaboration between artists through the use of networks. For this, we will use different network theories and constructions to analyse the properties of artists. Specifically, we will go through how the complete network of all artists was created and investigate it using various networks science analysis strategies. In addition to the network of all artists, we've also created smaller networks for specific genres. All this, and more, can be seen at the bottom of the page.
 
 # NOTE: Mangler det fulde netværk her
 
 # Creating the network
-The network is created by making each artist into a node and link up two artists if they have collaborated on a song. The network is created as an [_undirected network_](https://www.wikiwand.com/en/Undirected_graph) that, in comparison to a directed network, is a network where the links don't have an orientation, such that _information_ flows both ways. The size of a node is determined by the number of times they have appeared on Billboard's the hot 100 chart and the colour is based upon the most common genre for that artist. The size of each link is determined by the number of times the two artists have collaborated.
+The network is created by making each artist into a node and linking up two artists if they have collaborated on a song. The network is created as an [_undirected network_](https://www.wikiwand.com/en/Undirected_graph) that, in comparison to a directed network, is a network where the links don't have an orientation, such that _information_ flows both ways. The node's size is determined by the number of times they have appeared on Billboard's 'The Hot 100' chart, and the colour is based upon the most common genre for that artist. The size of each link is determined by the number of times the two artists have collaborated.
 
 
 # Walk-through of the full network
 ## Statistics
-Having created the full network, we are now ready to analyse it to get a better understanding of the artist's colaboratory dynamics. The two simplest measures are the number of nodes and links in the graph.
+Having created the full network, we are now ready to analyse it to understand the artist's collaboratory dynamics better. The two most straightforward measures are the number of nodes and links in the graph.
 
 \begin{equation*}
-    \textrm{Number of nodes}: 7845 \qquad \textrm{Number of links}: 6799
+    \textrm{Number of nodes}= 7845 \qquad \textrm{Number of links}= 6799
 \end{equation*}
 
-This means that we have a total of 7845 artists in the network with 6799 pairs of artists having collaborated. The next measure we will be investigating is the [_density_](https://networkx.org/documentation/stable/reference/generated/networkx.classes.function.density.html) of the network. The density describes how _densely_ connected a network is, where the density is 0 for a graph without links and 1 for a completely connected network. In this case, the network has a density of 0.00022. This value is quite low, which is also understandable given the large number of singleton nodes seen in the network above.
+This means that we have 7845 artists in the network, with 6799 pairs of artists having collaborated. The following measure we will be investigating is the [_density_](https://networkx.org/documentation/stable/reference/generated/networkx.classes.function.density.html) of the network. The density describes how _densely_ connected a network is, where the density is 0 for a graph without links and 1 for a completely connected network. In this case, the network has a density of 0.00022. This value is relatively low, which is understandable given the large number of singleton nodes seen in the network above.
 
 \begin{equation*}
     \textrm{Density} = 0.00022
@@ -34,6 +34,10 @@ Another measure that can be used to analyse a network is the [_average clusterin
 
 ### Analysis of degrees
 The degree of a node in an undirected network denotes the number of other nodes it's connected to, or in this case, the number of artists they have collaborated with. Analysing the degrees can tell us a great deal about the workings of a network. The average degree of the network is 1.8, which means each artist on average has collaborated with 1.8 other artists. The node with the largest degree is Lil Wayne, who has a whopping degree of 108, meaning that he is the biggest collaborator of all.
+
+\begin{equation*}
+    \textrm{Average degree}= 1.8 \qquad \textrm{Max degree}= 108
+\end{equation*}
 
 A common feature for real world networks are hubs - meaning that few nodes in the network are highly connected to other nodes. One way of investigating whether a network has this trait is by looking at the distribution of degrees. Specifically, [_Scale-free networks_](https://mathinsight.org/scale_free_network) have this feature, and they are characterised by what's called a _power-law_ degree distribution, which means their degree distribution is linear on a log-log scale. In the figure below, we see exactly such behaviour, meaning that few artists have collaborated much more than others.
 
@@ -51,13 +55,14 @@ When looking at the network, we see some of the same tendencies as for the genre
 # NOTE: Mangler det fulde netværk med Louvain communities her
 
 ## Comparison with random networks
+A common practice when dealing with networks is to compare them to random networks that are based on the real ones. This is done to make sure that the network is in fact _real_, understood in the sense that it couldn't have been generated randomly based on the number of nodes and links in the network. To make this comparison, 1000 random networks were generated using what's called the _double edge swap_ algorithm. For each of these random networks, we calculated the modularity using the genre communities. The figure below shows the distribution of the modularities for the 1000 random networks as well as the modularity for the genre communities and the Louvain communities. It can be seen that both the genre and Louvain modularity is vastly larger than any of the random networks' modularity, which indicates that we are in fact dealing with a real network and not random coincidence.
 
-# NOTE: Mangler
+
 
 ## Betweenness centrality
 As mentioned previously, the size of each node in the networks are determined based on the number of songs the artist has on The Hot 100 chart. The advantage of this, is that the most popular artists will be the ones that are easiest to see, this is especially the case for older artists that haven't collaborated as much - such as Elvis Presley or The Beatles. Artists like these would be virtually invisible if the size of the nodes was based on the strength of their connections. Though, scaling the nodes by the strength of their connections tell a great deal about which nodes are the biggest collaborators, and thereby some of the most central nodes in the graph.
 
-We will therefore in this section deal with [_betweenness centrality_](https://en.wikipedia.org/wiki/Betweenness_centrality) that, for each node in a graph, is a measure of how central that node is. The intuition is, that a node will get a large betweenness centrality score if they connect many nodes and parts of the network. Combining this with scaling the artists by the number of songs they have on the chart will give us a great overview of not just the most popular artists, but also the most central, colaboratory and connective artists. In the table below, the ten artists with the largest betweenness centrality score can be seen. Here we unsurprisingly see some artists that are also the largest in the networks, such as Lil Wayne, Kanye and Drake, but more surprisingly also Quincy Jones that 'just' has 13 songs on the chart - compared to Drake's 253 (though Jones has had a star-studded career that goes far beyond Billboard's 'The Hot 100').
+We will therefore in this section deal with [_betweenness centrality_](https://en.wikipedia.org/wiki/Betweenness_centrality) that, for each node in a graph, is a measure of how central that node is. The intuition is, that a node will get a large betweenness centrality score if they connect many nodes and parts of the network. Combining this with scaling the artists by the number of songs they have on the chart will give us a great overview of not just the most popular artists, but also the most central, colaboratory and connective artists. In the table below, the ten artists with the largest betweenness centrality score can be seen. Here we unsurprisingly see some artists that are also the largest in the networks, such as Lil Wayne, Kanye and Drake, but more surprisingly also Quincy Jones that _just_ has 13 songs on the chart (see if you can find him ;-) ) - compared to Drake's 253 (though Jones has had a star-studded career that goes far beyond Billboard's 'The Hot 100').
 
 | Betweenness centrality score |
 |--------------|---------------|
@@ -73,13 +78,8 @@ We will therefore in this section deal with [_betweenness centrality_](https://e
 | Usher        |        0.0027 |
 
 # All networks
-This brings us to the end of the full network's analysis, but were not done yet. The last part of this page will be dedicated to the exploratory part in all of us. Below it is possible to go on an adventure for different subnetworks based on some of the most influential genres in all music. These networks are made such that only artists that have made songs for the given genre is present. For each of the genres listed, four different networks can be seen: the full network where nodes are coloured based on each artists' genre, the full network where nodes are coloured based on they Louvain method partitioning and two other networks with the same colouring methods, but where singleton nodes with less than five songs are removed. This is done so that the networks are as clear as possible, while still maintaining the singleton artists that are influential for the genre at hand.
+This brings us to the end of the full network's analysis, but were not done yet. The last part of this page will be dedicated to the exploratory part in all of us. Below it is possible to go on an adventure for different subnetworks based on some of the most influential genres in all music. These networks are made such that only artists that have made songs for the given genre is present. For each of the genres listed, four different networks can be seen: the full network where nodes are coloured based on each artists' genre, the full network where nodes are coloured based on they Louvain method partitioning and two other networks with the same colouring methods, but where singleton nodes with less than five songs are removed. This is done so that the networks are as clear as possible, while still maintaining the singleton artists that are influential for the genre at hand. Alongside the networks, the appertaining statistics and betweenness centrality scores, that have been described on this page, is present. \
+The reader is encouraged to explore the networks. The nodes can be hovered over to see which artists they represent, and they can also be moved around to get a better idea of which other artists they are connected to - enjoy.
 
-
-The reader is here encourage to explore all the networks we've made
 
 {{< networks >}}
-
-
-We chose to only focus on the networks visualised above, as they ...
-
