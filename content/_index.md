@@ -21,7 +21,7 @@ Below, you can see a short preview of what we have created:
 
 <p style="text-align: center;"> <a href="https://davidariostenfeldt.github.io/project_website/network-analysis/">Network of all artists </a></p>
 
-# INDSÆT NETVÆRK
+{{< all_genre_network >}}
 
 <p style="text-align: center;"> <a href="https://davidariostenfeldt.github.io/project_website/text-analysis/">Wordclouds of 9 genres </a></p>
 
