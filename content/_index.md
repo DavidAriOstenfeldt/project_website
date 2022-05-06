@@ -5,10 +5,10 @@ next: data-description
 ---
 # OPDATER INTRODUKTION: Spil på at det er en oplevelse at være inde på hjemmesiden. Læseren opfordres til at undersøge tingene de er interesserede i... beskriv hvad der er på hvert tab...
 
-Music is a large part of our daily lives. A study shows that [only 4% of Danes do not listen to any music whatsoever, which leaves 96% listening through various means, such as radio, streaming, live music, tv etc](https://www.dst.dk/da/Statistik/emner/kultur-og-fritid/musik/musikvaner). But how much do we actually know about the various connections and intersections that happen to make our favourite listening activity? How do artists get together to create the music we love to listen to? Which artists collaborate more? Are some genres more prone to collaboration than others? Are artists collaborating more today, than in the 1960s? Does the language used in songs change through the years? What about between genres? Has Drake collaborated with more artists than DJ Khaled? All good questions, which we hope to answer in this project.
+Music is a large part of our daily lives. A study shows that [only 4% of Danes do not listen to any music whatsoever, which leaves 96% listening through various means such as radio, streaming, live music, tv etc](https://www.dst.dk/da/Statistik/emner/kultur-og-fritid/musik/musikvaner). But how much do we actually know about the various connections and intersections that happen to make our favourite listening activity? How do artists get together to create the music we love to listen to? Which artists collaborate more? Are some genres more prone to collaboration than others? Are artists collaborating more today, than in the 1960s? Does the language used in songs change through the years? What about between genres? Has Drake collaborated with more artists than DJ Khaled? All good questions, which we hope to answer in this project.
 
 This website is intended as an experience in which you, dear reader, can explore the intricacies and nuances of your favourite music at your own leisure. It is split up into three main parts:
-1. [A description of the full data.](./data-description).
+1. [A description of the full data.](./data-description)
 2. [A network analysis of the connections between artists.](./network-analysis)
 3. [An analysis of the lyrics used by artists and their evolution.](./text-analysis)
 
