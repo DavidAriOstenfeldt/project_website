@@ -19,11 +19,11 @@ In each section we have presented you with a myriad of options to inspect precis
 
 Below, you can see a short preview of what we have created:
 
-<p style="text-align: center;"> <a href="https://davidariostenfeldt.github.io/project_website/network-analysis/">Network of all artists </a></p>
+<p style="text-align: center;"> <a style="font-size:28px" href="https://davidariostenfeldt.github.io/project_website/network-analysis/">Network of all artists </a></p>
 
 {{< all_genre_network >}}
 
-<p style="text-align: center;"> <a href="https://davidariostenfeldt.github.io/project_website/text-analysis/">Wordclouds of 9 genres </a></p>
+<p style="text-align: center;"> <a style="font-size:28px" href="https://davidariostenfeldt.github.io/project_website/text-analysis/">Wordclouds of 9 genres </a></p>
 
 ![](/images/genre_clouds.png)
 
