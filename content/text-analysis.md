@@ -12,7 +12,13 @@ For the text part, we have chosen the following genres to inspect:
 These genres were chosen as they were most popular through time, and they show interesting differences and trends that are worth looking into.
 Pop in particular is an interesting genre. It is defined as a genre of popular music (they are different, although often used interchangeably) that started developing in the mid-1950s. Back then, pop music encompassed rock and roll, and they were largely synonomous until the 70s, at which point pop changed to became more accessible to wider audiences (source: [wikipedia](https://www.wikiwand.com/en/Pop_music)).
 
-Let's start by inspecting the happiness of the different genres:
+Let's take a look at what genres we listened to throughout the last 6 decades. The plot below shows the ratio between genres as a % of the total amount of genres. Note that not all genres are included, but only a pre-selected list of genres.
+
+![](/images/genre_per_decade.png)
+
+We can clearly see that over 50% of all music on the Billboard 'Hot-100' list was pop, with rock starting out on second and R&B and blues coming in on third and fourth. In 1990 R&B would take over as second, but more notably, rap would become the third most represented genre on the list, rising from almost 0 the decade before. The popularity of rap would increase until it in 2010 overtook pop music as the most represented genre on the 'Hot-100' list. In 2020 we are also seeing trap music overtaking pop.
+
+Now, let's inspect the happiness of the different genres:
 
 ![](/images/genre_sentiment.png)
 
@@ -482,32 +488,49 @@ We investigated some select words from these, and made a dispersion plot, to see
 ![](/images/dispersion.png)
 
 Let's go through some of the words:  
-Swag: The popularity of swag happened in the 00s and ended around the 10s. Few people still use it today, but the amount has declined steeply.  
-Shawty: A popular term for a young woman. Popular in rap and hip hop music.  
-Boogie and funky: Boogie was a popular genre of music at the end of the disco-era of the 70s.  
-Darling and bitch: Two words often used to describe women, but with very different meanings. It is interesting to see how the popularity of them are almost opposite, with darling being phased out as bitch is being phased in.  
-Drug: Singing about drugs is a staple in rap music, and it's not surprising to see its popularity increase through the 90s.  
-Skrrt: A popular ad-lib used in most rap/trap songs.  
-Nigga: Often used in rap music, which saw a steep increase in popularity from it's inception in the 90s, and has become a staple in most rap music.
+`Swag`: The popularity of swag happened in the 00s and ended around the 10s. Few people still use it today, but the amount has declined steeply.  
+`Shawty`: A popular term for a young woman. Popular in rap and hip hop music.  
+`Boogie` and `funky`: Boogie was a popular genre of music at the end of the disco-era of the 70s.  
+`Darling` and `bitch`: Two words often used to describe women, but with very different meanings. It is interesting to see how the popularity of them are almost opposite, with darling being phased out as bitch is being phased in.  
+`Drug`: Singing about drugs is a staple in rap music, and it's not surprising to see its popularity increase through the 90s.  
+`Skrrt`: A popular ad-lib used in most rap/trap songs.  
+`Nigga`: Often used in rap music, which saw a steep increase in popularity from its inception in the 90s, and has become a staple in most rap music.
 
-
-
-Now, let's take a look at what genres we listened to throughout the last 6 decades. The plot below shows the ratio between genres as a % of the total amount of genres. Note that not all genres are included, but only a pre-selected list of genres.
-
-![](/images/genre_per_decade.png)
-
-We can clearly see that over 50% of all music on the Billboard 'Hot-100' list was pop, with rock starting out on second and R&B and blues coming in on third and fourth. In 1990 R&B would take over as second, but more notably, rap would become the third most represented genre on the list, rising from almost 0 the decade before. The popularity of rap would increase until it in 2010 overtook pop music as the most represented genre on the 'Hot-100' list. In 2020 we are also seeing trap music overtaking pop.
 
 # Inspecting individual artists
-Some text about artists? All artists are used for tf-idf scores.
+In the tabs below the top 41 artists by the amount of songs on the Billboard 'Hot-100' list are split over 4 genres. Each artist has an associated wordcloud, created form their TF-IDF scores, and a similarity score, that indicates which other artists are most similar to the given artist, based on the lyrics in our corpus. Finally, the average sentiment of the artist is presented with a comparison of the all artists and top artists. The TF-IDF scores were calculated using all artists.
 
-Goal: Summary statistics should be needly confined for each artist letting the reader click on the desired artist.
+We invite you to go through the tabs and see if you can recognise some of the artists and their similar artists or most defining words.
 
-Summary statistics include:
+One funny aspect of the wordclouds is that most artists have their own name as one of the most significant words. This could of course be because they use tags in their songs, like DJ Khaleds iconic "It's DJ Khaled". Another explanation could be that when artists are collaborating together on a song, they often mention each other by name, and since we attribute the entire song to the artist, and not just the part that they wrote/sing, these lyrics will also be part of their TF-IDF scores.
 
-> Wordcloud, sentiment (compared to dist), songs on top 100, top n most similar and dissimilar artists
+Let's take a closer look at 3 artists: `Ariana Grande`, `Drake` and `Juice Wrld`.
 
-Note: artist clouds may not be indicative of the average word usage by an artist. The wordclouds are most likely _skewed_ towards what is mainstream. It is far from all songs by an artist which reach top 100.
+#### Ariana Grande
+[Ariana Grande](https://www.wikiwand.com/en/Ariana_Grande) is a pop singer who went from starring in a Nickelodeon tv series, to topping the Billboard charts with her debut album _Yours Truly_ in 2013. Since then, she has continued to top the charts with every new release and has won numerous awards from various outlets. As of today, she has had 68 songs appear on the Billboard 'Hot-100' chart.
+
+Her wordcloud reflects her style of humming and vocalizing with top words being "mmm", "woah", "ayy" and "yee". Her sentiment is pretty much right in the middle of everyone.
+
+The top similar artists are Justin Bieber, Chris Brown, The Weeknd, Drake and Rihanna. All of these have heavy pop and R&B connections, which is what Ariana Grande excels at.
+
+#### Drake
+[Drake](https://www.wikiwand.com/en/Drake_(musician)) is one of the most famous musicians living today. He has had the highest amount of songs on the Billboard 'Hot-100' list, coming in at 253 songs, almost 100 more than the followup. He is most well known for his rap songs, he debuted with his mixtape _Room for Improvement_ in 2006. in 2018 he released _Scorpion_, which had three Billboard 'Hot-100' number one singles: "God's plan", "Nice for What" and "In My Feelings".
+
+In his wordcloud appear pretty standard words from the rap genre (according to the rap wordcloud from earlier). The word "Drizzy" appears, which is a nickname that he often uses to [refer to himself with](https://twitter.com/drake).
+
+The most similar artists to him are other other rappers. Lil Wayne, Kanye West, Lil Baby, Future and Nicki Minaj are all highly respected rappers, and he has worked together with them in the past.
+
+His sentiment is pretty average compared to the other artists, although he is skewing a tiny bit to the lower side - a trait that is common in all rappers.
+
+#### Juice Wrld
+[Juice Wrld](https://www.wikiwand.com/en/Juice_Wrld) was a rapper who pioneered the emo-rap and SoundClouad rap subgenres. In 2018 he released his hit single "Lucid Dreams", which took the number two spot on the Billboard 'Hot-100' chart. Juice Wrld has had 70 songs appear on the chart. He collaborated mostly with other rappers, Drake, Future and the trio of Lils: Lil Wayne, Lil Uzi Vert and Lil Baby. All prominent names in the rap industry.
+
+Juice Wrld tended to sing a lot about battling with demons and doing all types of drugs, which is also reflected in his wordcloud.
+
+His sentiment is comparatively low, and his songs were often associated with turmoil, heartbreak and fragmented feelings.
+
+
+>Note: Artist clouds may not be indicative of the average word usage by an artist. The wordclouds are most likely _skewed_ towards what is mainstream, as it is far from all songs by an artist which reach top 100.
 
 {{< tabs >}}
 {{< tab "Pop" >}}
@@ -550,9 +573,8 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
   
-  ### Ariana Grande
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
-
+  Number of songs on 'Hot-100': 68
+  
   {{< /tab >}}
   {{< tab "Beyoncé" >}}
   ![](/images/beyoncé.png)
@@ -591,9 +613,8 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Beyoncé
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
-
+  Number of songs on 'Hot-100': 64
+ 
   {{< /tab >}}
   {{< tab "Billie Eilish" >}}
   ![](/images/billie_eilish.png)
@@ -632,9 +653,8 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Billie Eilish
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
-
+  Number of songs on 'Hot-100': 30
+ 
   {{< /tab >}}
   {{< tab "Britney Spears" >}}
   ![](/images/britney_spears.png)
@@ -673,8 +693,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Britney Spears
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 34
 
   {{< /tab >}}
   {{< tab "Cher" >}}
@@ -714,8 +733,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Cher
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 50
 
   {{< /tab >}}
   {{< tab "Ed Sheeran" >}}
@@ -755,9 +773,8 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Ed Sheeran
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
-
+  Number of songs on 'Hot-100': 48
+ 
   {{< /tab >}}
   {{< tab "Elton John" >}}
   ![](/images/elton_john.png)
@@ -796,9 +813,8 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Elton John
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
-
+  Number of songs on 'Hot-100': 64
+ 
   {{< /tab >}}
   {{< tab "Frank Sinatra" >}}
   ![](/images/frank_sinatra.png)
@@ -837,8 +853,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Frank Sinatra
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 39
 
   {{< /tab >}}
   {{< tab "Justin Bieber" >}}
@@ -878,9 +893,8 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Justin Bieber
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
-
+  Number of songs on 'Hot-100': 97
+ 
   {{< /tab >}}
   {{< tab "Katy Perry" >}}
   ![](/images/katy_perry.png)
@@ -919,8 +933,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Katy Perry
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 34
 
   {{< /tab >}}
   {{< tab "Madonna" >}}
@@ -960,8 +973,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Madonna
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 53
 
   {{< /tab >}}
   {{< tab "Michael Jackson" >}}
@@ -1001,8 +1013,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Michael Jackson
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100':  47
 
   {{< /tab >}}
   {{< tab "Miley Cyrus" >}}
@@ -1042,8 +1053,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Miley Cyrus
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100':  33
 
   {{< /tab >}}
   {{< tab "Taylor Swift" >}}
@@ -1083,9 +1093,8 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Taylor Swift
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
-
+  Number of songs on 'Hot-100': 161
+  
   {{< /tab >}}
   {{< /tabs >}}
 {{< /tab >}}
@@ -1129,9 +1138,8 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Aretha Franklin
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
-
+  Number of songs on 'Hot-100': 68
+ 
   {{< /tab >}}
   {{< tab "Chris Brown" >}}
   ![](/images/chris_brown.png)
@@ -1170,8 +1178,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Chris Brown
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 102
 
   {{< /tab >}}
   {{< tab "James Brown" >}}
@@ -1211,9 +1218,8 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### James Brown
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
-
+  Number of songs on 'Hot-100': 69
+ 
   {{< /tab >}}
   {{< tab "Marvin Gaye" >}}
   ![](/images/marvin_gaye.png)
@@ -1252,9 +1258,8 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Marvin Gaye
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
-
+  Number of songs on 'Hot-100': 52
+ 
   {{< /tab >}}
   {{< tab "Prince" >}}
   ![](/images/prince.png)
@@ -1293,8 +1298,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Prince
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 27
 
   {{< /tab >}}
   {{< tab "Stevie Wonder" >}}
@@ -1334,8 +1338,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Stevie Wonder
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 65
 
   {{< /tab >}}
   {{< tab "The Weeknd" >}}
@@ -1375,9 +1378,8 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### The Weeknd
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
-
+  Number of songs on 'Hot-100': 94
+ 
   {{< /tab >}}
   {{< /tabs >}}
 {{< /tab >}}
@@ -1421,8 +1423,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### DJ Khaled
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 43
 
   {{< /tab >}}
   {{< tab "Drake" >}}
@@ -1462,8 +1463,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Inner Tab 1
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 253
 
   {{< /tab >}}
   {{< tab "Eminem" >}}
@@ -1503,8 +1503,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Eminem
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 89
 
   {{< /tab >}}
   {{< tab "Future" >}}
@@ -1544,8 +1543,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Future
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 126
 
   {{< /tab >}}
   {{< tab "J. Cole" >}}
@@ -1585,9 +1583,8 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### J. Cole
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
-
+  Number of songs on 'Hot-100': 51
+ 
   {{< /tab >}}
   {{< tab "Jay-Z" >}}
   ![](/images/jay-z.png)
@@ -1626,8 +1623,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Jay-z
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 95
 
   {{< /tab >}}
   {{< tab "Juice Wrld" >}}
@@ -1667,8 +1663,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Juice Wrld
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 70
 
   {{< /tab >}}
   {{< tab "Kanye West" >}}
@@ -1708,8 +1703,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Juice Wrld
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 132
 
   {{< /tab >}}
   {{< tab "Lil Baby" >}}
@@ -1749,8 +1743,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Lil Baby
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 97
 
   {{< /tab >}}
   {{< tab "Lil Durk" >}}
@@ -1790,8 +1783,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Lil Durk
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 71
 
   {{< /tab >}}
   {{< tab "Lil Uzi Vert" >}}
@@ -1831,8 +1823,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Lil Uzi Vert
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 80
 
   {{< /tab >}}
   {{< tab "Lil Wayne" >}}
@@ -1872,8 +1863,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Lil Wayne
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 169
 
   {{< /tab >}}
   {{< tab "Nicki Minaj" >}}
@@ -1913,8 +1903,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Nicki Minaj
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 112
 
   {{< /tab >}}
   {{< tab "Snoop Dogg" >}}
@@ -1954,8 +1943,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Snoop Dogg
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 50
 
   {{< /tab >}}
   {{< tab "Travis Scott" >}}
@@ -1995,8 +1983,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Travis Scott
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 76
 
   {{< /tab >}}
   {{< tab "Young Thug" >}}
@@ -2036,8 +2023,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Young Thug
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 70
 
   {{< /tab >}}
   {{< tab "Youngboy Never Broke Again" >}}
@@ -2077,8 +2063,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Youngboy Never Broke Again
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 79
 
   {{< /tab >}}
   {{< /tabs >}}
@@ -2123,8 +2108,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Elvis Presley
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 89
 
   {{< /tab >}}
   {{< tab "Queen" >}}
@@ -2164,8 +2148,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### Queen
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 22
 
   {{< /tab >}}
   {{< tab "The Beatles" >}}
@@ -2205,8 +2188,7 @@ Note: artist clouds may not be indicative of the average word usage by an artist
     </div>
   </div>
 
-  ### The Beatles
-  This is an inner tab with a very long text, this text needs to be longer, still longer, still longer, still longer
+  Number of songs on 'Hot-100': 65
 
   {{< /tab >}}
   {{< /tabs >}}
