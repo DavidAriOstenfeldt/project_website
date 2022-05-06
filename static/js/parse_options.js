@@ -14,7 +14,6 @@ function change_genre(d, n) {
     d1 = d;
     controls = {};
     controls['file_path'] = d1 + d2 + 'network.json';
-
     d3.json(d1 + d2 + 'config.json', new_controls => {
         controls = {...controls, ...new_controls}
         vis(controls);
