@@ -52,6 +52,8 @@ In the network below, we see the partitioning that the Louvain method managed to
 
 When looking at the network, we see some of the same tendencies as for the genre partitioning; many of the rap-artists like Drake, Lil Wayne and Nicki Minaj are still grouped in the most notable purple community - the same is the case for country artists like Tim McGraw and Kenny Chesney in the green community in the bottom left. We also see new communities where pop, rap and R&B artists are mixed. Examples of these are the light blue nodes where, e.g. Beyoncé, Rihanna, Jay-Z and Kanye are grouped, while the dark green community consists of, e.g. Taylor Swift, Eminem, Ed Sheeran, 50 Cent and Snoop Dogg.
 
+ > Note: The figure can be seen in higher quality with nodes that can be hovered over further down the page.
+
 
 # NOTE: Mangler det fulde netværk med Louvain communities her
 
