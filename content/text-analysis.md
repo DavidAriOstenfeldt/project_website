@@ -294,6 +294,7 @@ To look at the lyrics used through the years, we split our corpus by release yea
 </div>
 
 
+
 {{< tabs >}}
 {{< tab "1960" >}}
 [The 1960s](https://www.wikiwand.com/en/1960s_in_music) were quite revolutionary for music. Rock was becoming more evolved, and artists were beginning to release more albums than singles. 
@@ -472,16 +473,17 @@ We investigated some select words from these and made a dispersion plot to see h
 
 Let's go through some of the words:  
 `Swag`: The popularity of swag happened in the 00s and ended around the 10s. Few people still use it today, but the amount has declined steeply.  
-`Shawty`: A popular term for a young woman. Prevalent in rap and hip-hop music.  
-`Boogie` and `funky`: Boogie was a popular genre of music at the end of the disco era of the 70s.  
-`Darling` and `bitch`: Two words often used to describe women, but with very different meanings. It is interesting to see how their popularity is almost the opposite, with darling being phased out as bitch is being phased in.  
-`Drug`: Singing about drugs is a staple in rap music, and it's not surprising to see its popularity increase through the 90s.  
+`Shawty`: A popular term for a young woman. Prevalent in rap, hip-hop and r&b music.  
+`Boogie` and `funky`: Boogie was a popular genre of music at the end of the disco era of the 70s. On the dispersion plot it appears as if funk and boogie had a short revival in the 90's as well.  
+`Darling` and `bitch`: Two words often used to describe women, but with very different meanings. It is interesting to see how their popularity is almost the opposite, with darling being phased out as bitch is being phased in. In a sense they display the transition from old-school pop and soul to modern pop and rab.  
+`Drug`: Singing about drugs is a staple in rap music, and it is not surprising to see its popularity increase through the 90s.  
 `Skrrt`: A popular ad-lib used in most rap/trap songs.  
-`Nigga`: Often used in rap music, which saw a steep increase in popularity from its inception in the 90s, and has become a staple in most rap music.
+`Nigga`: Often used in rap music, which saw a steep increase in popularity from its inception in the 90s, which is denoted as 'the golden age of rap' and has become a staple in most rap music.
+
 
 
 # Inspecting individual artists
-The top 41 artists by the number of songs on the Billboard 'Hot-100' list are split over four genres in the tabs below. Each artist has an associated word cloud, created from their TF-IDF scores and a similarity score that indicates which other artists are most similar to the given artist, based on the lyrics in our corpus. The TF-IDF scores were calculated using all artists. Finally, the average sentiment of the artist is presented with a comparison of all artists and top artists.
+41 highly influential artists by the number of songs on the Billboard 'Hot-100' chart are split over four genres in the tabs below. Each artist has an associated word cloud, created from their TF-IDF scores and a similarity score that indicates which other artists are most similar to the given artist, based on the lyrics in our corpus. The TF-IDF scores were calculated using all artists. Finally, the average sentiment of the artist is presented with a comparison of all artists and top artists.
 
 One funny aspect of the word clouds is that most artists have their own name as one of the most significant words. This could be because they use tags in their songs, like DJ Khaled's iconic "It's DJ Khaled". Another explanation could be that when artists collaborate on a song, they often mention each other by name. Since we attribute the entire song to the artist and not just the part they wrote/sang, these lyrics will also be part of their TF-IDF scores.
 
