@@ -11,7 +11,7 @@ For the text part, we have chosen the following genres to inspect:
 > pop, rock, rap, folk, blues, country, uk, funk and r&b
 
 These genres were chosen as they have been popular through time, cover a large portion of the world of music and show exciting differences and trends worth looking into.
-Pop, in particular, is an interesting genre. It is defined as a genre of popular music (they are different, although often used interchangeably) that started developing in the mid-1950s. Back then, pop music encompassed rock and roll, and they were essentially synonymous until the 70s, at which point pop changed to become more accessible to wider audiences (source: [wikipedia](https://www.wikiwand.com/en/Pop_music)).
+Pop, in particular, is an interesting genre. It is defined as a genre of popular music (they are different, although often used interchangeably) that started developing in the mid-1950s. Back then, pop music encompassed rock and roll, and they were essentially synonymous until the '70s, at which point pop changed to become more accessible to wider audiences (source: [wikipedia](https://www.wikiwand.com/en/Pop_music)).
 
 Let's look at what genres we listened to throughout the last six decades. The plot below shows the ratio between genres as a % of the total amount of genres. Note that not all genres are included, but only a pre-selected list of genres.
 
@@ -157,7 +157,7 @@ Some interesting trends we can see:
 {{< /tab >}}
 
 {{< tab "Rock" >}}
-[Rock](https://www.wikiwand.com/en/Rock_music) originated in the 50s and 60s and took the world by storm, and it spawned a myriad of sub-genres. Rock seems to be a mix of pop, country, and some other genres, as it contains much of the same words. The many variations of 'break' implies that hardships in life is a common topic.
+[Rock](https://www.wikiwand.com/en/Rock_music) originated in the '50s and '60s and took the world by storm, and it spawned a myriad of sub-genres. Rock seems to be a mix of pop, country, and some other genres, as it contains much of the same words. The many variations of 'break' implies that hardships in life is a common topic.
 <div class="row">
   <div class="column_table">
 
@@ -259,7 +259,7 @@ We now take a look at the music through the decades. We start by looking at the 
 
 ![](/images/decade_sentiment.png)
 
-We see much the same trend as with decades - higher sentiment values in the early decades than in the later. This is probably explained by the rise of rap and hip hop from the 90s and onwards. Let's also try to look at the sentiment more closely:
+We see much the same trend as with decades - higher sentiment values in the early decades than in the later. This is probably explained by the rise of rap and hip hop from the '90s and onwards. Let's also try to look at the sentiment more closely:
 
 ![](/images/rolling_sentiment.png)
 
@@ -293,7 +293,7 @@ To look at the lyrics used through the years, we split our corpus by release yea
     </div>
 </div>
 
-The words which according to the TF-IDF score define each decade are vastly different when dividing the decades according to the two rows in the above figure. The 60s, 70s and 80s all contain words which are completely normal words which everyone might use in their everyday life. Some perhaps more expressive and expressive than ordinary speech, but still real words. Some quite romantic words like _tenderly_ and _gentleness_ are also used. The wordclouds of the 10s and 20s are the polar opposite to this. One has to search the clouds quite extensively to find words which appear in the dictionary. All the important words are ad-libs used for rhythm in rap songs and slang. The 90s and 00s mark the transition between the two extremes. It is evident that as rap emerged, calling out artist names became more common. Further description of the wordclouds can be seen below.
+The words which according to the TF-IDF score define each decade are vastly different when dividing the decades according to the two rows in the above figure. The '60s, '70s and '80s all contain words which are completely normal words which everyone might use in their everyday life. Some perhaps more expressive and expressive than ordinary speech, but still real words. Some quite romantic words like _tenderly_ and _gentleness_ are also used. The wordclouds of the '10s and '20s are the polar opposite to this. One has to search the clouds quite extensively to find words which appear in the dictionary. All the important words are ad-libs used for rhythm in rap songs and slang. The '90s and '00s mark the transition between the two extremes. It is evident that as rap emerged, calling out artist names became more common. Further description of the wordclouds can be seen below.
 
 {{< tabs >}}
 {{< tab "1960" >}}
@@ -347,7 +347,7 @@ Looking at the defining words of the decade, a lot of people seemed to enjoy par
 {{< /tab >}}
 
 {{< tab "1980" >}}
-[The 1980s](https://www.wikiwand.com/en/1980s_in_music) had the rise of electronic dance music and modern rock. Most of the important words from this decade appear to be quite normal at a glance. Apparently, musicians really liked jellybeans in the 80s!
+[The 1980s](https://www.wikiwand.com/en/1980s_in_music) had the rise of electronic dance music and modern rock. Most of the important words from this decade appear to be quite normal at a glance. Apparently, musicians really liked jellybeans in the '80s!
 <div class="row">
   <div class="column_table">
 
@@ -419,7 +419,7 @@ Looking at the defining words of the decade, a lot of people seemed to enjoy par
 {{< /tab >}}
 
 {{< tab "2010" >}}
-[The 2010s](https://www.wikiwand.com/en/2010s_in_music) had increased popularity in a hushed style of vocal delivery (dubbed _whisperpop_) as well as a steep rise in traditional instruments: Ukuleles, banjos, mandolins and bongos from indie-rock bands. Most notably, however, is probably the growth of hip hop, dominating most charts. Ad-libs played a massive role in the 10s, and we saw the introduction of social media sites such as _Instagram_ to the vocabulary of the artists.
+[The 2010s](https://www.wikiwand.com/en/2010s_in_music) had increased popularity in a hushed style of vocal delivery (dubbed _whisperpop_) as well as a steep rise in traditional instruments: Ukuleles, banjos, mandolins and bongos from indie-rock bands. Most notably, however, is probably the growth of hip hop, dominating most charts. Ad-libs played a massive role in the '10s, and we saw the introduction of social media sites such as _Instagram_ to the vocabulary of the artists.
 <div class="row">
   <div class="column_table">
 
@@ -472,13 +472,13 @@ We investigated some select words from these and made a dispersion plot to see h
 ![](/images/dispersion.png)
 
 Let's go through some of the words:  
-`Swag`: The popularity of swag happened in the 00s and ended around the 10s. Few people still use it today, but the amount has declined steeply.  
+`Swag`: The popularity of swag happened in the '00s and ended around the '10s. Few people still use it today, but the amount has declined steeply.  
 `Shawty`: A popular term for a young woman. Prevalent in rap, hip-hop and r&b music.  
-`Boogie` and `funky`: Boogie was a popular genre of music at the end of the disco era of the 70s. On the dispersion plot it appears as if funk and boogie had a short revival in the 90's as well.  
+`Boogie` and `funky`: Boogie was a popular genre of music at the end of the disco era of the '70s. On the dispersion plot it appears as if funk and boogie had a short revival in the 90's as well.  
 `Darling` and `bitch`: Two words often used to describe women, but with very different meanings. It is interesting to see how their popularity is almost the opposite, with darling being phased out as bitch is being phased in. In a sense they display the transition from old-school pop and soul to modern pop and rap.  
-`Drug`: Singing about drugs is a staple in rap music, and it is not surprising to see its popularity increase through the 90s.  
+`Drug`: Singing about drugs is a staple in rap music, and it is not surprising to see its popularity increase through the '90s.  
 `Skrrt`: A popular ad-lib used in most rap/trap songs.  
-`Nigga`: Often used in rap music, which saw a steep increase in popularity from its inception in the 90s, which is denoted as 'the golden age of rap' and has become a staple in most rap music.
+`Nigga`: Often used in rap music, which saw a steep increase in popularity from its inception in the '90s, which is denoted as 'the golden age of rap' and has become a staple in most rap music.
 
 
 
