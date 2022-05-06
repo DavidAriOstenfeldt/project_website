@@ -6,7 +6,7 @@ next: text-analysis
 
 This section will cover the collaboration between artists aspect of the project. For this we will make use of different network theories and constructions in order to analyse the properties between artists. Specifically, we will go through how the full network of all artists were created and investigate it using various networks science analysis strategies. In addition to the network of all artists, we've also created smaller networks for specific genres. All this, and more, can be seen at the bottom of the page.
 
-# NOTE: MÅSKE DEN FULDE GRAF HER IGEN? DUNNO THO
+# NOTE: Mangler det fulde netværk her
 
 # Creating the network
 The network is created by making each artist into a node and link up two artists if they have collaborated on a song. The network is created as an [_undirected network_](https://www.wikiwand.com/en/Undirected_graph) that, in comparison to a directed network, is a network where the links don't have an orientation, such that _information_ flows both ways. The size of a node is determined by the number of times they have appeared on Billboard's the hot 100 chart and the colour is based upon the most common genre for that artist. The size of each link is determined by the number of times the two artists have collaborated.
@@ -39,16 +39,22 @@ A common feature for real world networks are hubs - meaning that few nodes in th
 
 ![](/images/distribution_of_degrees_90.png)
 
-## Community detection, comparison with random networks
+## Community detection
 In this section, we will explore the communities of the network. The most natural partitioning of the artists in the network is, as mention previously, by grouping them by their genre. Though this might not be the most optimal partitioning based on what's known as [_modularity_](https://en.wikipedia.org/wiki/Modularity_(networks)). Within network science, modularity is a measure of the strength of the partitioning of the nodes into _modules_ (or communities). This means that a network with high modularity has large connectivity within the communities, while each community is sparsely connected. The modularity is a value between -0.5, if the network consists of non-modular clustering, and 1 if the network has fully modular clustering. The modularity can thus be used to detect communities within the network by trying to optimise the modularity. This is exactly what the [_Louvain method_](https://en.wikipedia.org/wiki/Louvain_method) tries to do. By grouping artists into communities that optimise the modularity, interesting structures can be found, which the genre partitioning might not be able to illuminate. 
 
 # NOTE: Beskrivelsen herover er måske for teknisk - mangler andre øjne
 
-In the network below, we see the partitioning that the Louvain method managed to find. The modularity of this 
+In the network below, we see the partitioning that the Louvain method managed to find. The modularity of this partitioning for the network is 0.74, whereas the modularity using the genre partitioning was 0.33. This means that the Louvain method achieved a modularity more than twice as large as that of the genre partitioning. 
 
+When looking at the network, we see some of the same tendencies as for the genre partitioning; many of the rap-artists like Drake, Lil Wayne and Nicki Minaj are still grouped together in the most notable purple community - the same is the case for country-artists like Tim McGraw and Kenny Chesney in the green community in the bottom left. Though we also see new communities where pop, rap and R&B artists are mixed together. Examples of these are the light blue nodes where, e.g. Beyoncé, Rihanna, Jay-Z and Kanye are grouped together, while the dark green community consists of, e.g. Taylor Swift, Eminem, Ed Sheeran, 50 Cent and Snoop Dogg.
 
+# NOTE: Mangler det fulde netværk med Louvain communities her
+
+## Comparison with random networks
+# NOTE: Giver det mening at have sammenligning med random networks her på hjemmesiden?
 
 ## Betweenness centrality
+As mentioned previously, the size of the nodes in the networks are determined based on the number of songs they have on Bill
 
 
 # Argumentation for why we decided to also look at networks without small singletons, as well as why we picked the genres we did
