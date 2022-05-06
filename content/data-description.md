@@ -5,6 +5,8 @@ next: network-analysis
 ---
 
 # Gathering the data
+An impossibly large number of songs have been composed and released throughout the last century. Today songs are being released faster than one person can enjoy them due to the numerous platforms for music streaming such as [Spotify](https://www.spotify.com). In an attempt to gather music-related data which is both diverse in the number of artists, while focusing on the ones known by most, and also represents as many popular genres as possible, we turned to the [Billboard 'The Hot 100' list](https://www.billboard.com/charts/hot-100/). Each week a new chart containing the 100 most popular songs in the world (heavily tailored to the western world). Looking back all the way to Jan 1. 1960 until today the there is a roughly a potential 52$\cdot$100$\cdot$62 = 332,400 possible songs to find. Of course, most of the songs which hit the chart will stay there for more than a single week, so in reality there is a lot less. 
+
 
 First, we got the songs we wanted to investigate from the [Billboard 'The Hot 100' list](https://www.billboard.com/charts/hot-100/). Here, we collected song titles and artist names of all songs that appeared on the list starting from the first week of 1960, all the way to today. This was done with the [billboard.py API](https://github.com/guoguo12/billboard-charts). We made sure to only collect the songs if it was either the first time they appeared on the chart, or if we hadn't already added them to the list. This way we collected a total of 29,128 unique songs, out of the total possible 322,400 songs (5,200 a year * 62 years), which means 293,272 songs had multiple appearances on the Billboard 'The Hot 100' list.
 
