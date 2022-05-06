@@ -474,7 +474,7 @@ We investigated some select words from these and made a dispersion plot to see h
 Let's go through some of the words:  
 `Swag`: The popularity of swag happened in the '00s and ended around the '10s. Few people still use it today, but the amount has declined steeply.  
 `Shawty`: A popular term for a young woman. Prevalent in rap, hip-hop and r&b music.  
-`Boogie` and `funky`: Boogie was a popular genre of music at the end of the disco era of the '70s. On the dispersion plot it appears as if funk and boogie had a short revival in the 90's as well.  
+`Boogie` and `funky`: Boogie was a popular genre of music at the end of the disco era of the '70s. On the dispersion plot it appears as if funk and boogie had a short revival in the '90s as well.  
 `Darling` and `bitch`: Two words often used to describe women, but with very different meanings. It is interesting to see how their popularity is almost the opposite, with darling being phased out as bitch is being phased in. In a sense they display the transition from old-school pop and soul to modern pop and rap.  
 `Drug`: Singing about drugs is a staple in rap music, and it is not surprising to see its popularity increase through the '90s.  
 `Skrrt`: A popular ad-lib used in most rap/trap songs.  
