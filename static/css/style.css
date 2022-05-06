@@ -105,6 +105,13 @@
   padding: 5px;
 }
 
+.column h1 {
+	display: inline-block;
+	 text-align: center;
+  flex: 50%;
+  padding: 5px;
+}
+
 .column_img {
 	flex: fit-content;
 	padding: 10px 0px;
@@ -114,23 +121,23 @@
 	max-width: 250px;
 }
 
-table {
+.column table, .column_table table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 75%;
   border: 1px solid #ddd;
 }
 
-th {
+.column th, .column_table th {
 	background-color: rgb(229 231 235);
 }
 
-th, td {
+.column th, td, .column_table th, td {
   text-align: left;
   padding: 16px;
 }
 
-tr:nth-child(odd) {
+.column tr:nth-child(odd), .column_table tr:nth-child(odd) {
   background-color: #f2f2f2;
 }
 
