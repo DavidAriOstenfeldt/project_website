@@ -133,7 +133,7 @@ Some interesting trends we can see:
 
 
 {{< tab "Country" >}}
-[Country](https://www.wikiwand.com/en/Country_music) is a genre of music often associated with western cowboy music, living on a farm and driving tractors. The words deemed important reflect this, with _hillbilly_ and _tailgate_ ranking highest, followed by a bunch of other terms often associated with farming.
+[Country](https://www.wikiwand.com/en/Country_music) is a genre of music often associated with western cowboy music, living on a farm and driving tractors. The words deemed important reflect this, with _hillbilly_ and _tailgate_ ranking highest, followed by a bunch of other terms often associated with farming. It is definitely safe to say that the country genre lives up to the stereotype.
 <div class="row">
   <div class="column_table">
 
@@ -157,7 +157,7 @@ Some interesting trends we can see:
 {{< /tab >}}
 
 {{< tab "Rock" >}}
-[Rock](https://www.wikiwand.com/en/Rock_music) originated in the 50s and 60s and took the world by storm, and it spawned a myriad of sub-genres. Rock seems to be a mix of pop, country, and some other genres, as it contains much of the same words.
+[Rock](https://www.wikiwand.com/en/Rock_music) originated in the 50s and 60s and took the world by storm, and it spawned a myriad of sub-genres. Rock seems to be a mix of pop, country, and some other genres, as it contains much of the same words. The many variations of 'break' implies that hardships in life is a common topic.
 <div class="row">
   <div class="column_table">
 
@@ -229,7 +229,7 @@ Some interesting trends we can see:
 {{< /tab >}}
 
 {{< tab "UK" >}}
-[UK](https://www.wikiwand.com/en/Grime_(music_genre)), or "grime" as it is often called, originated in the 2000s. British communities primarily develop it, and as expected, the most characteristic words for the genre are British slang and ad-libs.
+[UK](https://www.wikiwand.com/en/Grime_(music_genre)), or "grime" as it is often called, originated in the 2000s. British communities primarily develop it, and as expected, the most characteristic words for the genre are British slang and ad-libs. Specifically, _cah_ means because, _blud_ means friend and _paigon_ means opponent. 
 <div class="row">
   <div class="column_table">
 
@@ -293,7 +293,7 @@ To look at the lyrics used through the years, we split our corpus by release yea
     </div>
 </div>
 
-
+The words which according to the TF-IDF score define each decade are vastly different when dividing the decades according to the two rows in the above figure. The 60s, 70s and 80s all contain words which are completely normal words which everyone might use in their everyday life. Some perhaps more expressive and expressive than ordinary speech, but still real words. Some quite romantic words like _tenderly_ and _gentleness_ are also used. The wordclouds of the 10s and 20s are the polar opposite to this. One has to search the clouds quite extensively to find words which appear in the dictionary. All the important words are ad-libs used for rhythm in rap songs and slang. The 90s and 00s mark the transition between the two extremes. It is evident that as rap emerged, calling out artist names became more common. Further description of the wordclouds can be seen below.
 
 {{< tabs >}}
 {{< tab "1960" >}}
@@ -395,7 +395,7 @@ Looking at the defining words of the decade, a lot of people seemed to enjoy par
 {{< /tab >}}
 
 {{< tab "2000" >}}
-[The 2000s](https://www.wikiwand.com/en/2000s_in_music) were indeed a mixed year. All genres saw a healthy consumption, but particularly teen pop and rap got increased participation. This is the decade where slang truly started taking over the lyrics of the music we listen to. Popular words such as [_luda_ and _cris_](https://www.wikiwand.com/en/Ludacris) dominate, as well as _swag_, _shorty_ and its variation _shawty_.
+[The 2000s](https://www.wikiwand.com/en/2000s_in_music) were indeed a mixed year. All genres saw a healthy consumption, but particularly teen pop and rap got increased participation. This is the decade where slang truly started taking over the lyrics of the music we listen to with words such as _swag_, _shorty_ and its variation _shawty_. Also some artists and producers names appear. For example, [_luda_ and _cris_](https://www.wikiwand.com/en/Ludacris) and [_darkchild_](https://www.wikiwand.com/en/darkchild).
 <div class="row">
   <div class="column_table">
 
@@ -419,7 +419,7 @@ Looking at the defining words of the decade, a lot of people seemed to enjoy par
 {{< /tab >}}
 
 {{< tab "2010" >}}
-[The 2010s](https://www.wikiwand.com/en/2010s_in_music) had increased popularity in a hushed style of vocal delivery (dubbed _whisperpop_) as well as a steep rise in traditional instruments: Ukuleles, banjos, mandolins and bongos from indie-rock bands. Most notably, however, is probably the growth of hip hop, dominating most charts. Ad-libs played a massive role in the 10s, and we saw the introduction of _Instagram_ to the vocabulary of the artists.
+[The 2010s](https://www.wikiwand.com/en/2010s_in_music) had increased popularity in a hushed style of vocal delivery (dubbed _whisperpop_) as well as a steep rise in traditional instruments: Ukuleles, banjos, mandolins and bongos from indie-rock bands. Most notably, however, is probably the growth of hip hop, dominating most charts. Ad-libs played a massive role in the 10s, and we saw the introduction of social media sites such as _Instagram_ to the vocabulary of the artists.
 <div class="row">
   <div class="column_table">
 
@@ -443,7 +443,7 @@ Looking at the defining words of the decade, a lot of people seemed to enjoy par
 {{< /tab >}}
 
 {{< tab "2020" >}}
-Although [the 2020s](https://www.wikiwand.com/en/2020s_in_music) are still young, we can see a clear trend in ad-libbing. The words getting the largest TF-IDF scores are ad-libs, and they have become a huge part of our daily listening.
+Although [the 2020s](https://www.wikiwand.com/en/2020s_in_music) are still young, we can see a clear trend in ad-libbing. The words getting the largest TF-IDF scores are ad-libs, and they have become a huge part of our daily listening. Through the lens of a grandparent the words understandably may seem like gibberish.
 <div class="row">
   <div class="column_table">
 
