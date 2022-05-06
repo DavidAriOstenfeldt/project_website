@@ -18,7 +18,7 @@ Let's look at what genres we listened to throughout the last six decades. The pl
 
 ![](/images/genre_per_decade.png)
 
-We can clearly see that over 50% of all music on the Billboard 'Hot-100' list was pop, with rock starting out on second and R&B and blues coming in on third and fourth. In 1990 R&B would take over as second, but more notably, rap would become the third most represented genre on the list, rising from almost 0 the decade before. The popularity of rap would increase until it, in 2010, overtook pop music as the most represented genre on the 'Hot-100' list. In 2020, we were also seeing trap music overtake pop.
+We can clearly see that over 50% of all music on the Billboard 'Hot-100' chart was pop, with rock starting out on second and R&B and blues coming in on third and fourth. In 1990 R&B would take over as second, but more notably, rap would become the third most represented genre on the list, rising from almost 0 the decade before. The popularity of rap would increase until it, in 2010, overtook pop music as the most represented genre on the 'Hot-100' chart. In 2020, we also see trap music overtake pop.
 
 Now, let's inspect the happiness of the different genres:
 
@@ -263,7 +263,7 @@ We see much the same trend as with decades - higher sentiment values in the earl
 
 ![](/images/rolling_sentiment.png)
 
-We can see much the same trend here as in the above plot. However, it is clear that there are spikes in sentiment, going both up and down. However, it is important to note that almost all songs are still above the average sentiment from labMT, which could indicate that generally, we just prefer to listen to happier music since all the songs we are investigating are only taken from the 'Hot-100' list.
+We can see much the same trend here as in the above plot. However, it is clear that there are spikes in sentiment, going both up and down. However, it is important to note that almost all songs are still above the average sentiment from labMT, which could indicate that generally, we just prefer to listen to happier music since all the songs we are investigating are only taken from the 'Hot-100' chart.
 
 To look at the lyrics used through the years, we split our corpus by release year instead of by genre. Once again, we compute the TF-IDF for each decade, and that leaves us with the following wordclouds:
 
@@ -475,7 +475,7 @@ Let's go through some of the words:
 `Swag`: The popularity of swag happened in the 00s and ended around the 10s. Few people still use it today, but the amount has declined steeply.  
 `Shawty`: A popular term for a young woman. Prevalent in rap, hip-hop and r&b music.  
 `Boogie` and `funky`: Boogie was a popular genre of music at the end of the disco era of the 70s. On the dispersion plot it appears as if funk and boogie had a short revival in the 90's as well.  
-`Darling` and `bitch`: Two words often used to describe women, but with very different meanings. It is interesting to see how their popularity is almost the opposite, with darling being phased out as bitch is being phased in. In a sense they display the transition from old-school pop and soul to modern pop and rab.  
+`Darling` and `bitch`: Two words often used to describe women, but with very different meanings. It is interesting to see how their popularity is almost the opposite, with darling being phased out as bitch is being phased in. In a sense they display the transition from old-school pop and soul to modern pop and rap.  
 `Drug`: Singing about drugs is a staple in rap music, and it is not surprising to see its popularity increase through the 90s.  
 `Skrrt`: A popular ad-lib used in most rap/trap songs.  
 `Nigga`: Often used in rap music, which saw a steep increase in popularity from its inception in the 90s, which is denoted as 'the golden age of rap' and has become a staple in most rap music.
@@ -497,7 +497,7 @@ Her word cloud reflects her style of humming and vocalizing, with top words bein
 The top similar artists are Justin Bieber, Chris Brown, The Weeknd, Drake and Rihanna. All of these have heavy pop and R&B connections, which is what Ariana Grande excels at.
 
 #### Drake
-[Drake](https://www.wikiwand.com/en/Drake_(musician)) is one of the most famous musicians living today. He has had the highest amount of songs on the Billboard 'Hot-100' list, coming in at 253 songs, almost 100 more than the runner-up. He is most well known for his rap songs. He debuted with his mixtape _Room for Improvement_ in 2006. in 2018 he released _Scorpion_, which had three Billboard 'Hot-100' number one singles: _God's plan_, _Nice for What_ and _In My Feelings_.
+[Drake](https://www.wikiwand.com/en/Drake_(musician)) is one of the most famous musicians living today. He has had the highest amount of songs on the Billboard 'Hot-100' list, coming in at 253 songs, almost 100 more than the runner-up. He is most well known for his rap songs. He debuted with his mixtape _Room for Improvement_ in 2006. In 2018, he released the hit album _Scorpion_, which had three Billboard 'Hot-100' number one singles: _God's plan_, _Nice for What_ and _In My Feelings_.
 
 His word cloud appears to have pretty common words from the rap genre (according to the rap word cloud from earlier). The term _Drizzy_ appears, which is a nickname that he often uses to [refer to himself with](https://twitter.com/drake).
 
