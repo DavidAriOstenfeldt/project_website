@@ -18,7 +18,7 @@ Let's look at what genres we listened to throughout the last six decades. The pl
 
 ![](/images/genre_per_decade.png)
 
-We can clearly see that over 50% of all music on the Billboard 'Hot-100' list was pop, with rock starting out on second and R&B and blues coming in on third and fourth. In 1990 R&B would take over as second, but more notably, rap would become the third most represented genre on the list, rising from almost 0 the decade before. The popularity of rap would increase until it, in 2010, overtook pop music as the most represented genre on the 'Hot-100' list. In 2020, we were also seeing trap music overtake pop.
+We can clearly see that over 50% of all music on the Billboard 'Hot-100' chart was pop, with rock starting out on second and R&B and blues coming in on third and fourth. In 1990 R&B would take over as second, but more notably, rap would become the third most represented genre on the list, rising from almost 0 the decade before. The popularity of rap would increase until it, in 2010, overtook pop music as the most represented genre on the 'Hot-100' chart. In 2020, we also see trap music overtake pop.
 
 Now, let's inspect the happiness of the different genres:
 
@@ -133,7 +133,7 @@ Some interesting trends we can see:
 
 
 {{< tab "Country" >}}
-[Country](https://www.wikiwand.com/en/Country_music) is a genre of music often associated with western cowboy music, living on a farm and driving tractors. The words deemed important reflect this, with _hillbilly_ and _tailgate_ ranking highest, followed by a bunch of other terms often associated with farming.
+[Country](https://www.wikiwand.com/en/Country_music) is a genre of music often associated with western cowboy music, living on a farm and driving tractors. The words deemed important reflect this, with _hillbilly_ and _tailgate_ ranking highest, followed by a bunch of other terms often associated with farming. It is definitely safe to say that the country genre lives up to the stereotype.
 <div class="row">
   <div class="column_table">
 
@@ -157,7 +157,7 @@ Some interesting trends we can see:
 {{< /tab >}}
 
 {{< tab "Rock" >}}
-[Rock](https://www.wikiwand.com/en/Rock_music) originated in the 50s and 60s and took the world by storm, and it spawned a myriad of sub-genres. Rock seems to be a mix of pop, country, and some other genres, as it contains much of the same words.
+[Rock](https://www.wikiwand.com/en/Rock_music) originated in the 50s and 60s and took the world by storm, and it spawned a myriad of sub-genres. Rock seems to be a mix of pop, country, and some other genres, as it contains much of the same words. The many variations of 'break' implies that hardships in life is a common topic.
 <div class="row">
   <div class="column_table">
 
@@ -229,7 +229,7 @@ Some interesting trends we can see:
 {{< /tab >}}
 
 {{< tab "UK" >}}
-[UK](https://www.wikiwand.com/en/Grime_(music_genre)), or "grime" as it is often called, originated in the 2000s. British communities primarily develop it, and as expected, the most characteristic words for the genre are British slang and ad-libs.
+[UK](https://www.wikiwand.com/en/Grime_(music_genre)), or "grime" as it is often called, originated in the 2000s. British communities primarily develop it, and as expected, the most characteristic words for the genre are British slang and ad-libs. Specifically, _cah_ means because, _blud_ means friend and _paigon_ means opponent. 
 <div class="row">
   <div class="column_table">
 
@@ -263,7 +263,7 @@ We see much the same trend as with decades - higher sentiment values in the earl
 
 ![](/images/rolling_sentiment.png)
 
-We can see much the same trend here as in the above plot. However, it is clear that there are spikes in sentiment, going both up and down. However, it is important to note that almost all songs are still above the average sentiment from labMT, which could indicate that generally, we just prefer to listen to happier music since all the songs we are investigating are only taken from the 'Hot-100' list.
+We can see much the same trend here as in the above plot. However, it is clear that there are spikes in sentiment, going both up and down. However, it is important to note that almost all songs are still above the average sentiment from labMT, which could indicate that generally, we just prefer to listen to happier music since all the songs we are investigating are only taken from the 'Hot-100' chart.
 
 To look at the lyrics used through the years, we split our corpus by release year instead of by genre. Once again, we compute the TF-IDF for each decade, and that leaves us with the following wordclouds:
 
@@ -293,7 +293,7 @@ To look at the lyrics used through the years, we split our corpus by release yea
     </div>
 </div>
 
-
+The words which according to the TF-IDF score define each decade are vastly different when dividing the decades according to the two rows in the above figure. The 60s, 70s and 80s all contain words which are completely normal words which everyone might use in their everyday life. Some perhaps more expressive and expressive than ordinary speech, but still real words. Some quite romantic words like _tenderly_ and _gentleness_ are also used. The wordclouds of the 10s and 20s are the polar opposite to this. One has to search the clouds quite extensively to find words which appear in the dictionary. All the important words are ad-libs used for rhythm in rap songs and slang. The 90s and 00s mark the transition between the two extremes. It is evident that as rap emerged, calling out artist names became more common. Further description of the wordclouds can be seen below.
 
 {{< tabs >}}
 {{< tab "1960" >}}
@@ -395,7 +395,7 @@ Looking at the defining words of the decade, a lot of people seemed to enjoy par
 {{< /tab >}}
 
 {{< tab "2000" >}}
-[The 2000s](https://www.wikiwand.com/en/2000s_in_music) were indeed a mixed year. All genres saw a healthy consumption, but particularly teen pop and rap got increased participation. This is the decade where slang truly started taking over the lyrics of the music we listen to. Popular words such as [_luda_ and _cris_](https://www.wikiwand.com/en/Ludacris) dominate, as well as _swag_, _shorty_ and its variation _shawty_.
+[The 2000s](https://www.wikiwand.com/en/2000s_in_music) were indeed a mixed year. All genres saw a healthy consumption, but particularly teen pop and rap got increased participation. This is the decade where slang truly started taking over the lyrics of the music we listen to with words such as _swag_, _shorty_ and its variation _shawty_. Also some artists and producers names appear. For example, [_luda_ and _cris_](https://www.wikiwand.com/en/Ludacris) and [_darkchild_](https://www.wikiwand.com/en/darkchild).
 <div class="row">
   <div class="column_table">
 
@@ -419,7 +419,7 @@ Looking at the defining words of the decade, a lot of people seemed to enjoy par
 {{< /tab >}}
 
 {{< tab "2010" >}}
-[The 2010s](https://www.wikiwand.com/en/2010s_in_music) had increased popularity in a hushed style of vocal delivery (dubbed _whisperpop_) as well as a steep rise in traditional instruments: Ukuleles, banjos, mandolins and bongos from indie-rock bands. Most notably, however, is probably the growth of hip hop, dominating most charts. Ad-libs played a massive role in the 10s, and we saw the introduction of _Instagram_ to the vocabulary of the artists.
+[The 2010s](https://www.wikiwand.com/en/2010s_in_music) had increased popularity in a hushed style of vocal delivery (dubbed _whisperpop_) as well as a steep rise in traditional instruments: Ukuleles, banjos, mandolins and bongos from indie-rock bands. Most notably, however, is probably the growth of hip hop, dominating most charts. Ad-libs played a massive role in the 10s, and we saw the introduction of social media sites such as _Instagram_ to the vocabulary of the artists.
 <div class="row">
   <div class="column_table">
 
@@ -443,7 +443,7 @@ Looking at the defining words of the decade, a lot of people seemed to enjoy par
 {{< /tab >}}
 
 {{< tab "2020" >}}
-Although [the 2020s](https://www.wikiwand.com/en/2020s_in_music) are still young, we can see a clear trend in ad-libbing. The words getting the largest TF-IDF scores are ad-libs, and they have become a huge part of our daily listening.
+Although [the 2020s](https://www.wikiwand.com/en/2020s_in_music) are still young, we can see a clear trend in ad-libbing. The words getting the largest TF-IDF scores are ad-libs, and they have become a huge part of our daily listening. Through the lens of a grandparent the words understandably may seem like gibberish.
 <div class="row">
   <div class="column_table">
 
@@ -475,7 +475,7 @@ Let's go through some of the words:
 `Swag`: The popularity of swag happened in the 00s and ended around the 10s. Few people still use it today, but the amount has declined steeply.  
 `Shawty`: A popular term for a young woman. Prevalent in rap, hip-hop and r&b music.  
 `Boogie` and `funky`: Boogie was a popular genre of music at the end of the disco era of the 70s. On the dispersion plot it appears as if funk and boogie had a short revival in the 90's as well.  
-`Darling` and `bitch`: Two words often used to describe women, but with very different meanings. It is interesting to see how their popularity is almost the opposite, with darling being phased out as bitch is being phased in. In a sense they display the transition from old-school pop and soul to modern pop and rab.  
+`Darling` and `bitch`: Two words often used to describe women, but with very different meanings. It is interesting to see how their popularity is almost the opposite, with darling being phased out as bitch is being phased in. In a sense they display the transition from old-school pop and soul to modern pop and rap.  
 `Drug`: Singing about drugs is a staple in rap music, and it is not surprising to see its popularity increase through the 90s.  
 `Skrrt`: A popular ad-lib used in most rap/trap songs.  
 `Nigga`: Often used in rap music, which saw a steep increase in popularity from its inception in the 90s, which is denoted as 'the golden age of rap' and has become a staple in most rap music.
@@ -497,7 +497,7 @@ Her word cloud reflects her style of humming and vocalizing, with top words bein
 The top similar artists are Justin Bieber, Chris Brown, The Weeknd, Drake and Rihanna. All of these have heavy pop and R&B connections, which is what Ariana Grande excels at.
 
 #### Drake
-[Drake](https://www.wikiwand.com/en/Drake_(musician)) is one of the most famous musicians living today. He has had the highest amount of songs on the Billboard 'Hot-100' list, coming in at 253 songs, almost 100 more than the runner-up. He is most well known for his rap songs. He debuted with his mixtape _Room for Improvement_ in 2006. in 2018 he released _Scorpion_, which had three Billboard 'Hot-100' number one singles: _God's plan_, _Nice for What_ and _In My Feelings_.
+[Drake](https://www.wikiwand.com/en/Drake_(musician)) is one of the most famous musicians living today. He has had the highest amount of songs on the Billboard 'Hot-100' list, coming in at 253 songs, almost 100 more than the runner-up. He is most well known for his rap songs. He debuted with his mixtape _Room for Improvement_ in 2006. In 2018, he released the hit album _Scorpion_, which had three Billboard 'Hot-100' number one singles: _God's plan_, _Nice for What_ and _In My Feelings_.
 
 His word cloud appears to have pretty common words from the rap genre (according to the rap word cloud from earlier). The term _Drizzy_ appears, which is a nickname that he often uses to [refer to himself with](https://twitter.com/drake).
 

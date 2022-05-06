@@ -5,7 +5,7 @@ next: network-analysis
 ---
 
 # Gathering the data
-An impossibly large number of songs have been composed and released throughout the last century. Today songs are being released faster than one person can enjoy them due to the numerous platforms for music streaming, such as [Spotify](https://www.spotify.com). In an attempt to gather music-related data, which is both diverse in the number of artists while focusing on the ones known by most, and also represents as many popular genres as possible, we turned to the [Billboard 'The Hot 100' list](https://www.billboard.com/charts/hot-100/). Each week a new chart containing the 100 most popular songs globally (heavily tailored to the western world). Looking back all the way to Jan 1. 1960, until today, there is roughly a potential 52$\cdot$100$\cdot$62 = 332,400 possible songs to find. Of course, most of the songs that hit the chart will stay there for more than a single week, so there is a lot less in reality. In fact, a total of 29,128 unique songs hit the Hot 100 chart in the last 62 years.
+An impossibly large number of songs have been composed and released throughout the last century. Today songs are being released faster than one person can enjoy them due to the numerous platforms for music streaming, such as [Spotify](https://www.spotify.com). In an attempt to gather music-related data, which is both diverse in the number of artists while focusing on the ones known by most, and also represents as many popular genres as possible, we turned to the [Billboard 'The Hot 100' chart](https://www.billboard.com/charts/hot-100/). Each week a new chart containing the 100 most popular songs globally (heavily tailored to the western world). Looking back all the way to Jan 1. 1960, until today, there is roughly a potential 52$\cdot$100$\cdot$62 = 332,400 possible songs to find. Of course, most of the songs that hit the chart will stay there for more than a single week, so there is a lot less in reality. In fact, a total of 29,128 unique songs hit the Hot 100 chart in the last 62 years.
 
 
 With the songs chosen, all that was left was to download the desired data from [Genius.com](https://genius.com/Rick-astley-never-gonna-give-you-up-lyrics). For each song, the _date of release_, _all artists who collaborated on the song_, _song lyrics_, _genre tags_ and _title_ were gathered. For further details on which tools were used to collect the data, the reader is referred to the [explainer notebook](https://davidariostenfeldt.github.io/project_website/explainer-notebook.html). Below the data of the first five songs are displayed. Interestingly, the two first songs are from before 1960 but still managed to hit the chart in that year.
@@ -30,7 +30,7 @@ About 13% of the downloaded songs turned out to be faulty. For example, songs an
 
 | Data Set                                                                                             |  Songs | Size (mb) |
 |:-----------------------------------------------------------------------------------------------------|-------:|----------:|
-| [Billboard List](https://drive.google.com/file/d/1Gd4YH_U98Z8mellnIV_haINLL4UhLJKG/view?usp=sharing) | 29,128 |       1.6 |
+| [Billboard Chart](https://drive.google.com/file/d/1Gd4YH_U98Z8mellnIV_haINLL4UhLJKG/view?usp=sharing) | 29,128 |       1.6 |
 | [Pre-cleaned](https://drive.google.com/file/d/1cyiIWnXD_0CHLsj8C0tcwNadfYI7z8FD/view?usp=sharing)    | 29,128 |      92.5 |
 | [Cleaned](https://drive.google.com/file/d/1Zhof84KbTJa3a1zfhN3TcwdWqPFCTnEv/view?usp=sharing)        | 25,419 |      44.2 |
 
