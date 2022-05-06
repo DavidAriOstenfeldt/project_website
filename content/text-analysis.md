@@ -571,7 +571,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 68</h1>
-      <img src="/images/ariana_grande.png">
+      <img src="/images/artists/ariana_grande.png">
     </div>
   </div>
     {{< spotify type="track" id="6ocbgoVGwYJhOv1GgI9NsF" width="50%" height="80" >}}
@@ -613,7 +613,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 64</h1>
-      <img src="/images/beyoncé.png">
+      <img src="/images/artists/beyoncé.png">
     </div>
   </div>
     {{< spotify type="track" id="2CvOqDpQIMw69cCzWqr5yr" width="50%" height="80" >}}
@@ -653,7 +653,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 30</h1>
-      <img src="/images/billie_eilish.png">
+      <img src="/images/artists/billie_eilish.png">
     </div>
   </div>
     {{< spotify type="track" id="2Fxmhks0bxGSBdJ92vM42m" width="50%" height="80" >}}
@@ -693,7 +693,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 34</h1>
-      <img src="/images/britney_spears.png">
+      <img src="/images/artists/britney_spears.png">
     </div>
   </div>  
   {{< spotify type="track" id="6I9VzXrHxO9rA9A5euc8Ak" width="50%" height="80" >}}
@@ -732,7 +732,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 50</h1>
-      <img src="/images/cher.png">
+      <img src="/images/artists/cher.png">
     </div>
   </div>
   {{< spotify type="track" id="2goLsvvODILDzeeiT4dAoR" width="50%" height="80" >}}
@@ -771,7 +771,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 48</h1>
-      <img src="/images/ed_sheeran.png">
+      <img src="/images/artists/ed_sheeran.png">
     </div>
   </div>
   {{< spotify type="track" id="0tgVpDi06FyKpA1z0VMD4v" width="50%" height="80" >}}
@@ -810,7 +810,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 64</h1>
-      <img src="/images/elton_john.png">
+      <img src="/images/artists/elton_john.png">
     </div>
   </div>
   {{< spotify type="track" id="3gdewACMIVMEWVbyb8O9sY" width="50%" height="80" >}}
@@ -849,7 +849,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 39</h1>
-      <img src="/images/frank_sinatra.png">
+      <img src="/images/artists/frank_sinatra.png">
     </div>
   </div>
   {{< spotify type="track" id="2dR5WkrpwylTuT3jRWNufa" width="50%" height="80" >}}
@@ -888,7 +888,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 97</h1>
-      <img src="/images/justin_bieber.png">
+      <img src="/images/artists/justin_bieber.png">
     </div>
   </div>
   {{< spotify type="track" id="50kpGaPAhYJ3sGmk6vplg0" width="50%" height="80" >}} 
@@ -927,7 +927,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 34</h1>
-      <img src="/images/katy_perry.png">
+      <img src="/images/artists/katy_perry.png">
     </div>
   </div>
   {{< spotify type="track" id="4jbmgIyjGoXjY01XxatOx6" width="50%" height="80" >}}
@@ -966,7 +966,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 53</h1>
-      <img src="/images/madonna.png">
+      <img src="/images/artists/madonna.png">
     </div>
   </div>
   {{< spotify type="track" id="22sLuJYcvZOSoLLRYev1s5" width="50%" height="80" >}}
@@ -1005,7 +1005,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100':  47</h1>
-      <img src="/images/michael_jackson.png">
+      <img src="/images/artists/michael_jackson.png">
     </div>
   </div>
   {{< spotify type="track" id="5ChkMS8OtdzJeqyybCc9R5" width="50%" height="80" >}}
@@ -1044,7 +1044,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100':  33</h1>
-      <img src="/images/miley_cyrus.png">
+      <img src="/images/artists/miley_cyrus.png">
     </div>
   </div>
   {{< spotify type="track" id="3E7dfMvvCLUddWissuqMwr" width="50%" height="80" >}}
@@ -1083,7 +1083,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 161</h1>
-      <img src="/images/taylor_swift.png">
+      <img src="/images/artists/taylor_swift.png">
     </div>
   </div>
   {{< spotify type="track" id="55n9yjI6qqXh5F2mYvUc2y" width="50%" height="80" >}}
@@ -1127,7 +1127,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 68</h1>
-      <img src="/images/aretha_franklin.png">
+      <img src="/images/artists/aretha_franklin.png">
     </div>
   </div>
   {{< spotify type="track" id="7s25THrKz86DM225dOYwnr" width="50%" height="80" >}}
@@ -1166,7 +1166,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 102</h1>
-      <img src="/images/chris_brown.png">
+      <img src="/images/artists/chris_brown.png">
     </div>
   </div>
   {{< spotify type="track" id="6XHVuErjQ4XNm6nDPVCxVX" width="50%" height="80" >}}
@@ -1205,7 +1205,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 69</h1>
-      <img src="/images/james_brown.png">
+      <img src="/images/artists/james_brown.png">
     </div>
   </div>
   {{< spotify type="track" id="5XeSAezNDk9tuw3viiCbZ3" width="50%" height="80" >}}
@@ -1244,7 +1244,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 52</h1>
-      <img src="/images/marvin_gaye.png">
+      <img src="/images/artists/marvin_gaye.png">
     </div>
   </div>
   {{< spotify type="track" id="7tqhbajSfrz2F7E1Z75ASX" width="50%" height="80" >}}
@@ -1283,7 +1283,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 27</h1>
-      <img src="/images/prince.png">
+      <img src="/images/artists/prince.png">
     </div>
   </div>
   {{< spotify type="track" id="54X78diSLoUDI3joC2bjMz" width="50%" height="80" >}}
@@ -1322,7 +1322,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 65</h1>
-      <img src="/images/stevie_wonder.png">
+      <img src="/images/artists/stevie_wonder.png">
     </div>
   </div>
   {{< spotify type="track" id="4N0TP4Rmj6QQezWV88ARNJ" width="50%" height="80" >}}
@@ -1361,7 +1361,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 94</h1>
-      <img src="/images/the_weeknd.png">
+      <img src="/images/artists/the_weeknd.png">
     </div>
   </div>
   {{< spotify type="track" id="0VjIjW4GlUZAMYd2vXMi3b" width="50%" height="80" >}}
@@ -1405,7 +1405,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 43</h1>
-      <img src="/images/dj_khaled.png">
+      <img src="/images/artists/dj_khaled.png">
     </div>
   </div>
   {{< spotify type="track" id="3DXncPQOG4VBw3QHh3S817" width="50%" height="80" >}}
@@ -1444,7 +1444,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 253</h1>
-      <img src="/images/drake.png">
+      <img src="/images/artists/drake.png">
     </div>
   </div>  
   {{< spotify type="track" id="1zi7xx7UVEFkmKfv06H8x0" width="50%" height="80" >}}
@@ -1483,7 +1483,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 89</h1>
-      <img src="/images/eminem.png">
+      <img src="/images/artists/eminem.png">
     </div>
   </div>
   {{< spotify type="track" id="1v7L65Lzy0j0vdpRjJewt1" width="50%" height="80" >}}
@@ -1522,7 +1522,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 126</h1>
-      <img src="/images/future.png">
+      <img src="/images/artists/future.png">
     </div>
   </div>
   {{< spotify type="track" id="0VgkVdmE4gld66l8iyGjgx" width="50%" height="80" >}}
@@ -1561,7 +1561,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 51</h1>
-      <img src="/images/j._cole.png">
+      <img src="/images/artists/j._cole.png">
     </div>
   </div>
   {{< spotify type="track" id="68Dni7IE4VyPkTOH9mRWHr" width="50%" height="80" >}}
@@ -1600,7 +1600,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 95</h1>
-      <img src="/images/jay-z.png">
+      <img src="/images/artists/jay-z.png">
     </div>
   </div>
   {{< spotify type="track" id="4Li2WHPkuyCdtmokzW2007" width="50%" height="80" >}}
@@ -1639,7 +1639,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 70</h1>
-      <img src="/images/juice_wrld.png">
+      <img src="/images/artists/juice_wrld.png">
     </div>
   </div>
   {{< spotify type="track" id="285pBltuF7vW8TeWk8hdRR" width="50%" height="80" >}}
@@ -1678,7 +1678,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 132</h1>
-      <img src="/images/kanye_west.png">
+      <img src="/images/artists/kanye_west.png">
     </div>
   </div>  
   {{< spotify type="track" id="0j2T0R9dR9qdJYsB7ciXhf" width="50%" height="80" >}}
@@ -1717,7 +1717,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 97</h1>
-      <img src="/images/lil_baby.png">
+      <img src="/images/artists/lil_baby.png">
     </div>
   </div>
   {{< spotify type="track" id="78QR3Wp35dqAhFEc2qAGjE" width="50%" height="80" >}}
@@ -1756,7 +1756,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 71</h1>
-      <img src="/images/lil_durk.png">
+      <img src="/images/artists/lil_durk.png">
     </div>
   </div>
   {{< spotify type="track" id="2SAqBLGA283SUiwJ3xOUVI" width="50%" height="80" >}}
@@ -1795,7 +1795,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 80</h1>
-      <img src="/images/lil_uzi_vert.png">
+      <img src="/images/artists/lil_uzi_vert.png">
     </div>
   </div>
   {{< spotify type="track" id="7GX5flRQZVHRAGd6B4TmDO" width="50%" height="80" >}}
@@ -1834,7 +1834,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 169</h1>
-      <img src="/images/lil_wayne.png">
+      <img src="/images/artists/lil_wayne.png">
     </div>
   </div>  
   {{< spotify type="track" id="5UsLjwBaTHBX4ektWIr4XX" width="50%" height="80" >}}
@@ -1873,7 +1873,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 112</h1>
-      <img src="/images/nicki_minaj.png">
+      <img src="/images/artists/nicki_minaj.png">
     </div>
   </div>
   {{< spotify type="track" id="0dKg2vGC1hFqcK5LGTaKzX" width="50%" height="80" >}}
@@ -1912,7 +1912,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 50</h1>
-      <img src="/images/snoop_dogg.png">
+      <img src="/images/artists/snoop_dogg.png">
     </div>
   </div>
   {{< spotify type="track" id="3FNy4yzOhHhFBeA5p4ofoq" width="50%" height="80" >}}
@@ -1951,7 +1951,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 76</h1>
-      <img src="/images/travis_scott.png">
+      <img src="/images/artists/travis_scott.png">
     </div>
   </div>
   {{< spotify type="track" id="6gBFPUFcJLzWGx4lenP6h2" width="50%" height="80" >}}
@@ -1990,7 +1990,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 70</h1>
-      <img src="/images/young_thug.png">
+      <img src="/images/artists/young_thug.png">
     </div>
   </div>
   {{< spotify type="track" id="1IIKrJVP1C9N7iPtG6eOsK" width="50%" height="80" >}}
@@ -2029,7 +2029,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 79</h1>
-      <img src="/images/youngboy_never_broke_again.png">
+      <img src="/images/artists/youngboy_never_broke_again.png">
     </div>
   </div>
   {{< spotify type="track" id="1oWM79mUVdZGCGYjSirHZR" width="50%" height="80" >}}
@@ -2073,7 +2073,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 89</h1>
-      <img src="/images/elvis_presley.png">
+      <img src="/images/artists/elvis_presley.png">
     </div>
   </div>
   {{< spotify type="track" id="44AyOl4qVkzS48vBsbNXaC" width="50%" height="80" >}}
@@ -2112,7 +2112,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 22</h1>
-      <img src="/images/queen.png">
+      <img src="/images/artists/queen.png">
     </div>
   </div>
   {{< spotify type="track" id="4u7EnebtmKWzUH433cf5Qv" width="50%" height="80" >}}
@@ -2151,7 +2151,7 @@ His sentiment is comparatively low, and his songs were often associated with tur
     </div>
     <div class="column_img">
       <h1>Number of songs on 'Hot-100': 65</h1>
-      <img src="/images/the_beatles.png">
+      <img src="/images/artists/the_beatles.png">
     </div>
   </div>
   {{< spotify type="track" id="6dGnYIeXmHdcikdzNNDMm2" width="50%" height="80" >}}
