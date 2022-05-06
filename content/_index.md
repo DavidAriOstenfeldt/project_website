@@ -31,7 +31,7 @@ To get a list of songs to investigate, we looked at the [Billboard 'Hot-100' lis
 
 The data was then cleaned via various methods (see [Data](./data-description) for more info), such that we were only left with unique songs.
 
-The data can be downloaded here from the table below. `Billboard List` is a list of songs on the Billboard 'Hot-100' list from 1958 to today. `Pre-cleaned` is the data we collected from Genius through the `Billboard List`. It has 4 attributes: The song title, the lyrics, the release date, and the artists who worked on the song. Finally, `Cleaned` is the cleaned final version of the data we are working with, where duplicates, non-english songs, non-songs, etc. have been removed.
+The data can be downloaded from the table below. `Billboard List` is a list of songs on the Billboard 'Hot-100' list from 1958 to today. `Pre-cleaned` is the data we collected from Genius through the `Billboard List`. It has 4 attributes: The song title, the lyrics, the release date, and the artists who worked on the song. Finally, `Cleaned` is the cleaned final version of the data we are working with, where duplicates, non-english songs, non-songs, etc. have been removed.
 
 | Data Set                                                                                             |  Songs | Size (mb) |
 |:-----------------------------------------------------------------------------------------------------|-------:|----------:|
