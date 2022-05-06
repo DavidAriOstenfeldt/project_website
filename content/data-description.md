@@ -26,7 +26,7 @@ Unfortunately, scraping Genius.com for a song does not always yield the desired 
 
 ![](/images/song_lengths_sns.png)
 
-About 13% of the downloaded songs turned out to be faulty. The final data set thus consists of 25,419 songs, 7,855 unique artists and 582 unique genres. The three data sets used throughout the project can be seen and downloaded in the table below. Note that removing the extremely long _'songs'_ from Marcel Proust and the likes reduces the data file size by more than 50%!
+About 13% of the downloaded songs turned out to be faulty. For example, songs and other literature which did in fact not appear on the 'Hot-100' chart or wrong versions of songs where the lyrics were translated to non-english languages. The final data set thus consists of 25,419 songs, 7,855 unique artists and 582 unique genres. The three data sets used throughout the project can be seen and downloaded in the table below. Note that removing the extremely long _'songs'_ from Marcel Proust and the likes reduces the data file size by more than 50%!
 
 | Data Set                                                                                             |  Songs | Size (mb) |
 |:-----------------------------------------------------------------------------------------------------|-------:|----------:|
